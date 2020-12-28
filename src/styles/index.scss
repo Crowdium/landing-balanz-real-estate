@@ -1,0 +1,57 @@
+@import "./fonts/index.scss";
+@import "./themes/main.scss";
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-pr);
+}
+body{
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.title{
+    width: 100%;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 85px;
+        background-color: #0875a4;
+        font-weight: 600;
+        height: 6px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.content-video{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+
+    & .content-embed-video{
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border: none;
+    }
+}
+p{
+    color: var(--ct-main);
+    font-size: 17px;
+    padding-bottom: 10px;
+    line-height: 27px;
+}
