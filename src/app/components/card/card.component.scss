@@ -1,0 +1,103 @@
+.card{
+    max-width: 370px;
+    border: 1px solid #eeeeee;
+    position: relative;
+    margin: 15px auto;
+
+    & .card-header{
+        position: relative;
+        width: 100%;
+        
+        & .card-img{
+            height: 245px;
+            overflow: hidden;
+
+            & img{
+                display: block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+
+                &.portrait{
+                    width: 100%;
+                    height: auto;
+                }
+    
+                &.landscape{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+
+        }
+
+        & .card-label{
+            position: absolute;
+            top: 16px;
+            left: -16px;
+            background-color: var(--bg-primary);
+            color: var(--ct-primary);
+            padding: 5px 16px;
+            border-radius: 5px;
+        }
+    }
+
+    & .card-body{
+        text-align: left;
+
+        & .card-profile{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: -3px;
+
+            &-avatar{
+                width: 70px;
+                min-width: 70px;
+                height: 70px;
+                border-radius: 70px;
+                overflow: hidden;
+                position: relative;
+                margin: 0 16px;
+                transform: translateY(-30%);
+
+                & img{
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    left: -50%;
+                    transform: translateX(50%);
+                }
+
+            }
+            &-content{
+                padding: 0 10px;
+                
+                & .card-profile-title{
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: var(--ct-back);
+                }
+    
+                & .card-profile-description{
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: var(--ct-main);
+    
+                    & svg{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            &-column{
+                flex-direction: column;
+                margin-bottom: 12px;
+            }
+        }
+        & .card-content{
+            padding: 0 22px 22px;
+        }
+    }
+}

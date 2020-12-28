@@ -1,0 +1,30 @@
+<div class="timeline">
+    <ng-container *ngFor="let item of data;let i of index">
+        <ng-container #timelineLeft *ngIf="i % 2 else timelineRight">
+            <div class="timeline-left">
+                <div class="timeline-step">
+                    {{ item.step }}
+                </div>
+                <div class="timeline-content">
+                    <h4>{{item.title}}</h4>
+                    <p>
+                        {{item.content}}
+                    </p>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container #timelineRight>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h4>{{item.title}}</h4>
+                    <p>
+                        {{item.content}}
+                    </p>
+                </div>
+                <div class="timeline-step">
+                    {{ item.step }}
+                </div>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>

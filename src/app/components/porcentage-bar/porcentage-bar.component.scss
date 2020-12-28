@@ -1,0 +1,29 @@
+.porcentage-bar{
+    margin: 16px 0;
+    
+    &-title{
+        text-align: center;
+        font-size: 18px;
+        color: var(--ct-back);
+    }
+    & .bar{
+        display: block;
+        height: 12px;
+        background-color: #eeeeee;
+        border-radius: 3px;
+        margin: 5px 0;
+        overflow: hidden;
+
+        &-progress{
+            height: 12px;
+            background-color: #27bb01;
+        }
+    }
+    &-min-max{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        color: var(--ct-main);   
+    }
+}
