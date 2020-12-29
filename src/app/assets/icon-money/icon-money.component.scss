@@ -1,0 +1,16 @@
+.money-icon{
+    & .money-icon-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 14px;
+    }
+    
+    & .money-icon-2 {
+        fill: #fff;
+    }
+    
+    & .money-icon-3 {
+        fill: #fffdfd;
+    }
+}

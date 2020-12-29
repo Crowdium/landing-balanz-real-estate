@@ -142,6 +142,8 @@
       "app",
       "",
       "cp",
+      "ct",
+      "grid",
       "camelCase"
     ],
     "component-selector": [
@@ -150,6 +152,8 @@
       "app",
       "",
       "cp",
+      "ct",
+      "grid",
       "kebab-case"
     ]
   }

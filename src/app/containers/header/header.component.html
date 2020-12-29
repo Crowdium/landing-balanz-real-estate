@@ -1,0 +1,42 @@
+<navbar [position]="'top'">
+    <navbar-left>
+        <icon-logo></icon-logo>
+    </navbar-left>
+    <navbar-right>
+        <ng-container *ngFor="let obj of navbarRight; let i = index">
+            <ng-container [ngSwitch]="obj.type">
+
+                <cp-button *ngSwitchCase="'button'" [className]="obj.classnames">
+                    <div class="leading" *ngIf="obj.icon && obj.icon.position === 'left'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                    {{obj.name}}
+                    <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                </cp-button>
+                <a *ngSwitchCase="'link'" [routerLink]="obj.path" [class]="obj.classnames">
+                    <div class="leading" *ngIf="obj.icon && obj.icon.position === 'left'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                    {{obj.name}}
+                    <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                </a>
+            </ng-container>
+        </ng-container>
+    </navbar-right>
+</navbar>
+<header class="header">
+    <div class="header-content">
+        <grid-row>
+            <grid-col [md]="12" [lg]="8" [xl]="6">
+                <div class="header-content-left">
+                    <h1>
+                        <span>Ahora podés invertir</span>
+                        <strong>en Real Estate</strong>
+                    </h1>
+                    <p>
+                        Invertí en las mejores propiedades y desarrollos a través del <strong>Crowdfunding Inmobiliario</strong> desde montos mínimos.
+                    </p>
+                    <cp-button size="lg" class="no-mg">
+                        Abrir Cuenta
+                    </cp-button>
+                </div>
+            </grid-col>
+        </grid-row>
+    </div>
+</header>

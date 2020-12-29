@@ -1,0 +1,14 @@
+.legal{
+    padding: 100px 100px 0;
+
+    & p{
+        font-size: 13px;
+        line-height: normal;
+        text-align: center;
+    }
+}
+@media (max-width:768px){
+    .legal{
+        padding: 60px 10px 0;
+    }
+}

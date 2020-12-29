@@ -1,0 +1,38 @@
+.investment{
+    padding: 60px 120px;
+    text-align: center;
+    color: var(--ct-back);
+
+    & h1{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    & .investments-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .card-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 5px 0;
+        font-size: 13px;
+
+        &-title{
+            color: var(--ct-main);
+        }
+        &-value{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+@media (max-width: 768px){
+    .investment{
+        padding: 60px 10px;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import classnames from 'classnames'
 
 export enum buttonType{
@@ -13,7 +13,8 @@ export enum buttonType{
 @Component({
   selector: 'cp-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent implements OnInit {
 

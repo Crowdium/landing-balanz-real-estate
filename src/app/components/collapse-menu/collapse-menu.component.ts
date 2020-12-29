@@ -6,7 +6,7 @@ export interface ICollapseMenuData{
 }
 
 @Component({
-  selector: 'cp-collapse-menu',
+  selector: 'collapse-menu',
   templateUrl: './collapse-menu.component.html',
   styleUrls: ['./collapse-menu.component.scss']
 })
@@ -15,6 +15,7 @@ export class CollapseMenuComponent implements OnInit {
   @Input() data: ICollapseMenuData;
 
   index:number = 0;
+  arrowIcon = "assets/arrow.png"
   constructor() { }
 
   ngOnInit(): void {

@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import classnames from 'classnames';
 
 @Component({
-  selector: 'col',
+  selector: 'grid-col',
   templateUrl: './col.component.html',
   styleUrls: ['./col.component.scss']
 })

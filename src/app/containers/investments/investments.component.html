@@ -1,0 +1,61 @@
+<div class="investment">
+    <h1>Proyectos de Inversión</h1>
+    <div class="investments-content">
+        <grid-row justifyContent="center">
+            <ng-container *ngIf="data && !error">
+                <ng-container *ngFor="let obj of data; let i = index">
+                    <grid-col [sm]="12" [md]="6" [lg]="4">
+                        <cp-card>
+                            <card-head>
+                                <div class="card-img">
+                                    <img [src]="obj.Imagen" alt="obj.Abreviatura" [class]="obj.ImagenOrientacion">
+                                </div>
+                                <div class="card-label">
+                                    {{obj.Tipo}}
+                                </div>
+                            </card-head>
+                            <card-body>
+                                <div #cardProfile class="card-profile" [class]="{'card-profile-column': this.state.isColumnProfile}">
+                                    <div class="card-profile-avatar">
+                                        <img src="obj.Logo" alt=""/>
+                                    </div>
+                                    <div class="card-profile-content">
+                                        <div className="card-profile-title">
+                                            {{obj.Abreviatura}}
+                                        </div>
+                                        <div class="card-profile-description">
+                                            <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+                                            {{obj.Ubicacion}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <div class="card-item-title">MONEDA DEL FONDO</div>
+                                        <div class="card-item-value">{{obj.Moneda}}</div>
+                                    </div>
+                                    <div class="card-item">
+                                        <div class="card-item-title">RENTABILIDAD ESTIMADA TOTAL:</div>
+                                        <div class="card-item-value">{{obj.RentabilidadEstimada}}%</div>
+                                    </div>
+                                    <div class="card-item">
+                                        <div class="card-item-title">TIR ESTIMADA:</div>
+                                        <div class="card-item-value">{{obj.TirEstimada}}%</div>
+                                    </div>
+                                    <div class="card-item">
+                                        <div class="card-item-title">DURACIÓN ESTIMADA:</div>
+                                        <div class="card-item-value">{{obj.Plazo}}</div>
+                                    </div>
+                                    <porcentage-bar [min]="0" [max]="100" [progress]="obj.Completado"></porcentage-bar>
+                                    <cp-button [size]="'lg'" [fullWidth]="true" [className]="'no-mg'">
+                                        Más información
+                                    </cp-button>
+                                </div>
+                            </card-body>
+                        </cp-card>
+                    </grid-col>
+                </ng-container>
+            </ng-container>
+        </grid-row>
+    </div>
+</div>

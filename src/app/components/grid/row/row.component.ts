@@ -2,7 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import classnames from 'classnames';
 
 @Component({
-  selector: 'row',
+  selector: 'grid-row',
   templateUrl: './row.component.html',
   styleUrls: ['./row.component.scss'],
   encapsulation: ViewEncapsulation.None

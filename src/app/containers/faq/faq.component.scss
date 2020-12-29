@@ -1,0 +1,14 @@
+.faq{
+    padding: 0 100px;
+
+    & h1{
+        text-align: center;
+        color: var(--title);
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 768px){
+    .faq{
+        padding: 0 10px;
+    }
+}

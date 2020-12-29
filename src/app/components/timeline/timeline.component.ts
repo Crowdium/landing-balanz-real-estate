@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 export interface ITimeline{
   step: string | InnerHTML,
@@ -9,7 +9,8 @@ export interface ITimeline{
 @Component({
   selector: 'timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.scss']
+  styleUrls: ['./timeline.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TimelineComponent implements OnInit {
 
