@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavbarItems, navbarRight } from 'src/app/constants/navbar';
 
 @Component({
@@ -8,6 +8,8 @@ import { NavbarItems, navbarRight } from 'src/app/constants/navbar';
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
+
+  @Input() viewNav:boolean;
 
   navbarRight:NavbarItems[];
   constructor() { }

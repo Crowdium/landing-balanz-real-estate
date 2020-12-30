@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'porcentage-bar',
   templateUrl: './porcentage-bar.component.html',
-  styleUrls: ['./porcentage-bar.component.scss']
+  styleUrls: ['./porcentage-bar.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PorcentageBarComponent implements OnInit {
 

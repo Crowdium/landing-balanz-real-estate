@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 export interface ICollapseMenuData{
   title: string;
@@ -8,7 +8,8 @@ export interface ICollapseMenuData{
 @Component({
   selector: 'collapse-menu',
   templateUrl: './collapse-menu.component.html',
-  styleUrls: ['./collapse-menu.component.scss']
+  styleUrls: ['./collapse-menu.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CollapseMenuComponent implements OnInit {
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 
 
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'partners',
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PartnersComponent implements OnInit {
 
