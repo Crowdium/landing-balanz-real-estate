@@ -1,10 +1,10 @@
 <div class="investment">
     <h1>Proyectos de Inversión</h1>
     <div class="investments-content">
-        <grid-row justifyContent="center">
+        <div class="row justify-content-center">
             <ng-container *ngIf="data && !error">
                 <ng-container *ngFor="let obj of data; let i = index">
-                    <grid-col [sm]="12" [md]="6" [lg]="4">
+                    <div class="col sm-12 md-6 lg-4">
                         <cp-card>
                             <card-head>
                                 <div class="card-img">
@@ -53,9 +53,9 @@
                                 </div>
                             </card-body>
                         </cp-card>
-                    </grid-col>
+                    </div>
                 </ng-container>
             </ng-container>
-        </grid-row>
+        </div>
     </div>
 </div>

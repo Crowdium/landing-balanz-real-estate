@@ -6,9 +6,9 @@
         El mercado del Real Estate es uno de los más seguros por tratarse de activos valuados en dólares. Funcionan como una reserva 
         de valor y son los que mejor resisten a las crisis financieras.
     </p>
-    <grid-row>
+    <div class="row">
         <ng-container *ngFor="let obj of WhyRealEstateData; let i = index">
-            <grid-col [md]="6" [lg]="3">
+            <div class="col md-6 lg-3">
                 <div class="item-icon" [innerHTML]="(obj.icon | safeHTML)"></div>
                 <div class="item-title">
                     {{obj.title}}
@@ -16,7 +16,7 @@
                 <div class="item-content">
                     {{obj.content}}
                 </div>
-            </grid-col>
+            </div>
         </ng-container>
-    </grid-row>
+    </div>
 </div>
