@@ -8,19 +8,19 @@
                         <cp-card>
                             <card-head>
                                 <div class="card-img">
-                                    <img [src]="obj.Imagen" alt="obj.Abreviatura" [class]="obj.ImagenOrientacion">
+                                    <img [src]="obj.Imagen" [alt]="obj.Abreviatura" [class]="obj.ImagenOrientacion">
                                 </div>
                                 <div class="card-label">
                                     {{obj.Tipo}}
                                 </div>
                             </card-head>
                             <card-body>
-                                <div #cardProfile class="card-profile" [class]="{'card-profile-column': this.state.isColumnProfile}">
+                                <div #cardProfile class="card-profile" [class]="{'card-profile-column': isColumnProfile}">
                                     <div class="card-profile-avatar">
-                                        <img src="obj.Logo" alt=""/>
+                                        <img [src]="obj.Logo" [alt]="obj.Abreviatura"/>
                                     </div>
                                     <div class="card-profile-content">
-                                        <div className="card-profile-title">
+                                        <div class="card-profile-title">
                                             {{obj.Abreviatura}}
                                         </div>
                                         <div class="card-profile-description">

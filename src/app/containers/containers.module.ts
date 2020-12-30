@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectsService } from '../services/projects.service';
+
 import { ComponentsModule } from '../components/components.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AssetsModule } from '../assets/assets.module';
+import { PipesModule } from '../pipes/pipes.module';
 
 import { AboutCiComponent } from './about-ci/about-ci.component';
 import { AsInvestmentComponent } from './as-investment/as-investment.component';
@@ -16,7 +20,8 @@ import { InvestmentsComponent } from './investments/investments.component';
 import { LegalComponent } from './legal/legal.component';
 import { PartnersComponent } from './partners/partners.component';
 import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.component';
-import { PipesModule } from '../pipes/pipes.module';
+
+
 
 @NgModule({
   declarations: [
@@ -38,6 +43,7 @@ import { PipesModule } from '../pipes/pipes.module';
     FontAwesomeModule,
     AssetsModule,
     PipesModule,
+    HttpClientModule,
   ],
   exports: [
     AboutCiComponent,

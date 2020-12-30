@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './screens/app-routing.module';
 import { AppComponent } from './app.component';
 import { ScreensModule } from './screens/screens.module';
 import { ComponentsModule } from './components/components.module';
 import { ContainersModule } from './containers/containers.module';
-import { SafeHTMLPipe } from './pipes/safe-html.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,7 @@ import { SafeHTMLPipe } from './pipes/safe-html.pipe';
     ScreensModule,
     ComponentsModule,
     ContainersModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
