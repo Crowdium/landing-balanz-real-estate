@@ -4,7 +4,6 @@ import { ButtonComponent } from './button/button.component';
 import { CollapseMenuComponent } from './collapse-menu/collapse-menu.component';
 import { PorcentageBarComponent } from './porcentage-bar/porcentage-bar.component';
 import { TimelineComponent } from './timeline/timeline.component';
-import { GridModule } from './grid/grid.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { CardModule } from './card/card.module';
 import { PipesModule } from '../pipes/pipes.module';
@@ -20,7 +19,6 @@ import { PipesModule } from '../pipes/pipes.module';
   ],
   imports: [
     CommonModule,
-    GridModule,
     NavbarModule,
     CardModule,
     PipesModule
@@ -30,7 +28,6 @@ import { PipesModule } from '../pipes/pipes.module';
     CollapseMenuComponent,
     PorcentageBarComponent,
     TimelineComponent,
-    GridModule,
     NavbarModule,
     CardModule
   ]
