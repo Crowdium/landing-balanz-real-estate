@@ -3,8 +3,8 @@
   "name": "balanz-crowdium",
   "version": "0.0.0",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "ng build --prod --base-href=./",
+    "deploy": "ng deploy --base-href=./",
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
@@ -41,6 +41,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "^6.0.0",
     "gh-pages": "^3.1.0",
     "jasmine-core": "~3.6.0",

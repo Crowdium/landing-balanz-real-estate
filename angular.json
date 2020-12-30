@@ -124,8 +124,13 @@
               "devServerTarget": "balanz-crowdium:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "balanz-crowdium"
 }
