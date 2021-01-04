@@ -19,6 +19,7 @@ import { InvestmentsComponent } from './investments/investments.component';
 import { LegalComponent } from './legal/legal.component';
 import { PartnersComponent } from './partners/partners.component';
 import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.component';
+import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.component';
 
 
 
@@ -34,7 +35,8 @@ import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.compon
     InvestmentsComponent,
     LegalComponent,
     PartnersComponent,
-    WhyRealEstateComponent
+    WhyRealEstateComponent,
+    ChartRealEstateComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.compon
     InvestmentsComponent,
     LegalComponent,
     PartnersComponent,
-    WhyRealEstateComponent
+    WhyRealEstateComponent,
+    ChartRealEstateComponent
   ],
 })
 export class ContainersModule {

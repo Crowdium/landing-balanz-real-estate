@@ -1,0 +1,38 @@
+<div class="chart-real-estate">
+    <h1 class="page-header">
+        Real Estate
+        <small>Seguridad en la economía real</small>
+    </h1>
+    <p>
+        1977-2020. Valor m2 U$D promedio C.A.B.A <br>
+        Para dtos. - 2/3 amb.
+    </p>
+    <div class="row">
+        <div class="col md-9">
+            <cp-chart [data]="chartData"></cp-chart>
+        </div>
+        <div class="col md-3">
+            <div class="table-container">
+                <div class="table-view">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Año</th>
+                                <th>VALOR m2</th>
+                                <th>VARIACIÓN ANUAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of chartData">
+                                <td class="text-center">{{data.date}}</td>
+                                <td class="text-center">{{data.value}}</td>
+                                <td class="text-center">{{data.variant}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-gradient"></div>
+            </div>
+        </div>
+    </div>
+</div>

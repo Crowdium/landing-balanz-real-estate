@@ -1,0 +1,79 @@
+.chart-real-estate{
+    margin-top: 70px;
+    .page-header {
+        text-align: left;
+        padding-bottom: 9px;
+        margin: 40px 0 20px;
+        border-bottom: 1px solid #cdcdca;
+        font-size: 36px;
+        font-family: 'Raleway','Open Sans',Arial,Helvetica,sans-serif;
+        font-weight: 600;
+        color: #0d0d5d;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    
+        & small{
+            font-weight: 400;
+            line-height: 1;
+            color: #777;
+            font-size: 65%;
+            font-family: 'Lato',sans-serif;
+        }
+    }
+
+    & p{
+        text-align: left;
+        color: #666;
+        font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    & .table{
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        border-collapse: collapse;
+
+        & thead{
+            & th{
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+
+        &.table-striped{
+            & tbody{
+                & tr:nth-of-type(odd){
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+        & td,
+        & th{
+            padding: .75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+    }
+    
+    .table-container{
+        position: relative;
+    }
+    
+    .table-view{
+        height: 500px;
+        overflow-y: auto;
+        padding-bottom: 50px;
+    }
+    
+    .table-gradient{
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgb(245 245 245 / 0) 0%, #f5f5f5 65%, #f5f5f5 100%);
+    }
+}

@@ -7,6 +7,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { CardModule } from './card/card.module';
 import { PipesModule } from '../pipes/pipes.module';
+import { ChartComponent } from './chart/chart.component';
 
 
 
@@ -16,6 +17,7 @@ import { PipesModule } from '../pipes/pipes.module';
     CollapseMenuComponent,
     PorcentageBarComponent,
     TimelineComponent,
+    ChartComponent,
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { PipesModule } from '../pipes/pipes.module';
     PorcentageBarComponent,
     TimelineComponent,
     NavbarModule,
-    CardModule
+    CardModule,
+    ChartComponent
   ]
 })
 export class ComponentsModule { }
