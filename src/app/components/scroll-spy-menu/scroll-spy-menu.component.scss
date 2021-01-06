@@ -1,0 +1,27 @@
+.scroll-spy-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+    background-color: white;
+
+    & .scroll-spy-item{
+        background: transparent;
+        color: var(--ct-main);
+        border: none;
+        outline: none;
+        text-decoration: none;
+        padding: 18px 22px;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+
+        &.active{
+            color: var(--active);
+        }
+    }
+}

@@ -27,9 +27,28 @@
         width: 50%;
         padding: 32px 60px;
 
-        & h4{
-            font-size: 18px;
-            margin-bottom: 10px;
+        & h1{
+            font-size: 22px;
+            line-height: 1.25;
+            color: var(--title);
+            font-weight: 500;
+            margin: 0;
+        }
+        & h3{
+            text-transform: uppercase;
+            font-size: 16px;
+            color: var(--subtitle);
+            font-weight: 400;
+        }
+        & p{
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        &.full-width{
+            width: 100%;
         }
     }
 
@@ -42,6 +61,10 @@
 
         & .timeline-content{
             text-align: left;
+
+            & h1, & h3{
+                text-align: left !important;
+            }
         }
 
         &::before{
@@ -119,6 +142,10 @@
 
         & .timeline-content{
             text-align: right;
+
+            & h1, & h3{
+                text-align: right !important;
+            }
         }
 
         &::before{

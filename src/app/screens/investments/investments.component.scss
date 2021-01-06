@@ -1,0 +1,119 @@
+.landing-real-estate-investment{
+
+    & .container{
+        padding: 75px;
+    }
+
+    & .header-content{
+        background-image: url(../../../assets/real-estate-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 100px 0;
+    
+        & h1{
+            width: 450px;
+            padding: 32px 0;
+            text-align: center;
+            background-color: rgba(41, 41, 41, 0.7);
+            color: white;
+            font-size: 50px;
+            
+        }
+    }
+
+    & .page-header {
+        text-align: left;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #cdcdca;
+        font-size: 26px;
+        font-family: 'Raleway','Open Sans',Arial,Helvetica,sans-serif;
+        font-weight: 600;
+        color: #0d0d5d;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 32px;
+    }
+
+    & .form-select{
+        width: max-content;
+        position: relative;
+        display: flex;
+        align-items: center;
+        & label{
+            font-family: Roboto,sans-serif;
+            color: #000;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            margin: 0;
+        }
+
+        & select{
+            background: transparent;
+            border: none;
+            outline: none;
+            height: 40px;
+            color: #1959b9;
+            font-weight: 600;
+            margin-left: 10px;
+            margin-right: 12px;
+            min-width: 70px;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+        &::after{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            z-index: -1;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #0a1729;
+        }
+    }
+
+    & .card-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 5px 0;
+        font-size: 13px;
+
+        &-title{
+            color: var(--ct-main);
+        }
+        &-value{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    & .card-no-item{
+        padding: 16px;
+        text-align: center;
+        
+        & h1{
+            font-size: 25px;
+        }
+
+        & p{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .landing-real-estate-investment{
+        & .container{
+            padding: 32px 10px;
+        }
+    }
+}

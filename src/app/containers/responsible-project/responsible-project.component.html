@@ -1,0 +1,17 @@
+<div class="reponsible-project">
+    <div class="title">
+        Responsables
+    </div>
+    <div class="row align-items-center">
+        <ng-container *ngFor="let obj of data">
+            <div class="col md-4">
+                <img [src]="obj.image" alt="obj.title">
+            </div>
+            <div class="col md-8 margin-b-3">
+                <h1>{{obj.title}}</h1>
+                <h3>{{obj.subtitle}}</h3>
+                <p>{{obj.content}}</p>
+            </div>
+        </ng-container>
+    </div>
+</div>

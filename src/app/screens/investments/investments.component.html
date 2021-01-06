@@ -1,0 +1,100 @@
+<div class="landing-real-estate-investment">
+    <ct-header [viewNav]="false">
+        <div class="header-content">
+            <h1>Real Estate</h1>
+        </div>
+    </ct-header>
+    <div class="container">
+        <h1 class="page-header">
+            Lista de Inversiones
+        </h1>
+        <form [formGroup]="filterForm">
+            <div class="form-select">
+                <label for="filter">
+                    Filtrar por
+                </label>
+                <select formControlName="status">
+                    <option *ngFor="let opt of options" [value]="opt.value">{{opt.text}}</option>
+                </select>
+            </div>
+        </form>
+
+
+        <div class="row justify-content-start">
+            <ng-container *ngIf="data && !error && !loading">
+                <ng-container *ngIf="dataFilter && dataFilter.length else noItems">
+                    <ng-container *ngFor="let obj of dataFilter; let i = index">
+                        <div class="col sm-12 md-6 lg-4">
+                            <cp-card>
+                                <card-head>
+                                    <div class="card-img">
+                                        <img [src]="obj.Imagen" [alt]="obj.Abreviatura" [class]="obj.ImagenOrientacion">
+                                    </div>
+                                    <div class="card-label">
+                                        {{obj.Tipo}}
+                                    </div>
+                                </card-head>
+                                <card-body>
+                                    <div #cardProfile class="card-profile" [class]="{'card-profile-column': isColumnProfile}">
+                                        <div class="card-profile-avatar">
+                                            <img [src]="obj.Logo" [alt]="obj.Abreviatura"/>
+                                        </div>
+                                        <div class="card-profile-content">
+                                            <div class="card-profile-title">
+                                                {{obj.Abreviatura}}
+                                            </div>
+                                            <div class="card-profile-description">
+                                                <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+                                                {{obj.Ubicacion}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-item">
+                                            <div class="card-item-title">MONEDA DEL FONDO</div>
+                                            <div class="card-item-value">{{obj.Moneda}}</div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="card-item-title">RENTABILIDAD ESTIMADA TOTAL:</div>
+                                            <div class="card-item-value">{{obj.RentabilidadEstimada}}%</div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="card-item-title">TIR ESTIMADA:</div>
+                                            <div class="card-item-value">{{obj.TirEstimada}}%</div>
+                                        </div>
+                                        <div class="card-item">
+                                            <div class="card-item-title">DURACIÓN ESTIMADA:</div>
+                                            <div class="card-item-value">{{obj.Plazo}}</div>
+                                        </div>
+                                        <porcentage-bar [min]="0" [max]="100" [progress]="obj.Completado"></porcentage-bar>
+                                        <cp-button (click)="moreInfo(obj.Abreviatura)" [size]="'lg'" [fullWidth]="true" [className]="'no-mg'">
+                                            Más información
+                                        </cp-button>
+                                    </div>
+                                </card-body>
+                            </cp-card>
+                        </div>
+                    </ng-container>
+                </ng-container>
+                <ng-template #noItems>
+                    <cp-card>
+                        <card-body>
+                            <div class="card-no-item">
+                                <h1>No hay proyectos para mostrar.</h1>
+                                <p>
+                                    Estamos trabajando para sumar más proyectos en los que puedas invertir.
+                                </p>
+                            </div>
+                        </card-body>
+                    </cp-card>
+                </ng-template>
+            </ng-container>
+            <ng-container *ngIf="loading">
+                <div class="text-center">
+                    <fa-icon [icon]="faSpinner" [spin]="true" [size]="'6x'"></fa-icon>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+</div>

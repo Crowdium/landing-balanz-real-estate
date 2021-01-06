@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ScreensModule } from './screens/screens.module';
 import { ComponentsModule } from './components/components.module';
 import { ContainersModule } from './containers/containers.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,9 @@ import { ContainersModule } from './containers/containers.module';
     ComponentsModule,
     ContainersModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NzIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

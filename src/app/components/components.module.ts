@@ -8,6 +8,9 @@ import { NavbarModule } from './navbar/navbar.module';
 import { CardModule } from './card/card.module';
 import { PipesModule } from '../pipes/pipes.module';
 import { ChartComponent } from './chart/chart.component';
+import { ScrollSpyMenuComponent } from './scroll-spy-menu/scroll-spy-menu.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 
 
@@ -18,12 +21,15 @@ import { ChartComponent } from './chart/chart.component';
     PorcentageBarComponent,
     TimelineComponent,
     ChartComponent,
+    ScrollSpyMenuComponent,
+    GalleryComponent,
   ],
   imports: [
     CommonModule,
     NavbarModule,
     CardModule,
-    PipesModule
+    PipesModule,
+    IvyCarouselModule,
   ],
   exports:[
     ButtonComponent,
@@ -32,7 +38,9 @@ import { ChartComponent } from './chart/chart.component';
     TimelineComponent,
     NavbarModule,
     CardModule,
-    ChartComponent
+    ChartComponent,
+    ScrollSpyMenuComponent,
+    GalleryComponent
   ]
 })
 export class ComponentsModule { }

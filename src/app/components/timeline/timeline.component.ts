@@ -3,6 +3,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 export interface ITimeline{
   step: string | InnerHTML,
   title: string;
+  subtitle?: string;
   content: string;
 }
 
@@ -15,6 +16,7 @@ export interface ITimeline{
 export class TimelineComponent implements OnInit {
 
   @Input() data: ITimeline[];
+  @Input() fullWidth: boolean = false;
 
   constructor() { }
 

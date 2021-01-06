@@ -1,0 +1,23 @@
+<div class="resume-investment">
+    <div class="title">
+        Resumen de la Inversión
+    </div>
+    <div class="resume-container">
+        <div class="resume-item" *ngFor="let item of data">
+            <div class="resume-title">
+                <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>
+                {{item.title}}
+            </div>
+            <div class="resume-dotted"></div>
+            <div class="resume-value">{{item.value}}</div>
+        </div>
+    </div>
+    <div class="progress">
+        <porcentage-bar [min]="0" [max]="100" [progress]="progress"></porcentage-bar>
+    </div>
+    <div class="text-center">
+        <cp-button [size]="'lg'">
+            Invertir Ahora
+        </cp-button>
+    </div>
+</div>

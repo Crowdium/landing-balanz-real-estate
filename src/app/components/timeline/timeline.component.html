@@ -1,9 +1,10 @@
 <div class="timeline">
     <ng-container *ngFor="let item of data;let i = index">
-        <ng-template [ngIf]="i % 2" [ngIfElse]="timelineLeft">
+        <ng-template [ngIf]="i % 2" [ngIfElse]="timelineLeft" >
             <div class="timeline-right">
-                <div class="timeline-content">
-                    <h4>{{item.title}}</h4>
+                <div class="timeline-content" [class]="{'full-width': fullWidth}">
+                    <h1>{{item.title}}</h1>
+                    <h3>{{item.subtitle}}</h3>
                     <p>
                         {{item.content}}
                     </p>
@@ -14,8 +15,9 @@
         <ng-template #timelineLeft>
             <div class="timeline-left">
                 <div class="timeline-step" [innerHTML]="(item.step | safeHTML)"></div>
-                <div class="timeline-content">
-                    <h4>{{item.title}}</h4>
+                <div class="timeline-content" [class]="{'full-width': fullWidth}">
+                    <h1>{{item.title}}</h1>
+                    <h3>{{item.subtitle}}</h3>
                     <p>
                         {{item.content}}
                     </p>

@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ComponentsModule } from '../components/components.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AssetsModule } from '../assets/assets.module';
 import { PipesModule } from '../pipes/pipes.module';
 
@@ -20,6 +21,14 @@ import { LegalComponent } from './legal/legal.component';
 import { PartnersComponent } from './partners/partners.component';
 import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.component';
 import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.component';
+import { GalleryMapComponent } from './gallery-map/gallery-map.component';
+import { ResumeInvestmentComponent } from './resume-investment/resume-investment.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { DescriptionProjectComponent } from './description-project/description-project.component';
+import { TimelineProjectComponent } from './timeline-project/timeline-project.component';
+import { ResponsibleProjectComponent } from './responsible-project/responsible-project.component';
+import { FaqProjectComponent } from './faq-project/faq-project.component';
+
 
 
 
@@ -36,7 +45,13 @@ import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.
     LegalComponent,
     PartnersComponent,
     WhyRealEstateComponent,
-    ChartRealEstateComponent
+    ChartRealEstateComponent,
+    GalleryMapComponent,
+    ResumeInvestmentComponent,
+    DescriptionProjectComponent,
+    TimelineProjectComponent,
+    ResponsibleProjectComponent,
+    FaqProjectComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +60,9 @@ import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.
     AssetsModule,
     PipesModule,
     HttpClientModule,
-  ],
+    NzIconModule,
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyApF-4LCHcUYVJOfyBe3vDo7B1mYubcdgk'})
+  ],  
   exports: [
     AboutCiComponent,
     AsInvestmentComponent,
@@ -58,9 +75,13 @@ import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.
     LegalComponent,
     PartnersComponent,
     WhyRealEstateComponent,
-    ChartRealEstateComponent
+    ChartRealEstateComponent,
+    GalleryMapComponent,
+    ResumeInvestmentComponent,
+    DescriptionProjectComponent,
+    TimelineProjectComponent,
+    ResponsibleProjectComponent,
+    FaqProjectComponent
   ],
 })
-export class ContainersModule {
-
-}
+export class ContainersModule {}
