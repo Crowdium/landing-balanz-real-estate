@@ -28,6 +28,7 @@ import { DescriptionProjectComponent } from './description-project/description-p
 import { TimelineProjectComponent } from './timeline-project/timeline-project.component';
 import { ResponsibleProjectComponent } from './responsible-project/responsible-project.component';
 import { FaqProjectComponent } from './faq-project/faq-project.component';
+import { config } from '../constants/config';
 
 
 
@@ -61,7 +62,7 @@ import { FaqProjectComponent } from './faq-project/faq-project.component';
     PipesModule,
     HttpClientModule,
     NzIconModule,
-    AgmCoreModule.forRoot({ apiKey: 'AIzaSyApF-4LCHcUYVJOfyBe3vDo7B1mYubcdgk'})
+    AgmCoreModule.forRoot({ apiKey: config.GMAPS})
   ],  
   exports: [
     AboutCiComponent,
