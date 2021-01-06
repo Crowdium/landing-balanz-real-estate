@@ -20,22 +20,21 @@ export class ScrollSpyMenuComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(){
+    let top = window.scrollY;
     let scrollSpyContainer = document.querySelector('.scroll-spy-container');
     if(60 === scrollSpyContainer.getBoundingClientRect().top){
       this.scrolled = true;
     }else{
       this.scrolled = false;
     }
-    /*
-    let yi = window.scrollY;
-    let yf = window.innerHeight + yi;
     this.ids.map(id => {
       let el = document.querySelector(id);
-      if(yi >= el.scrollTop && yf <= el.scrollTop + el.clientHeight){
-        console.log(id, 'in View')
+      let rect = el.getBoundingClientRect();
+      if(rect.top - 120 <= 0 && rect.top + rect.height - 120 >= 0){
+        this.section = id;
       }
+      
     })
-    */
   }
 
   constructor() { }
