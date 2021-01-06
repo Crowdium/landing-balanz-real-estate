@@ -11,6 +11,10 @@ import { IconMoneyComponent } from './icon-money/icon-money.component';
 import { IconOwnerComponent } from './icon-owner/icon-owner.component';
 import { IconValueComponent } from './icon-value/icon-value.component';
 import { createCustomElement } from '@angular/elements';
+import { IconToolsComponent } from './icon-tools/icon-tools.component';
+import { IconAcquisitionComponent } from './icon-acquisition/icon-acquisition.component';
+import { IconSaleComponent } from './icon-sale/icon-sale.component';
+import { IconLoadingComponent } from './icon-loading/icon-loading.component';
 
 
 
@@ -25,7 +29,11 @@ import { createCustomElement } from '@angular/elements';
     IconInvestmentComponent,
     IconMoneyComponent,
     IconOwnerComponent,
-    IconValueComponent
+    IconValueComponent,
+    IconToolsComponent,
+    IconAcquisitionComponent,
+    IconSaleComponent,
+    IconLoadingComponent
   ],
   imports: [
     CommonModule
@@ -40,7 +48,11 @@ import { createCustomElement } from '@angular/elements';
     IconInvestmentComponent,
     IconMoneyComponent,
     IconOwnerComponent,
-    IconValueComponent
+    IconValueComponent,
+    IconToolsComponent,
+    IconAcquisitionComponent,
+    IconSaleComponent,
+    IconLoadingComponent
   ],
   entryComponents: [
     IconUserComponent,
@@ -48,7 +60,10 @@ import { createCustomElement } from '@angular/elements';
     IconInvestmentComponent,
     IconOwnerComponent,
     IconDiversifityComponent,
-    IconDoughnutComponent
+    IconDoughnutComponent,
+    IconToolsComponent,
+    IconAcquisitionComponent,
+    IconSaleComponent
   ]
 })
 export class AssetsModule {
@@ -74,5 +89,12 @@ export class AssetsModule {
     customElements.define('icon-owner', iconOwner);
     const iconDiversifity = createCustomElement(IconDiversifityComponent, { injector: injector });
     customElements.define('icon-diversifity', iconDiversifity);
+
+    const iconTools = createCustomElement(IconToolsComponent, { injector: injector });
+    customElements.define('icon-tools', iconTools);
+    const iconAcquisition = createCustomElement(IconAcquisitionComponent, { injector: injector });
+    customElements.define('icon-acquisition', iconAcquisition);
+    const iconSale = createCustomElement(IconSaleComponent, { injector: injector });
+    customElements.define('icon-sale', iconSale)
   }
 }

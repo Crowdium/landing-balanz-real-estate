@@ -9,6 +9,7 @@ import { HubProjectComponent } from './hub-project/hub-project.component';
 import { InvestInRealEstateComponent } from '../containers/invest-in-real-estate/invest-in-real-estate.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AssetsModule } from '../assets/assets.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ComponentsModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AssetsModule,
   ],
   exports: [
     HomeComponent, 

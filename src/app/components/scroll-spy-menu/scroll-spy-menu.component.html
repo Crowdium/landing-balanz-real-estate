@@ -1,4 +1,4 @@
-<div class="scroll-spy-container">
+<div class="scroll-spy-container" [class]="{'scrolled': scrolled}">
     <ng-container *ngFor="let obj of data; let i = index">
         <button class="scroll-spy-item" [class]="{'active': section === obj.id}" (click)="scrollTo(obj.id)">
             {{obj.content}}

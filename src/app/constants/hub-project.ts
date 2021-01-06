@@ -128,19 +128,19 @@ export const descriptionData:string = `
 `;
 export const timelineProjectData: ITimeline[] = [
     {
-        step: `<icon-doughnut></icon-doughnut>`, 
+        step: `<icon-acquisition></icon-acquisition>`, 
         title: "Adquisición", 
         subtitle: "MARZO 2021", 
         content: "Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con un 25% de descuento respecto de similares departamentos en el edificio."
     },
     {
-        step: `<icon-bars></icon-bars>`, 
+        step: `<icon-sale></icon-sale>`, 
         title: "Obra + Venta de la Unidad",  
         subtitle: "MARZO 2022 - MARZO 2023", 
         content: "Las unidades se pondrán a la venta tratando de maximizar el valor de venta durante la construcción del edificio. Los mejores momentos de venta son al terminar las losas del edificio (15 pisos) o con la posterior posesión de las unidades. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta, entendiendo que la finalización de la obra se estima a los 30 meses desde la adquisición de las unidades."
     },
     {
-        step: `<icon-money></icon-money>`, 
+        step: `<icon-tools></icon-tools>`, 
         title: "Finalización de la Obra",
         subtitle: "ABRIL 2023 - AGOSTO 2023", 
         content: "Se estima que la obra finalice entre marzo y agosto del 2023"

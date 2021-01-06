@@ -1,13 +1,21 @@
 .scroll-spy-container{
+    max-width: 75%;
+    min-width: 798px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 32px;
     position: sticky;
     top: 60px;
     z-index: 9;
     background-color: white;
+
+    &.scrolled{
+        min-width: 100%;
+        left: 0;
+        right: 0;
+    }
 
     & .scroll-spy-item{
         background: transparent;
@@ -23,5 +31,10 @@
         &.active{
             color: var(--active);
         }
+    }
+}
+@media (max-width:798px){
+    .scroll-spy-container{
+        display: none;
     }
 }

@@ -23,24 +23,20 @@
                 </div>
             </div>
         </ct-header>
-        <div class="row justify-content-center">
-            <div class="col md-9">
-                <scroll-spy-menu [data]="scrollSpyMenu">
-                    <div class="content-panel">
-                        <gallery-map [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
-                        <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado"></resume-investment>
-                        <div class="divider"></div>
-                        <description-project id="description" [description]="getDescription()"></description-project>
-                        <div class="divider"></div>
-                        <timeline-project id="timeline" [data]="timelineProjectData"></timeline-project>
-                        <div class="divider"></div>
-                        <responsible-project id="responsible" [data]="responsibleData"></responsible-project>
-                        <div class="divider"></div>
-                        <faq-project id="faq"></faq-project>
-                    </div>
-                </scroll-spy-menu>
+        <scroll-spy-menu [data]="scrollSpyMenu">
+            <div class="content-panel">
+                <gallery-map [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
+                <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado"></resume-investment>
+                <div class="divider"></div>
+                <description-project id="description" [description]="getDescription()"></description-project>
+                <div class="divider"></div>
+                <timeline-project id="timeline" [data]="timelineProjectData"></timeline-project>
+                <div class="divider"></div>
+                <responsible-project id="responsible" [data]="responsibleData"></responsible-project>
+                <div class="divider"></div>
+                <faq-project id="faq"></faq-project>
             </div>
-        </div>
+        </scroll-spy-menu>
         <legal></legal>
         <from-your-mobile></from-your-mobile>
         <ct-footer></ct-footer>
