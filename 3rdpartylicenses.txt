@@ -26,6 +26,9 @@ THE SOFTWARE.
 @amcharts/amcharts4
 SEE LICENSE IN LICENSE
 
+@angular/animations
+MIT
+
 @angular/cdk
 MIT
 The MIT License
@@ -274,9 +277,6 @@ Awesome, nor vice versa. **Please do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.**
 
 
-angular-responsive-carousel
-Apache License 2.0
-
 animated-scroll-to
 MIT
 The MIT License
@@ -394,6 +394,9 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 ng-zorro-antd
+MIT
+
+ngx-owl-carousel-o
 MIT
 
 pdfmake
