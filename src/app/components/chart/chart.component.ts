@@ -96,7 +96,7 @@ export class ChartComponent implements OnInit {
         state: function(target, stateId){
             if(target instanceof am4charts.DateAxis){
                 let state = target.states.create(stateId);
-                //state.sprite.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 5 }])
+                console.log(state.sprite)
             }
             if (target instanceof am4charts.AxisRendererY) {
                 var state = target.states.create(stateId);

@@ -9,6 +9,7 @@
 
     & .resume-container{
         margin: 32px 0;
+        
         & .resume-item{
             display: flex;
             justify-content: space-between;
@@ -38,6 +39,7 @@
                 padding-left: .5em;
                 color: #002162;
                 font-weight: 600;
+                font-size: 18px;
             }
             & .resume-title{
                 float: left;
@@ -47,19 +49,20 @@
                 font-weight: 400;
 
                 & i{
-                    margin-right: 8px;
+                    font-size: 90%;
+                    margin-right: 10px;
                 }
             }
             & .resume-dotted{
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 0;
+                top: -1px;
                 bottom: 0;
                 margin: auto;
                 height: 1px;
                 width: 100%;
-                border: 1px dotted var(--border);
+                border-bottom: 1px dotted var(--border);
             }
         }
     }

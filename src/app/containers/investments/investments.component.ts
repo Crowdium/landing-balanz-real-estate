@@ -1,6 +1,8 @@
 import {  AfterViewChecked, ChangeDetectorRef, Component, HostListener, OnInit, QueryList, ViewChildren, ViewEncapsulation } from '@angular/core';
-import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Project } from 'src/app/constants/project';
+import { encodeURL } from 'src/app/helpers/encodeURI';
 import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
@@ -18,7 +20,7 @@ export class InvestmentsComponent implements OnInit, AfterViewChecked {
 
   isColumnProfile:boolean = false;
 
-  faMapMarkerAlt = faMapMarkedAlt;
+  faMapMarkerAlt = faMapMarkerAlt;
 
   @HostListener('window:resize', ['$event'])
   onResize(ev?:any){
@@ -32,7 +34,7 @@ export class InvestmentsComponent implements OnInit, AfterViewChecked {
     }
   }
 
-  constructor( private projectS: ProjectsService, private cdr: ChangeDetectorRef ) { }
+  constructor( private projectS: ProjectsService, private cdr: ChangeDetectorRef, private router: Router ) { }
 
   ngOnInit(): void {
     this.projectS.getProjects().subscribe(data => {
@@ -46,5 +48,10 @@ export class InvestmentsComponent implements OnInit, AfterViewChecked {
   ngAfterViewChecked(){
     this.onResize()
     this.cdr.detectChanges();
+  }
+
+  moreInfo(value:string){
+    let url = encodeURL(value);
+    this.router.navigateByUrl(`/real-estate/inversiones/${url}`)
   }
 }

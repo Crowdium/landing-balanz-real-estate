@@ -1,6 +1,7 @@
 .scroll-spy-container{
-    max-width: 75%;
+    width: 100%;
     min-width: 798px;
+    max-width: 1026px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -12,18 +13,20 @@
     background-color: white;
 
     &.scrolled{
-        min-width: 100%;
+        margin-left: -16px;
+        min-width: calc(100% + 32px);
         left: 0;
         right: 0;
     }
 
     & .scroll-spy-item{
         background: transparent;
+        height: 3.5rem;
         color: var(--ct-main);
         border: none;
         outline: none;
         text-decoration: none;
-        padding: 18px 22px;
+        padding: 0 1.5rem;
         font-size: 17px;
         font-weight: 400;
         cursor: pointer;

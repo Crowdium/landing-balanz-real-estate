@@ -1,7 +1,10 @@
 .reponsible-project{
 
-    &.reponsible-content{
-        margin-bottom: 3em;
+    & .reponsible-content{
+        margin-bottom: 35px;
+    }
+    & .reponsible-content:last-child{
+        margin-bottom: 0;
     }
 
     & h1{
@@ -26,7 +29,7 @@
         margin-top: 10px;
     }
 }
-@media (min-width: 767px){
+@media (max-width: 767px){
     .reponsible-project{
         & .reponsible-content{
             margin-bottom: 0em;

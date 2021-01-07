@@ -20,7 +20,6 @@ export class ScrollSpyMenuComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(){
-    let top = window.scrollY;
     let scrollSpyContainer = document.querySelector('.scroll-spy-container');
     if(60 === scrollSpyContainer.getBoundingClientRect().top){
       this.scrolled = true;

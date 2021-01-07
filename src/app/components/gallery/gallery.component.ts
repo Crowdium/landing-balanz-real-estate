@@ -24,9 +24,9 @@ export class GalleryComponent implements OnInit {
     this.config = {
       items: 1,
       loop: true,
-  
+      center: true,
       autoWidth: true,
-      autoHeight: true,
+      autoHeight: false,
   
       startPosition: 0,
       nav:true,
@@ -35,9 +35,19 @@ export class GalleryComponent implements OnInit {
       autoplay: true,
       autoplayTimeout: 6000,
       autoplayHoverPause: true,
+      stagePadding: 20,
       responsive: {
         0:{
-          items: 1
+          items: 1.2,
+          margin: 10,
+          nav: false,
+          dots: false
+        },
+        768:{
+          items: 1,
+          margin: 0,
+          nav: true,
+          dots: true
         }
       }
       
