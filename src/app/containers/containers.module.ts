@@ -1,9 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { config } from '../constants/config';
+
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { IconDefinition } from '@ant-design/icons-angular';
+import { 
+  DollarCircleFill, 
+  SignalFill, 
+  FundFill, 
+  ClockCircleFill, 
+  PieChartFill, 
+  ProjectFill, 
+  HomeFill, 
+  ProfileFill, 
+  BankFill,
+} from '@ant-design/icons-angular/icons';
 
 import { ComponentsModule } from '../components/components.module';
 import { AssetsModule } from '../assets/assets.module';
@@ -23,15 +38,23 @@ import { WhyRealEstateComponent } from './why-real-estate/why-real-estate.compon
 import { ChartRealEstateComponent } from './chart-real-estate/chart-real-estate.component';
 import { GalleryMapComponent } from './gallery-map/gallery-map.component';
 import { ResumeInvestmentComponent } from './resume-investment/resume-investment.component';
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { DescriptionProjectComponent } from './description-project/description-project.component';
 import { TimelineProjectComponent } from './timeline-project/timeline-project.component';
 import { ResponsibleProjectComponent } from './responsible-project/responsible-project.component';
 import { FaqProjectComponent } from './faq-project/faq-project.component';
-import { config } from '../constants/config';
 
 
-
+const icons: IconDefinition[] = [
+  DollarCircleFill, 
+  SignalFill, 
+  FundFill, 
+  ClockCircleFill, 
+  PieChartFill, 
+  ProjectFill, 
+  HomeFill, 
+  ProfileFill, 
+  BankFill
+]
 
 @NgModule({
   declarations: [
@@ -61,7 +84,7 @@ import { config } from '../constants/config';
     AssetsModule,
     PipesModule,
     HttpClientModule,
-    NzIconModule,
+    NzIconModule.forRoot(icons),
     AgmCoreModule.forRoot({ apiKey: config.GMAPS})
   ],  
   exports: [
