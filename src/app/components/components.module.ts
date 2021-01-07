@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { CollapseMenuComponent } from './collapse-menu/collapse-menu.component';
@@ -10,8 +11,8 @@ import { PipesModule } from '../pipes/pipes.module';
 import { ChartComponent } from './chart/chart.component';
 import { ScrollSpyMenuComponent } from './scroll-spy-menu/scroll-spy-menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     NavbarModule,
     CardModule,
     PipesModule,
-    IvyCarouselModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   exports:[
     ButtonComponent,

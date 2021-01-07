@@ -10,13 +10,13 @@ export const scrollSpyMenu = [
     {id: "#faq", content: "Preguntas Frecuentes"},
 ]
 export const galleryData:IGalleryData[] = [
-    {path: "../../assets/gallery/hub-cabildo-1.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-2.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-3.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-4.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-5.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-6.jpg"},
-    {path: "../../assets/gallery/hub-cabildo-7.jpg"}
+    {path: "../../assets/gallery/hub-cabildo-1.jpg", id:"1", alt:"HUB Cabildo 1"},
+    {path: "../../assets/gallery/hub-cabildo-2.jpg", id:"2", alt:"HUB Cabildo 2"},
+    {path: "../../assets/gallery/hub-cabildo-3.jpg", id:"3", alt:"HUB Cabildo 3"},
+    {path: "../../assets/gallery/hub-cabildo-4.jpg", id:"4", alt:"HUB Cabildo 4"},
+    {path: "../../assets/gallery/hub-cabildo-5.jpg", id:"5", alt:"HUB Cabildo 5"},
+    {path: "../../assets/gallery/hub-cabildo-6.jpg", id:"6", alt:"HUB Cabildo 6"},
+    {path: "../../assets/gallery/hub-cabildo-7.jpg", id:"7", alt:"HUB Cabildo 7"}
 ]
 export const resumeList:IResume[] = [
     {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DOLAR'},

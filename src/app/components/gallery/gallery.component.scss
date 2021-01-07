@@ -1,0 +1,53 @@
+.owl-nav{
+    margin: 0 !important;
+
+    & .owl-prev,
+    & .owl-next{
+        width: 55px;
+        height: 55px;
+        border-radius: 55px !important;
+        background-color: rgba(22, 22, 22, 0.4) !important;
+        border: 3px solid #ffffff !important;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto !important;
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px !important;
+    }
+
+    & .owl-prev{
+        left: 10px;
+    }
+
+    & .owl-next{
+        right: 10px;
+    }
+    
+}
+.owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    .owl-dot{
+        & span{
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 15px !important;
+            margin: 10px 4px !important;
+            background: var(--ct-pr) !important;
+        }
+
+        &.active,
+        &:hover{
+            & span{
+                background: var(--bg-pr) !important;
+            }
+        }
+    }
+}

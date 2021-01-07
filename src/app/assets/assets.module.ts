@@ -33,7 +33,7 @@ import { IconLoadingComponent } from './icon-loading/icon-loading.component';
     IconToolsComponent,
     IconAcquisitionComponent,
     IconSaleComponent,
-    IconLoadingComponent
+    IconLoadingComponent,
   ],
   imports: [
     CommonModule
@@ -52,7 +52,7 @@ import { IconLoadingComponent } from './icon-loading/icon-loading.component';
     IconToolsComponent,
     IconAcquisitionComponent,
     IconSaleComponent,
-    IconLoadingComponent
+    IconLoadingComponent,
   ],
   entryComponents: [
     IconUserComponent,
@@ -63,7 +63,7 @@ import { IconLoadingComponent } from './icon-loading/icon-loading.component';
     IconDoughnutComponent,
     IconToolsComponent,
     IconAcquisitionComponent,
-    IconSaleComponent
+    IconSaleComponent,
   ]
 })
 export class AssetsModule {
