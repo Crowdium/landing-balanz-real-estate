@@ -12,6 +12,8 @@ export class NotFoundComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isIframe = () => window.self === window.top;
+  isIframe(){
+    return window.self === window.top
+  }
 
 }
