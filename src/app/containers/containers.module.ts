@@ -42,6 +42,7 @@ import { DescriptionProjectComponent } from './description-project/description-p
 import { TimelineProjectComponent } from './timeline-project/timeline-project.component';
 import { ResponsibleProjectComponent } from './responsible-project/responsible-project.component';
 import { FaqProjectComponent } from './faq-project/faq-project.component';
+import { VideoProjectComponent } from './video-project/video-project.component';
 
 
 const icons: IconDefinition[] = [
@@ -75,7 +76,8 @@ const icons: IconDefinition[] = [
     DescriptionProjectComponent,
     TimelineProjectComponent,
     ResponsibleProjectComponent,
-    FaqProjectComponent
+    FaqProjectComponent,
+    VideoProjectComponent
   ],
   imports: [
     CommonModule,
@@ -105,7 +107,8 @@ const icons: IconDefinition[] = [
     DescriptionProjectComponent,
     TimelineProjectComponent,
     ResponsibleProjectComponent,
-    FaqProjectComponent
+    FaqProjectComponent,
+    VideoProjectComponent,
   ],
 })
 export class ContainersModule {}

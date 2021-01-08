@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { descriptionData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData } from 'src/app/constants/hub-project';
+import { descriptionData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData, urlVideo } from 'src/app/constants/hub-project';
 import { Project } from 'src/app/constants/project';
 import { encodeURL } from 'src/app/helpers/encodeURI';
 import { ProjectsService } from 'src/app/services/projects.service';
@@ -23,6 +23,7 @@ export class HubProjectComponent implements OnInit {
   resumeList = resumeList;
   timelineProjectData = timelineProjectData;
   responsibleData = responsibleData;
+  videoProjectData = urlVideo;
 
 
   constructor(private projectS: ProjectsService, private route: ActivatedRoute) { }

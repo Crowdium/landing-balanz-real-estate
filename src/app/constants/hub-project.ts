@@ -2,13 +2,17 @@ import { IGalleryData } from '../components/gallery/gallery.component';
 import { ITimeline } from '../components/timeline/timeline.component';
 import { IResume } from '../containers/resume-investment/resume-investment.component';
 
+export const urlVideo:string = "https://www.youtube.com/embed/PVKcrQv_fEU";
+
 export const scrollSpyMenu = [
     {id: "#resume", content: "Resumen"},
     {id: "#description", content: "Descripción del Proyecto"},
     {id: "#timeline", content: "Línea de Tiempo"},
+    {id: "#video", content: "Video"},
     {id: "#responsible", content: "Responsables"},
     {id: "#faq", content: "Preguntas Frecuentes"},
-]
+];
+
 export const galleryData:IGalleryData[] = [
     {path: "../../assets/gallery/hub-cabildo-1.jpg", id:"1", alt:"HUB Cabildo 1"},
     {path: "../../assets/gallery/hub-cabildo-2.jpg", id:"2", alt:"HUB Cabildo 2"},
@@ -17,18 +21,20 @@ export const galleryData:IGalleryData[] = [
     {path: "../../assets/gallery/hub-cabildo-5.jpg", id:"5", alt:"HUB Cabildo 5"},
     {path: "../../assets/gallery/hub-cabildo-6.jpg", id:"6", alt:"HUB Cabildo 6"},
     {path: "../../assets/gallery/hub-cabildo-7.jpg", id:"7", alt:"HUB Cabildo 7"}
-]
+];
+
 export const resumeList:IResume[] = [
     {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DOLAR'},
     {icon: 'signal', title: 'RENTABILIDAD ESTIMADA TOTAL', value: '25~35%'},
     {icon: 'fund', title: 'TIR ESTIMADA', value: '10,4%'},
     {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 Meses'},
     {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
-    {icon: 'project', title: 'ASSET MANAGER', value: 'Crowdium S.R.L'},
-    {icon: 'home', title: 'ASSET OWNER', value: 'Fideicomiso Cabildo'},
-    {icon: 'profile', title: 'TIPO DE FONDO', value: 'Fideicomiso Ordinario De Administración'},
+    {icon: 'dollar-circle', title: "OBJETIVO DE FONDEO", value: "USD 6.123.000"},
+    {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
+    {icon: 'profile', title: 'VEHICULO LEGAL', value: 'Fideicomiso Ordinario De Administración'},
     {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A'},
-]
+];
+
 export const descriptionData:string = `
     <p>
         HUB Cabildo es un desarrollo inmobiliario residencial premium, ubicado en el barrio de Núñez sobre la Av. Cabildo frente a la Plaza Balcarce y el Blvd. Comodoro Rivadavia. 
@@ -36,9 +42,9 @@ export const descriptionData:string = `
         permitirá ofrecer un valor por m² más elevado que el promedio y así, generar una alta revalorización para sus inversores.
     </p>
     <blockquote class="success">
-        Se propone adquirir unidades de pozo a precio fijo con un <strong>25% de descuento</strong> sobre el precio de lista del desarrollador por la compra mayorista y de 
-        contado. <b>HUB Cabildo</b> es uno de los desarrollos más destacados de la zona, donde la revalorización desde el pozo a terminado supera el 10% anual, estimando generar 
-        así una <strong>rentabilidad entre el 25 y 35% en dólares en 36 meses.</strong>
+        A través del modelo del crowfunding inmobiliario, se propone adquirir unidades de pozo a precio fijo con un <strong>25% de descuento</strong> sobre el precio de lista del 
+        desarrollador por la compra mayorista y de contado. <b>HUB Cabildo</b> es uno de los desarrollos más destacados de la zona, donde la revalorización desde el pozo a 
+        terminado supera el 10% anual, estimando generar así una <strong>rentabilidad entre el 25 y 35% en dólares en 36 meses.</strong>
     </blockquote>
     <p>
         La torre cuenta con 186 unidades distribuidas en 14 pisos con full amenities, sobre un terreno de más de 1.000mts² de superficie. Al estar ubicado en una manzana 
@@ -121,6 +127,7 @@ export const descriptionData:string = `
         y mantendrá los valores en los máximos del mercado.. </strong>
     </p>
 `;
+
 export const timelineProjectData: ITimeline[] = [
     {
         step: `<icon-acquisition></icon-acquisition>`, 
@@ -140,7 +147,8 @@ export const timelineProjectData: ITimeline[] = [
         subtitle: "OCTUBRE 2023 - MARZO 2024", 
         content: "Se estima que la obra termine entre octubre y marzo del 2024 momento en el cual estimamos que las unidades habrán alcanzado el mayor valor de venta del mt²."
     },
-]
+];
+
 export const responsibleData = [
     {
         image: "../../assets/responsible/tiscornia.jpg",
@@ -172,4 +180,4 @@ export const responsibleData = [
         subtitle: "CONSTRUCTORA",
         content: "Fundada en 1983 por los ingenieros Marcelo Perri, Luis Perri y Luis E. Zolezzi, se dedica al desarrollo de actividades vinculadas a la industria de la construcción, obras de arquitectura e ingeniería y consultoría técnica. Tienen construido más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el Instituto de Neurociencias de Buenos Aires o el Faena Art Center."
     },
-]
+];
