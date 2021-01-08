@@ -1,6 +1,6 @@
 # Landing Page Balanz Real Estate
 
-El proyecto fue desarrollado en [Angular 10.2.0](https://angular.io/docs).
+El proyecto fue desarrollado en [Angular 11.0.5](https://angular.io/docs).
 
 # Instalación:
 
@@ -28,6 +28,7 @@ En la carpeta `src/app/constants` agregar `config.ts` y agregar el siguente scri
 export enum config {
     API_KEY = "TU_APIKEY",
     ENDPOINT = "TU_ENDPOINT",
+    GMAPS = "TU_APIKEY_GOOGLE_MAPS",
 }
 ```
 
