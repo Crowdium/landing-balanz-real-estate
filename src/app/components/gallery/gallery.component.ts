@@ -27,7 +27,6 @@ export class GalleryComponent implements OnInit {
       center: true,
       autoWidth: true,
       autoHeight: false,
-  
       startPosition: 0,
       nav:true,
       navText: ['<i class="fas fa-chevron-left"></i>', `<i class="fas fa-chevron-right"></i>`],

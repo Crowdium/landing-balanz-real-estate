@@ -55,3 +55,16 @@
     overflow: hidden;
     border-radius: 4px ;
 }
+@media (max-width:471px){
+    .owl-item{
+        height: 200px;
+
+        & img{
+            width: auto !important;
+            height: 100%;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%;
+        }
+    }
+}

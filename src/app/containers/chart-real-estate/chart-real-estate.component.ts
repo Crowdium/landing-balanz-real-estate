@@ -14,5 +14,10 @@ export class ChartRealEstateComponent implements OnInit {
   ngOnInit(): void {
     this.chartData = chartData;
   }
+  sort(){
+    let array = [];
+    array = this.chartData.sort((a, b) => Number(b.date) - Number(a.date))
+    return array;
+  }
 
 }

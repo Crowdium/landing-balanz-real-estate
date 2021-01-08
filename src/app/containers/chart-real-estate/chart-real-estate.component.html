@@ -23,7 +23,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let data of chartData">
+                            <tr *ngFor="let data of sort()">
                                 <td class="text-center">{{data.date}}</td>
                                 <td class="text-center">{{data.value}}</td>
                                 <td class="text-center">{{data.variant}}</td>
