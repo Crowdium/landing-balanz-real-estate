@@ -1,5 +1,5 @@
 <div class="not-found">
-    <ct-header [viewNav]="isIframe">
+    <ct-header [viewNav]="true">
         <div class="error-container">
             <div class="error-content">
                 <h1>Página no encontrada</h1>
@@ -7,7 +7,7 @@
                     Oops! No encontramos la página solicitada. <br>
                     Si crees que esto es un problema, escríbenos.
                 </p>
-                <cp-button size="lg" className="margin-t-1">
+                <cp-button size="lg" className="margin-t-1" (click)="goHome()">
                     Volver a Balanz
                 </cp-button>
             </div>
@@ -16,4 +16,7 @@
             </div>
         </div>
     </ct-header>
+    <from-your-mobile></from-your-mobile>
+    <ct-footer></ct-footer>
+    <partners></partners>
 </div>

@@ -190,9 +190,11 @@ export const faqHUB: ICollapseMenuData[] = [
                 Crowdfunding, del inglés Crowd (masa o multitud) y Funding (financiamiento o fondeo). La financiación colectiva, es la cooperación conjunta llevada a cabo por 
                 personas que forman una red para conseguir dinero u otros recursos.
             </p>
-            <p>
-                ¿Tiene algún riesgo el Crowdfunding?
-            </p>
+        `
+    },
+    {
+        title: "¿Tiene algún riesgo el Crowdfunding?",
+        content: `
             <p>
                 No, el crowdfunding en sí significa simplemente “financiamiento colectivo”. El riesgo está asociado únicamente al activo subyacente. En este caso, el 
                 crowdfunding está aplicado al mercado inmobiliario que históricamente es uno de los mercado mas seguros y rentables del mundo.

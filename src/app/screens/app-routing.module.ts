@@ -17,9 +17,9 @@ const routes: Routes = [
       {path: '', component: RealEstateComponent},
       {path: 'inversiones', component: InvestmentsScreensComponent},
       {path: 'inversiones/:project', component: HubProjectComponent},
-      {path: '**', component: NotFoundComponent}
     ],
-  }
+  },
+  {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({

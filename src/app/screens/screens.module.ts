@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AssetsModule } from '../assets/assets.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ReactiveFormsModule,
     FontAwesomeModule,
     AssetsModule,
+    RouterModule
   ],
   exports: [
     HomeComponent, 
