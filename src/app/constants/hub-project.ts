@@ -46,11 +46,6 @@ export const descriptionData:string = `
         Río. <strong>Las unidades que se adquirirán son departamentos de 1 a 4 ambientes de entre 35 y 100mts².</strong>
     </p>
     <p>
-        Núñez se destaca por ser una de las zonas con mayor crecimiento y revalorización de los últimos años. Es una ubicación privilegiada con una amplia variedad de opciones 
-        y alternativas gastronómicas, comerciales, educativas y culturales. rodeada por parques, boulevards, calles amplias, mucha arboleda, circuitos aeróbicos, bicisendas y 
-        con accesos rápidos al centro de la ciudad (Metrobus, subte línea D y tren ramal mitre) y a zona norte del Gran Buenos Aires (Panamericana y Av. Gral Paz).
-    </p>
-    <p>
         El desarrollo es llevado a cabo por destacadas empresas del sector inmobiliario argentino, marcando la seriedad y calidad con la que se construirán y entregarán todas 
         las unidades de HUB Cabildo.
     </p>
@@ -102,7 +97,7 @@ export const descriptionData:string = `
         <li>
             <p>
                 <strong>Responsables de primer nivel:</strong> los desarrolladores y constructores responsables del proyecto tienen más de 30 años en el mercado y llevan más de 
-                50.000mts² construidos.
+                80.000mts² construidos.
             </p>
         </li>
     </ul>
@@ -135,15 +130,15 @@ export const timelineProjectData: ITimeline[] = [
     },
     {
         step: `<icon-sale></icon-sale>`, 
-        title: "Obra + Venta de la Unidad",  
-        subtitle: "MARZO 2022 - MARZO 2023", 
-        content: "Las unidades se pondrán a la venta tratando de maximizar el valor de venta durante la construcción del edificio. Los mejores momentos de venta son al terminar las losas del edificio (15 pisos) o con la posterior posesión de las unidades. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta, entendiendo que la finalización de la obra se estima a los 30 meses desde la adquisición de las unidades."
+        title: "Etapa de Obra",  
+        subtitle: "ABRIL 2021 - SEPTIEMBRE 2023", 
+        content: "La contrucción del edificio que comenzó en septiembre del 2020 continuará con su etapa de obra durante los próximos 30 a 36 meses aproximadamente. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta durante la obra, entendiendo que a su finalización será uno de los mejores momentos para vender."
     },
     {
         step: `<icon-tools></icon-tools>`, 
-        title: "Finalización de la Obra",
-        subtitle: "ABRIL 2023 - AGOSTO 2023", 
-        content: "Se estima que la obra finalice entre marzo y agosto del 2023"
+        title: "Finalización de la Obra + Venta",
+        subtitle: "OCTUBRE 2023 - MARZO 2024", 
+        content: "Se estima que la obra termine entre octubre y marzo del 2024 momento en el cual estimamos que las unidades habrán alcanzado el mayor valor de venta del mt²."
     },
 ]
 export const responsibleData = [
@@ -151,30 +146,30 @@ export const responsibleData = [
         image: "../../assets/responsible/tiscornia.jpg",
         title: "Tiscornia",
         subtitle: "DESARROLLADOR",
-        content: "Con 20 años de trayectoria, el Estudio Tiscornia, fundado y presidido por el arquitecto César Felipe Tiscornia, se especializa en el desarrollo de edificios en las mejores zonas de la ciudad de Buenos Aires. Su amplia experiencia en el sector está plasmada en los casi 80.000 m2 de obra construidos en Palermo, Las Cañitas y Barrio Norte."
+        content: "Estudio que cuenta con más de 20 años de trayectoria y más de 80.000mts² de obra construidos de edificios en las mejores zonas de la ciudad de Buenos Aires."
     },
     {
         image: "../../assets/responsible/bma.jpg",
         title: "Bodas Miani Anger",
         subtitle: "BMA ESTUDIO DE ARQUITECTURA",
-        content: "El estudio BMA fue fundado por Martín Bodas, Rodolfo Miani y Alejandro Anger a principios de 1990. Se dedica a prestar servicios integrales respecto a proyectos y desarrollos inmobiliarios en general y se especializa en obras comerciales como por ejemplo la ampliación del Aeropuerto Jorge Newbery, el Solar de la Abadía y diversos cines para la cadena Village. También realizaron el Tortugas Open Mall inaugurado en 2011 y Madero Walk un conjunto de locales flotantes en el Dique 1 de Puerto Madero. Hoy en día cuentan con dos estudios, uno en la ciudad de Buenos Aires y el otro en Santiago de Chile."
+        content: "Se dedica a prestar servicios integrales respecto a proyectos y desarrollos inmobiliarios en general y se especializa en obras comerciales como por ejemplo la ampliación del Aeropuerto Jorge Newbery, el Solar de la Abadía y diversos cines para la cadena Village. También realizaron el Tortugas Open Mall y Madero Walk un conjunto de locales flotantes en el Dique 1 de Puerto Madero. Hoy cuentan con estudios en Buenos Aires y Santiago de Chile."
     },
     {
         image: "../../assets/responsible/camps_tiscornia.jpg",
         title: "Camps/Tiscornia",
         subtitle: "ARQUITECTOS",
-        content: "Fundado en 1984 por los arquitectos Luis Camps y Ramiro Tiscornia, este estudio de arquitectura brinda un servicio integral para satisfacer a sus clientes tanto en el plano comercial como en lo técnico y funcional. Sus años de experiencia los llevaron a especializarse en trabajos de refuncionalización y equipamiento de edificios de oficinas en donde el estudio se compromete en la administración de tareas para optimizar tiempos y costos. Su búsqueda está orientada a dar una respuesta estética mediante criterios de simpleza y sobriedad, sin adherir específicamente a ninguna corriente formal."
+        content: "Fundado en 1984 por los arquitectos Luis Camps y Ramiro Tiscornia, este estudio de arquitectura brinda un servicio integral para satisfacer a sus clientes tanto en el plano comercial como en lo técnico y funcional."
     },
     {
         image: "../../assets/responsible/interwin.jpg",
         title: "Interwin",
         subtitle: "CO DESARROLLO Y DEFINICION DE PRODUCTO INMOBILIARIO",
-        content: "Con 20 años de trayectoria, el Estudio Tiscornia, fundado y presidido por el arquitecto César Felipe Tiscornia, se especializa en el desarrollo de edificios en las mejores zonas de la ciudad de Buenos Aires. Su amplia experiencia en el sector está plasmada en los casi 80.000 m2 de obra construidos en Palermo, Las Cañitas y Barrio Norte."
+        content: "Inmobiliaria con 27 años de trayectoria y más de 1,5 millones de m2 comercializados. Actualmente, cuenta con un equipo de 40 profesionales especializados en la comercialización de propiedades residenciales, locales y oficinas en Argentina y el exterior."
     },
     {
         image: "../../assets/responsible/bma.jpg",
         title: "Obras & Sistemas",
         subtitle: "CONSTRUCTORA",
-        content: "Fundada en 1983 por los ingenieros Marcelo Perri, Luis Perri y Luis E. Zolezzi, quienes conformaron una eficiente organización técnica y empresarial especializada en el desarrollo de actividades vinculadas a todos los ámbitos de la industria de la construcción, obras de arquitectura e ingeniería y consultoría técnica. Trabajando con los desarrolladores y empresas más importantes del país, y habiendo concluido más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el Instituto de Neurociencias de Buenos Aires o el Faena Art Center."
+        content: "Fundada en 1983 por los ingenieros Marcelo Perri, Luis Perri y Luis E. Zolezzi, se dedica al desarrollo de actividades vinculadas a la industria de la construcción, obras de arquitectura e ingeniería y consultoría técnica. Tienen construido más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el Instituto de Neurociencias de Buenos Aires o el Faena Art Center."
     },
 ]

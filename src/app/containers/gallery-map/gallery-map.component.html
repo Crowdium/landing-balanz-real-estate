@@ -5,7 +5,7 @@
     </div>
     <div class="group-content">
         <cp-gallery *ngIf="selectView === 'gallery'" [data]="galleryData"></cp-gallery>
-        <agm-map class="map-responsive" *ngIf="selectView === 'map'" [latitude]="lat" [longitude]="lng" [zoom]="15">
+        <agm-map class="map-responsive" *ngIf="selectView === 'map'" [latitude]="lat" [longitude]="lng" [zoom]="15" [scrollwheel]="false">
             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
         </agm-map>
     </div>

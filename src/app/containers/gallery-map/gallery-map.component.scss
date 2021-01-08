@@ -58,17 +58,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 10px;
+            margin-bottom: 10px;
 
             & button{
                 width: 100%;
-                background-color: initial;
+                background-color: #f5f6f7;
                 color: var(--text);
                 border-bottom: 4px solid transparent;
 
                 &.active,
                 &:hover{
-                    background-color: initial;
+                    background-color: #eeeeee;
                     color:var(--text);
                     border-bottom: 4px solid var(--active);
                 }
