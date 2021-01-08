@@ -167,7 +167,7 @@ export const responsibleData = [
         content: "Inmobiliaria con 27 años de trayectoria y más de 1,5 millones de m2 comercializados. Actualmente, cuenta con un equipo de 40 profesionales especializados en la comercialización de propiedades residenciales, locales y oficinas en Argentina y el exterior."
     },
     {
-        image: "../../assets/responsible/bma.jpg",
+        image: "../../assets/responsible/obras_sistemas.jpg",
         title: "Obras & Sistemas",
         subtitle: "CONSTRUCTORA",
         content: "Fundada en 1983 por los ingenieros Marcelo Perri, Luis Perri y Luis E. Zolezzi, se dedica al desarrollo de actividades vinculadas a la industria de la construcción, obras de arquitectura e ingeniería y consultoría técnica. Tienen construido más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el Instituto de Neurociencias de Buenos Aires o el Faena Art Center."
