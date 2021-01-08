@@ -13,47 +13,53 @@ body{
 }
 $numbers: 0, 1, 2, 3, 4, 5;
 .margin{
+    @each $n in $numbers {
+        &-#{$n}{
+            margin: #{$n}em !important;
+        }
+    }
+
     &-b{
         @each $n in $numbers {
             &-#{$n}{
-                margin-bottom: #{$n}em;
+                margin-bottom: #{$n}em !important;
             }
         }
     }
     &-t{
         @each $n in $numbers {
             &-#{$n}{
-                margin-top: #{$n}em;
+                margin-top: #{$n}em !important;
             }
         }
     }
     &-l{
         @each $n in $numbers {
             &-#{$n}{
-                margin-left: #{$n}em;
+                margin-left: #{$n}em !important;
             }
         }
     }
     &-r{
         @each $n in $numbers {
             &-#{$n}{
-                margin-right: #{$n}em;
+                margin-right: #{$n}em !important;
             }
         }
     }
     &-h{
         @each $n in $numbers {
             &-#{$n}{
-                margin-left: #{$n}em;
-                margin-right: #{$n}em;
+                margin-left: #{$n}em !important;
+                margin-right: #{$n}em !important;
             }
         }
     }
     &-v{
         @each $n in $numbers {
             &-#{$n}{
-                margin-top: #{$n}em;
-                margin-bottom: #{$n}em;
+                margin-top: #{$n}em !important;
+                margin-bottom: #{$n}em !important;
             }
         }
     }
