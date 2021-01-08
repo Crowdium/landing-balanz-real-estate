@@ -113,19 +113,19 @@ export const descriptionData:string = `
     </p>
     <p>
         Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se 
-        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de entre 12 y 36 meses..
+        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de entre 12 y 36 meses.
     </p>
     <p>
-        La <strong>Fiduciaria CFA</strong> se encargará de administrar el capital de aforo durante la vida del Fideicomiso y la posterior venta de los departamentos..
+        La <strong>Fiduciaria CFA</strong> se encargará de administrar el capital de aforo durante la vida del Fideicomiso y la posterior venta de los departamentos.
     </p>
     <p>
         Se espera que el precio de venta aumente de forma considerable debido a que las unidades se adquieren en una etapa temprana del desarrollo del edificio 
-        (final de la demolición, inicio de obra estructural) además de estar ubicado en una de las zonas con mayor crecimiento y revalorización de los últimos años..
+        (final de la demolición, inicio de obra estructural) además de estar ubicado en una de las zonas con mayor crecimiento y revalorización de los últimos años.
     </p>
     <p>
-        Sumado a ello, <strong>HUB Cabildo</strong> será una torre premium de gran escala y con una calidad constructiva de primer nivel que generará un diferencial 
+        Sumado a ello, <strong>HUB Cabildo</strong> será una semitorre premium de gran escala y con una calidad constructiva de primer nivel que generará un diferencial 
         importante respecto a cualquier otro desarrollo de la zona y logrará atraer la atención tanto de inversores como compradores finales lo que <strong> agilizará la venta 
-        y mantendrá los valores en los máximos del mercado.. </strong>
+        y mantendrá los valores en los máximos del mercado. </strong>
     </p>
 `;
 
