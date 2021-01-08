@@ -10,13 +10,15 @@ import { InvestInRealEstateComponent } from '../containers/invest-in-real-estate
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AssetsModule } from '../assets/assets.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     HomeComponent, 
     RealEstateComponent, 
     InvestmentsScreensComponent, 
-    HubProjectComponent
+    HubProjectComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import { AssetsModule } from '../assets/assets.module';
     RealEstateComponent,
     InvestInRealEstateComponent,
     HubProjectComponent,
+    NotFoundComponent
   ]
 })
 export class ScreensModule { }
