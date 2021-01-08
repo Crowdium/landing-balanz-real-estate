@@ -22,7 +22,13 @@ export class ChartComponent implements OnInit {
 
     @HostListener('window:resize', ['$event'])
     onResize(){
-        
+        if(this.dateAxis.pixelWidth <= 642 && this.dateAxis.pixelWidth > 435){
+            this.dateAxis.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 5 }]);
+        }else if(this.dateAxis.pixelWidth <= 435){
+            this.dateAxis.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 10 }]);
+        }else if(this.dateAxis.pixelWidth > 642){
+            this.dateAxis.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 3 }]);
+        }
     }
 
     constructor( @Inject(PLATFORM_ID) private platformId, private zone:NgZone ) { }
@@ -104,39 +110,17 @@ export class ChartComponent implements OnInit {
 
             this.chart.responsive.rules.push({
                 relevant: function(target){
-                    return true;
+                    if(target.pixelWidth <= 768){
+                        return true;
+                    }
+                    return false;
                 },
                 state: function(target, stateId){
-                    if(target.pixelWidth <= 642 && target.pixelWidth > 435){
-                        if(target instanceof am4charts.DateAxis){
-                            let state = target.states.create(stateId);
-                            target.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 5 }]);
-                            return state;
-                        }
-                        if (target instanceof am4charts.AxisRendererY) {
-                            var state = target.states.create(stateId);
-                            state.properties.inside = true;
-                            return state;
-                        }
-                    }else if(target.pixelWidth <= 435){
-                        if(target instanceof am4charts.DateAxis){
-                            let state = target.states.create(stateId);
-                            target.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 10 }]);
-                            return state;
-                        }
-                    }else if(target.pixelWidth > 642){
-                        if(target instanceof am4charts.DateAxis){
-                            let state = target.states.create(stateId);
-                            target.gridIntervals.setAll([{ timeUnit: "year", count: 1 },{ timeUnit: "year", count: 3 }]);
-                            return state;
-                        }
-                        if (target instanceof am4charts.AxisRendererY) {
-                            var state = target.states.create(stateId);
-                            state.properties.inside = false;
-                            return state;
-                        }
+                    if (target instanceof am4charts.AxisRendererY) {
+                        var state = target.states.create(stateId);
+                        state.properties.inside = true;
+                        return state;
                     }
-
                 }
             })
 
