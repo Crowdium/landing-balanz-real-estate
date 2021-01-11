@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
 import classnames from 'classnames'
 
 export enum buttonType{
@@ -16,7 +16,7 @@ export enum buttonType{
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent implements OnInit, OnChanges {
 
   @Input() type?: 'outline' | 'text' | 'classic' | 'classic-icon' | 'outline-icon' | 'text-icon';
   @Input() size?: 'lg' | 'sm';
@@ -28,6 +28,12 @@ export class ButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.cn = classnames('btn', this.className, this.type, this.size, {
+        'full-width': this.fullWidth
+    });
+  }
+
+  ngOnChanges(): void{
     this.cn = classnames('btn', this.className, this.type, this.size, {
         'full-width': this.fullWidth
     });

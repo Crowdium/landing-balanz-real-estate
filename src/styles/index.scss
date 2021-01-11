@@ -12,6 +12,58 @@ body{
     overflow-x: hidden;
 }
 $numbers: 0, 1, 2, 3, 4, 5;
+.padding{
+    @each $n in $numbers {
+        &-#{$n}{
+            padding: #{$n}em !important;
+        }
+    }
+
+    &-b{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-bottom: #{$n}em !important;
+            }
+        }
+    }
+    &-t{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-top: #{$n}em !important;
+            }
+        }
+    }
+    &-l{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-left: #{$n}em !important;
+            }
+        }
+    }
+    &-r{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-right: #{$n}em !important;
+            }
+        }
+    }
+    &-h{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-left: #{$n}em !important;
+                padding-right: #{$n}em !important;
+            }
+        }
+    }
+    &-v{
+        @each $n in $numbers {
+            &-#{$n}{
+                padding-top: #{$n}em !important;
+                padding-bottom: #{$n}em !important;
+            }
+        }
+    }
+}
 .margin{
     @each $n in $numbers {
         &-#{$n}{

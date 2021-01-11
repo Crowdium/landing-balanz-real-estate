@@ -34,8 +34,8 @@
             </div>
         </div>
     </div>
-    <div class="content-button">
-        <cp-button [size]="'lg'">
+    <div class="content-button" *ngIf="buttonCallToAction">
+        <cp-button [size]="'lg'" (click)="scrollSpy('#investments')">
             Ver Inversiones
         </cp-button>
     </div>

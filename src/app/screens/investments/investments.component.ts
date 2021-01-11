@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, HostListener, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { faMapMarkedAlt, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { Project } from 'src/app/constants/project';
 import { encodeURL } from 'src/app/helpers/encodeURI';
 import { ProjectsService } from 'src/app/services/projects.service';
@@ -29,7 +29,7 @@ export class InvestmentsScreensComponent implements OnInit {
     {value: "Finalizado", text: "Inversiones Finalizadas"}
   ]
 
-  faMapMarkerAlt = faMapMarkedAlt;
+  faMapMarketAlt = faMapMarkerAlt;
   faSpinner = faSpinner;
   
   loading:boolean = false;
