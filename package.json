@@ -1,7 +1,7 @@
 {
   "homepage": "https://newlinkcapital.github.io/landing-balanz-real-estate/",
   "name": "balanz-crowdium",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "scripts": {
     "predeploy": "ng build --prod",
     "deploy": "gh-pages -d dist",
