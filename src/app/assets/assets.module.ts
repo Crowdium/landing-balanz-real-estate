@@ -15,6 +15,7 @@ import { IconToolsComponent } from './icon-tools/icon-tools.component';
 import { IconAcquisitionComponent } from './icon-acquisition/icon-acquisition.component';
 import { IconSaleComponent } from './icon-sale/icon-sale.component';
 import { IconLoadingComponent } from './icon-loading/icon-loading.component';
+import { IconBuyerComponent } from './icon-buyer/icon-buyer.component';
 
 
 
@@ -34,6 +35,7 @@ import { IconLoadingComponent } from './icon-loading/icon-loading.component';
     IconAcquisitionComponent,
     IconSaleComponent,
     IconLoadingComponent,
+    IconBuyerComponent,
   ],
   imports: [
     CommonModule
@@ -53,6 +55,7 @@ import { IconLoadingComponent } from './icon-loading/icon-loading.component';
     IconAcquisitionComponent,
     IconSaleComponent,
     IconLoadingComponent,
+    IconBuyerComponent
   ],
   entryComponents: [
     IconUserComponent,

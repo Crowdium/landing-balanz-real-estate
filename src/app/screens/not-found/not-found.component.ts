@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'not-found',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NotFoundComponent implements OnInit {
 
+  faChevronLeft = faChevronLeft;
   constructor(private router:Router) { }
 
   ngOnInit(): void {

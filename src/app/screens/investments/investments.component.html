@@ -77,16 +77,13 @@
                     </ng-container>
                 </ng-container>
                 <ng-template #noItems>
-                    <cp-card>
-                        <card-body>
-                            <div class="card-no-item">
-                                <h1>No hay proyectos para mostrar.</h1>
-                                <p>
-                                    Estamos trabajando para sumar más proyectos en los que puedas invertir.
-                                </p>
-                            </div>
-                        </card-body>
-                    </cp-card>
+                    <div class="no-items">
+                        <icon-buyer></icon-buyer>
+                        <h1>No hay proyectos para mostrar.</h1>
+                        <p>
+                            Estamos trabajando para sumar más proyectos en los que puedas invertir.
+                        </p>
+                    </div>
                 </ng-template>
             </ng-container>
             <ng-container *ngIf="loading">

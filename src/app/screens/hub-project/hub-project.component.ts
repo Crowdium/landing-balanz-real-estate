@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { descriptionData, faqHUB, responsibleData, resumeList, scrollSpyMenu, timelineProjectData, urlVideo } from 'src/app/constants/hub-project';
 import { Project } from 'src/app/constants/project';
 import { encodeURL } from 'src/app/helpers/encodeURI';
@@ -15,7 +15,7 @@ export class HubProjectComponent implements OnInit {
 
   data:Project;
   error:boolean;
-  loading:boolean;
+  loading:boolean = true;
 
   url:string;
 
@@ -27,7 +27,7 @@ export class HubProjectComponent implements OnInit {
   faqProject = faqHUB;
 
 
-  constructor(private projectS: ProjectsService, private route: ActivatedRoute) { }
+  constructor(private projectS: ProjectsService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.url = this.route.snapshot.paramMap.get('project');
@@ -35,6 +35,10 @@ export class HubProjectComponent implements OnInit {
       this.data = data.filter(obj => {
         return encodeURL(obj.Abreviatura) === this.url;
       })[0];
+      if(this.data === undefined){
+        this.router.navigateByUrl('/404', { skipLocationChange: true})
+      }
+      this.loading = false;
     }, err => console.log(err))
   }
 

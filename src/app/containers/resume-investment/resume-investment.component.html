@@ -5,8 +5,7 @@
     <div class="resume-container">
         <div class="resume-item" *ngFor="let item of data">
             <div class="resume-title">
-                <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>
-                {{item.title}}
+                <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>{{item.title}}
             </div>
             <div class="resume-dotted"></div>
             <div class="resume-value">{{item.value}}</div>

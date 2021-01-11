@@ -101,12 +101,24 @@
             font-weight: 600;
         }
     }
-    & .card-no-item{
+    .no-items{
+        max-width: 370px;
+        margin: 0 auto;
         padding: 16px;
         text-align: center;
+
+        & icon-buyer{
+            display: block;
+            margin-bottom: 25px;
+        }
         
         & h1{
-            font-size: 25px;
+            line-height: 1.25;
+            font-family: var(--font-family-pr);
+            color: var(--bg-pr);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 24px;
         }
 
         & p{

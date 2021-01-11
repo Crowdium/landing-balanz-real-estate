@@ -1,4 +1,9 @@
 <div class="project-screens">
+    <ng-container *ngIf="loading">
+        <div class="loading-full-screen">
+            <icon-loading></icon-loading>
+        </div>
+    </ng-container>
     <ng-container *ngIf="data && !error">
         <ct-header id="header" [viewNav]="true">
             <div class="header-content" [style.background-image]="'url(../../../assets/' + url + '.jpg)'">

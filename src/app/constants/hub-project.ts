@@ -72,7 +72,7 @@ export const descriptionData:string = `
         </li>
         <li>
             <p>
-                <strong>Fuerte revalorizacion:</strong> por el perfil de cliente final y escasez de este tipo de producto en la zona.
+                <strong>Fuerte revalorización:</strong> por el perfil de cliente final y escasez de este tipo de producto en la zona.
             </p>
         </li>
         <li>
@@ -113,7 +113,7 @@ export const descriptionData:string = `
     </p>
     <p>
         Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se 
-        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de entre 12 y 36 meses.
+        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de entre 30 y 36 meses.
     </p>
     <p>
         La <strong>Fiduciaria CFA</strong> se encargará de administrar el capital de aforo durante la vida del Fideicomiso y la posterior venta de los departamentos.
@@ -262,12 +262,12 @@ export const faqHUB: ICollapseMenuData[] = [
         content: `
             <p>
                 En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este caso, 
-                Tiscornia y Obras & Sistemas son unos de los desarrolladores y constructora más grande de la Argentina con el 100% de obras terminadas teniendo entre sus 
-                proyectos obras de gran envergadura como más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el 
+                Tiscornia y Obras & Sistemas son unos de los desarrolladores y constructora más grande de la Argentina con el 100% de obras terminadas teniendo más de 65 proyectos de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el 
                 Instituto de Neurociencias de Buenos Aires o el Faena Art Center.
             </p>
             <p>
-                En segundo lugar, <strong>HUB Cabildo</strong> tiene la tierra comprada y paga al 100% y más del 70% de las unidades vendidas, con lo cual ya posee el capital necesario para finalizar la obra.
+                En segundo lugar, <strong>HUB Cabildo</strong> tiene la tierra comprada y paga al 100% y más del 70% de las unidades vendidas, con lo cual ya posee el capital 
+                necesario para finalizar la obra.
             </p>
         `
     },
