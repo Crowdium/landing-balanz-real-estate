@@ -31,7 +31,7 @@
         <div class="scroll-spy-view">
             <scroll-spy-menu [data]="scrollSpyMenu">
                 <div class="content-panel">
-                    <gallery-map [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
+                    <gallery-map id="gallery" [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
                     <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado"></resume-investment>
                     <div class="divider"></div>
                     <description-project id="description" [description]="getDescription()"></description-project>

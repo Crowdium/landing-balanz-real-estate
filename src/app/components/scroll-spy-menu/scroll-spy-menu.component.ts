@@ -40,7 +40,7 @@ export class ScrollSpyMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.ids = this.data.map(obj => obj.id);
-    this.ids.push('#header');
+    this.ids.push('#header', "#gallery");
   }
 
   handleClick(value:string, index:number){
