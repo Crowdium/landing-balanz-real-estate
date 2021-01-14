@@ -28,7 +28,7 @@
                             <cp-card>
                                 <card-head>
                                     <div class="card-img">
-                                        <img [src]="obj.Imagen" [alt]="obj.Abreviatura" [class]="obj.ImagenOrientacion">
+                                        <img [src]="obj.Imagen" [alt]="obj.Nombre" [class]="obj.ImagenOrientacion">
                                     </div>
                                     <div class="card-label">
                                         {{obj.Tipo}}
@@ -37,11 +37,11 @@
                                 <card-body>
                                     <div #cardProfile class="card-profile" [class]="{'card-profile-column': isColumnProfile}">
                                         <div class="card-profile-avatar">
-                                            <img [src]="obj.Logo" [alt]="obj.Abreviatura"/>
+                                            <img [src]="obj.Logo" [alt]="obj.Nombre"/>
                                         </div>
                                         <div class="card-profile-content">
                                             <div class="card-profile-title">
-                                                {{obj.Abreviatura}}
+                                                {{obj.Nombre}}
                                             </div>
                                             <div class="card-profile-description">
                                                 <fa-icon [icon]="faMapMarketAlt"></fa-icon>
@@ -60,7 +60,7 @@
                                         </div>
                                         <div class="card-item">
                                             <div class="card-item-title">TIR ESTIMADA:</div>
-                                            <div class="card-item-value">{{obj.TirEstimada}}%</div>
+                                            <div class="card-item-value">{{obj.TirEstimada.toString().replace('.', ',')}}%</div>
                                         </div>
                                         <div class="card-item">
                                             <div class="card-item-title">DURACIÓN ESTIMADA:</div>
