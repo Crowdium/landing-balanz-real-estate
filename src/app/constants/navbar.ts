@@ -19,7 +19,21 @@ export const navbarCenter:NavbarItems[] = [
     {name: 'F.A.Q', type: 'button' },
 ];
 
-export const navbarRight:NavbarItems[] = [
-    {name: 'Iniciar Sesión', type: 'button', icon: { position: 'right', html: `<span><icon-user></icon-user></span>` }, classnames:"text"},
-    {name: 'Abrir Cuenta', type: 'button', classnames: 'outline'}
+export const navbarRight = (SignIn:string, SignUp:string):NavbarItems[] => [
+    {
+        name: 'Iniciar Sesión', 
+        type: 'link',
+        path: SignIn,
+        icon: { 
+            position: 'right', 
+            html: `<span><icon-user></icon-user></span>` 
+        }, 
+        classnames:"text"
+    },
+    {
+        name: 'Abrir Cuenta', 
+        type: 'link',
+        path: SignUp, 
+        classnames: 'outline'
+    }
 ]

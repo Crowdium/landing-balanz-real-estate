@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'from-your-mobile',
@@ -8,6 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FromYourMobileComponent implements OnInit {
 
+  @Input() callToAction:string
   CustomizedServicesPlatform:string = "assets/customized-services-platforms.png"
 
   constructor() { }

@@ -16,7 +16,7 @@ const routes: Routes = [
     children: [
       {path: '', component: RealEstateComponent},
       {path: 'inversiones', component: InvestmentsScreensComponent},
-      {path: 'inversiones/:project', component: HubProjectComponent},
+      {path: 'inversiones/hub-cabildo', component: HubProjectComponent},
     ],
   },
   {path: '**', component: NotFoundComponent}

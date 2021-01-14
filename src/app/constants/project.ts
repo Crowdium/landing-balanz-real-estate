@@ -24,6 +24,7 @@ export interface Project{
     Nombre: string;
     Plazo: string;
     RentabilidadEstimada: string;
+    Slug:string;
     Tipo: string;
     TirEstimada: string;
     Ubicacion: string;

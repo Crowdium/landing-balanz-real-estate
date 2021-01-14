@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'invest-in-real-estate',
@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class InvestInRealEstateComponent implements OnInit {
 
+  @Input() signUp:string;
+  @Input() signIn:string;
   constructor() { }
 
   ngOnInit(): void {

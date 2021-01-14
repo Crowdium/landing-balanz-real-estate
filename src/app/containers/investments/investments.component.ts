@@ -51,7 +51,6 @@ export class InvestmentsComponent implements OnInit, AfterViewChecked {
   }
 
   moreInfo(value:string){
-    let url = encodeURL(value);
-    this.router.navigateByUrl(`/real-estate/inversiones/${url}`)
+    this.router.navigateByUrl(`/real-estate/inversiones/${value}`)
   }
 }

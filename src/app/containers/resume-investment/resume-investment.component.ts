@@ -15,6 +15,7 @@ export class ResumeInvestmentComponent implements OnInit {
 
   @Input() data:IResume[];
   @Input() progress:number;
+  @Input() callToAction:string;
   
   constructor() { }
 

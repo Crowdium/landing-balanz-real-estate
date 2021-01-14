@@ -43,6 +43,7 @@ import { TimelineProjectComponent } from './timeline-project/timeline-project.co
 import { ResponsibleProjectComponent } from './responsible-project/responsible-project.component';
 import { FaqProjectComponent } from './faq-project/faq-project.component';
 import { VideoProjectComponent } from './video-project/video-project.component';
+import { RouterModule } from '@angular/router';
 
 
 const icons: IconDefinition[] = [
@@ -87,7 +88,8 @@ const icons: IconDefinition[] = [
     PipesModule,
     HttpClientModule,
     NzIconModule.forRoot(icons),
-    AgmCoreModule.forRoot({ apiKey: config.GMAPS})
+    AgmCoreModule.forRoot({ apiKey: config.GMAPS}),
+    RouterModule,
   ],  
   exports: [
     AboutCiComponent,

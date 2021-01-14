@@ -17,8 +17,6 @@ export class HubProjectComponent implements OnInit {
   error:boolean;
   loading:boolean = true;
 
-  url:string;
-
   scrollSpyMenu = scrollSpyMenu;
   resumeList = resumeList;
   timelineProjectData = timelineProjectData;
@@ -26,14 +24,15 @@ export class HubProjectComponent implements OnInit {
   videoProjectData = urlVideo;
   faqProject = faqHUB;
 
+  signIn:string = "https://clientes.balanz.com/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
+  signUp:string = "https://balanz.com/abrir-cuenta-2.aspx/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
 
   constructor(private projectS: ProjectsService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.url = this.route.snapshot.paramMap.get('project');
     this.projectS.getProjects().subscribe((data:Project[]) => {
       this.data = data.filter(obj => {
-        return encodeURL(obj.Abreviatura) === this.url;
+        return obj.Slug === 'hub-cabildo';
       })[0];
       if(this.data === undefined){
         this.router.navigateByUrl('/404', { skipLocationChange: true})

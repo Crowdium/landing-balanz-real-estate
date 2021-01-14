@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { ICollapseMenuData } from 'src/app/components/collapse-menu/collapse-menu.component';
-import { faq } from 'src/app/constants/faq';
 
 @Component({
   selector: 'faq',
@@ -10,11 +9,10 @@ import { faq } from 'src/app/constants/faq';
 })
 export class FaqComponent implements OnInit {
 
-  faq: ICollapseMenuData[];
+  @Input() faq: ICollapseMenuData[];
   constructor() { }
 
   ngOnInit(): void {
-    this.faq = faq
   }
 
 }

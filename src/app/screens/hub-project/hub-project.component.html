@@ -5,15 +5,15 @@
         </div>
     </ng-container>
     <ng-container *ngIf="data && !error">
-        <ct-header id="header" [viewNav]="true">
-            <div class="header-content" [style.background-image]="'url(../../../assets/' + url + '.jpg)'">
+        <ct-header id="header" [viewNav]="true" [signIn]="signIn" [signUp]="signUp">
+            <div class="header-content" [style.background-image]="'url(../../../assets/project/' + data.Slug + '.jpg)'">
                 <div class="avatar-content">
                     <div class="avatar-img">
                         <img [src]="data.Logo" [alt]="data.Abreviatura">
                     </div>
                     <div class="avatar-title">
                         <h1>
-                            Invertí en {{data.Abreviatura}}
+                            Invertí en HUB Cabildo
                         </h1>
                         <p>Desarrollo de Pozo en Núñez, CABA</p>
                     </div>
@@ -21,9 +21,9 @@
                         <p>
                             Obtené una rentabilidad estimada del {{data.RentabilidadEstimada}}% en dólares en {{data.Plazo}}
                         </p>
-                        <cp-button [size]="'lg'" [className]="'bg-white'">
+                        <a class="btn lg bg-white" [href]="signIn">
                             Invertir Ahora
-                        </cp-button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <scroll-spy-menu [data]="scrollSpyMenu">
                 <div class="content-panel">
                     <gallery-map id="gallery" [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
-                    <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado"></resume-investment>
+                    <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado" [callToAction]="signIn"></resume-investment>
                     <div class="divider"></div>
                     <description-project id="description" [description]="getDescription()"></description-project>
                     <div class="divider"></div>
@@ -46,8 +46,14 @@
                 </div>
             </scroll-spy-menu>
         </div>
-        <legal></legal>
-        <from-your-mobile></from-your-mobile>
+        <legal>
+            <p>
+                (*) “Se hace saber al público inversor que, conforme lo dispone el artículo 1673 del Código Civil y Comercial de la Nación, el registro de Fiduciarios 
+                Financieros no implica que los fideicomisos en los que estos actúen se encuentren sujetos al contralor de la COMISIÓN NACIONAL DE VALORES, cuya 
+                competencia sólo alcanza a los fideicomisos financieros emitidos bajo el régimen bajo el régimen de la oferta pública", CNV.
+            </p>
+        </legal>
+        <from-your-mobile [callToAction]="signIn"></from-your-mobile>
         <ct-footer></ct-footer>
         <partners></partners>
     </ng-container>

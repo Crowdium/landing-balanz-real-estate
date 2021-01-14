@@ -83,8 +83,7 @@ export class InvestmentsScreensComponent implements OnInit {
   }
 
   moreInfo(value:string){
-    let url = encodeURL(value);
-    let newURL = this.router.createUrlTree(['/real-estate/inversiones', url])
+    let newURL = this.router.createUrlTree(['/real-estate/inversiones', value])
     window.open(newURL.toString(), '_blank')
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { faq } from 'src/app/constants/faq';
 
 @Component({
   selector: 'real-estate',
@@ -7,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class RealEstateComponent implements OnInit {
+
+  faq = faq;
 
   constructor() { }
 

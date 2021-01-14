@@ -187,8 +187,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Qué es el Crowdfunding?",
         content: `
             <p>
-                Crowdfunding, del inglés Crowd (masa o multitud) y Funding (financiamiento o fondeo). La financiación colectiva, es la cooperación conjunta llevada a cabo por 
-                personas que forman una red para conseguir dinero u otros recursos.
+                Crowdfunding, del inglés Crowd (masa o multitud) y Funding (financiamiento o fondeo). La financiación colectiva, es la cooperación conjunta llevada a 
+                cabo por personas que forman una red para conseguir dinero u otros recursos.
             </p>
         `
     },
@@ -196,8 +196,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Tiene algún riesgo el Crowdfunding?",
         content: `
             <p>
-                No, el crowdfunding en sí significa simplemente “financiamiento colectivo”. El riesgo está asociado únicamente al activo subyacente. En este caso, el 
-                crowdfunding está aplicado al mercado inmobiliario que históricamente es uno de los mercado mas seguros y rentables del mundo.
+                No, el crowdfunding en sí significa simplemente “financiamiento colectivo”. El riesgo está asociado únicamente al activo subyacente. En este caso, 
+                el crowdfunding está aplicado al mercado inmobiliario que históricamente es uno de los mercado mas seguros y rentables del mundo.
             </p>
         `
     },
@@ -205,8 +205,9 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Qué es el Crowdfunding Inmobiliario?",
         content: `
             <p>
-                El Crowdfunding aplicado al Mercado Inmobiliario le brinda a los clientes la posibilidad de participar en grandes proyectos con tickets de inversión reducidos. 
-                Es decir, elimina la barrera de acceso que tenían los medianos y pequeños inversores para con los grandes proyectos inmobiliarios de primer nivel.
+                El Crowdfunding aplicado al Mercado Inmobiliario le brinda a los clientes la posibilidad de participar en grandes proyectos con tickets de inversión 
+                reducidos. Es decir, elimina la barrera de acceso que tenían los medianos y pequeños inversores para con los grandes proyectos inmobiliarios de primer 
+                nivel.
             </p>
             <p>
                 Por ejemplo, un proyecto inmobiliario de USD 10.000.000 puede ser financiado por 1.000 participantes que invierten USD10.000 cada uno.
@@ -252,8 +253,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cómo se instrumentará la compra de las unidades?",
         content: `
             <p>
-                Una vez reunido el capital, el Fideicomiso realizará la compraventa de los departamentos a precio cerrado y de contado que se instrumentará a través de una 
-                adhesión al fideicomiso de obra quien lleva acabo el desarrollo del inmueble.
+                Una vez reunido el capital, el Fideicomiso realizará la compraventa de los departamentos a precio cerrado y de contado que se instrumentará a través de 
+                una adhesión al fideicomiso de obra quien lleva acabo el desarrollo del inmueble.
             </p>
         `
     },
@@ -261,13 +262,14 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Qué seguridad tiene mi inversión sobre el proyecto?",
         content: `
             <p>
-                En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este caso, 
-                Tiscornia y Obras & Sistemas son unos de los desarrolladores y constructora más grande de la Argentina con el 100% de obras terminadas teniendo más de 65 proyectos de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, el 
-                Instituto de Neurociencias de Buenos Aires o el Faena Art Center.
+                En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este 
+                caso, Tiscornia y Obras & Sistemas son unos de los desarrolladores y constructora más grande de la Argentina con el 100% de obras terminadas teniendo 
+                entre sus proyectos obras de gran envergadura como más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, 
+                el Instituto de Neurociencias de Buenos Aires o el Faena Art Center.
             </p>
             <p>
-                En segundo lugar, <strong>HUB Cabildo</strong> tiene la tierra comprada y paga al 100% y más del 70% de las unidades vendidas, con lo cual ya posee el capital 
-                necesario para finalizar la obra.
+                En segundo lugar, <strong>HUB Cabildo</strong> tiene la tierra comprada y paga al 100% y más del 70% de las unidades vendidas, con lo cual ya posee el capital necesario 
+                para finalizar la obra.
             </p>
         `
     },
@@ -284,7 +286,7 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cuánto es el monto mínimo de inversión?",
         content: `
             <p>
-                El monto mínimo de inversión es de USD 3.000.
+                El monto mínimo de inversión es de USD 1.000.
             </p>
         `
     },
@@ -310,9 +312,9 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cómo me aseguran que mi dinero se usará en lo que estoy invirtiendo?",
         content: `
             <p>
-                Tu inversión estará reguardada en la cuenta bancaria del fideicomiso en dólares hasta completar el cupo necesario para la compra mayorista de los departamentos 
-                y será administrado por una fiduciaria pública registrada en la Comisión Nacional de Valores (CNV)*. Crowdium en ningún momento tiene acceso al capital 
-                invertido ya que el dinero es transferido directamente a la cuenta del fideicomiso.
+                Tu inversión estará reguardada en la cuenta bancaria del fideicomiso en dólares hasta completar el cupo necesario para la compra mayorista de los 
+                departamentos y será administrado por una fiduciaria pública registrada en la Comisión Nacional de Valores (CNV)*. Crowdium en ningún momento tiene acceso 
+                al capital invertido ya que el dinero es transferido directamente a la cuenta del fideicomiso.
             </p>
         `
     },
@@ -320,8 +322,9 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cuáles son los factores de riesgo?",
         content: `
             <p>
-                El riesgo de participar en este proyecto es el de participar en la compra de departamentos desde el pozo. Adicionalmente, para reducir los riesgos inherentes 
-                del mercado inmobiliario, Crowdium realizó las debidas diligencias de todos los involucrados en el desarrollo del proyecto <strong>HUB Cabildo</strong>.
+                El riesgo de participar en este proyecto es el de participar en la compra de departamentos desde el pozo. Adicionalmente, para reducir los riesgos 
+                inherentes del mercado inmobiliario, se han realizado las debidas diligencias de todos los involucrados en el desarrollo del proyecto 
+                <strong>HUB Cabildo<strong>.
             </p>
         `
     },
@@ -345,8 +348,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿En qué moneda puedo invertir?",
         content: `
             <p>
-                La forma de suscripción al proyecto podrá ser en pesos, dólares. Mediante transferencia bancaria a la cuenta del fideicomiso u operando directamente a través 
-                de tu cuenta comitente en Balanz.
+                La forma de suscripción al proyecto podrá ser en pesos, dólares. Mediante transferencia bancaria a la cuenta del fideicomiso u operando directamente a 
+                través de tu cuenta comitente en Balanz.
             </p>
         `
     },
@@ -371,8 +374,8 @@ export const faqHUB: ICollapseMenuData[] = [
         content: `
             <p>
                 Si no se recauda el 100% del capital requerido, se podrá realizar una compra parcial de las unidades. En caso de recaudar menos del 50% del capital 
-                requerido, el dinero será devuelto a los usuarios en su totalidad descontando el impuesto a los Débitos y Créditos bancarios de acuerdo con lo establecido en 
-                la Ley 25.413.
+                requerido, el dinero será devuelto a los usuarios en su totalidad descontando el impuesto a los Débitos y Créditos bancarios de acuerdo con lo 
+                establecido en la Ley 25.413.
             </p>
         `
     },
