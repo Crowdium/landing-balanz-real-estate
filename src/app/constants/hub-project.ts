@@ -113,10 +113,11 @@ export const descriptionData:string = `
     </p>
     <p>
         Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se 
-        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de entre 30 y 36 meses.
+        venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de 36 meses.
     </p>
     <p>
-        La <strong>Fiduciaria CFA</strong> se encargará de administrar el capital de aforo durante la vida del Fideicomiso y la posterior venta de los departamentos.
+        La <strong>Fiduciaria CFA</strong> se encargará de administrar los fondos remanentes depositados en el fideicomiso para afrontar los gastos de mantenimiento e 
+        impuestos del fideicomiso.
     </p>
     <p>
         Se espera que el precio de venta aumente de forma considerable debido a que las unidades se adquieren en una etapa temprana del desarrollo del edificio 
@@ -140,7 +141,7 @@ export const timelineProjectData: ITimeline[] = [
         step: `<icon-sale></icon-sale>`, 
         title: "Etapa de Obra",  
         subtitle: "ABRIL 2021 - SEPTIEMBRE 2023", 
-        content: "La contrucción del edificio que comenzó en septiembre del 2020 continuará con su etapa de obra durante los próximos 30 a 36 meses aproximadamente. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta durante la obra, entendiendo que a su finalización será uno de los mejores momentos para vender."
+        content: "La contrucción del edificio que comenzó en septiembre del 2020 continuará con su etapa de obra durante los próximos 36 meses aproximadamente. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta durante la obra, entendiendo que a su finalización será uno de los mejores momentos para vender."
     },
     {
         step: `<icon-tools></icon-tools>`, 
