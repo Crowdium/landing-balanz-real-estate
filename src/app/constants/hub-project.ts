@@ -25,20 +25,19 @@ export const galleryData:IGalleryData[] = [
 ];
 
 export const resumeList:IResume[] = [
-    {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DOLAR'},
+    {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DÓLAR'},
     {icon: 'signal', title: 'RENTABILIDAD ESTIMADA TOTAL', value: '25~35%'},
     {icon: 'fund', title: 'TIR ESTIMADA', value: '10,4%'},
-    {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 Meses'},
+    {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses'},
     {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
-    {icon: 'dollar-circle', title: "OBJETIVO DE FONDEO", value: "USD 6.123.000"},
     {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
-    {icon: 'profile', title: 'VEHICULO LEGAL', value: 'Fideicomiso Ordinario De Administración'},
-    {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A'},
+    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso Ordinario De Administración'},
+    {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A.'},
 ];
 
 export const descriptionData:string = `
     <p>
-        HUB Cabildo es un desarrollo inmobiliario residencial premium, ubicado en el barrio de Núñez sobre la Av. Cabildo frente a la Plaza Balcarce y el Blvd. Comodoro Rivadavia. 
+        HUB Cabildo es un desarrollo inmobiliario residencial premium, ubicado en el barrio de Núñez sobre la Av. Cabildo, frente a la Plaza Balcarce y el Blvd. Comodoro Rivadavia. 
         Al ser uno de los desarrollos de mayor calidad constructiva de la zona, con una ubicación, diseño y arquitectura exclusiva, su venta, una vez terminada la obra, 
         permitirá ofrecer un valor por m² más elevado que el promedio y así, generar una alta revalorización para sus inversores.
     </p>
@@ -62,7 +61,7 @@ export const descriptionData:string = `
     <ul>
         <li>
             <p>
-                <strong>Oportunidad única de compra:</strong> 25% por debajo del precio del lista del desarrollador.
+                <strong>Oportunidad única de compra:</strong> 25% por debajo del precio de lista del desarrollador.
             </p>
         </li>
         <li>
@@ -109,7 +108,7 @@ export const descriptionData:string = `
         </li>
     </ul>
     <p class="subtitle">
-        ESTRATEGIA DE SALIDA
+        ESTRATÉGIA DE SALIDA
     </p>
     <p>
         Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se 
