@@ -1,3 +1,5 @@
+$lineWidth: 5px;
+$sizeStep: 70px;
 .timeline{
     display: flex;
     align-items: center;
@@ -5,16 +7,16 @@
     flex-direction: column;
 
     & .timeline-step{
-        min-width: 70px;
-        min-height: 70px;
-        width: 70px;
-        height: 70px;
+        min-width: $sizeStep;
+        min-height: $sizeStep;
+        width: $sizeStep;
+        height: $sizeStep;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: var(--bg-primary);
         color:var(--ct-primary);
-        border-radius: 70px;
+        border-radius: $sizeStep;
         position: relative;
         padding: 12px;
 
@@ -73,8 +75,8 @@
             left: calc(100px / 2);
             bottom: 0%;
             width: calc(100% - 100px);
-            height: 4px;
-            background-color: var( --bg-primary);
+            height: $lineWidth;
+            background-color: var(--bg-primary);
         }
 
         &:first-child{
@@ -82,13 +84,13 @@
             &::after{
                 content: "";
                 position: absolute;
-                left: calc(70px / 2);
+                left: calc(#{$sizeStep} / 2);
                 bottom: 0%;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-left: 4px solid var(--bg-primary);
-                border-bottom: 4px solid var(--bg-primary);
+                border-left: $lineWidth solid var(--bg-primary);
+                border-bottom: $lineWidth solid var(--bg-primary);
                 border-bottom-left-radius: 15px;
                 z-index: -1;
             }
@@ -97,13 +99,13 @@
             &::after{
                 content: "";
                 position: absolute;
-                left: calc(70px / 2);
-                top: -4px;
+                left: calc(#{$sizeStep} / 2);
+                top: -$lineWidth;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-left: 4px solid var(--bg-primary);
-                border-top: 4px solid var(--bg-primary);
+                border-left: $lineWidth solid var(--bg-primary);
+                border-top: $lineWidth solid var(--bg-primary);
                 border-top-left-radius: 15px;
                 z-index: -1;
             }
@@ -122,14 +124,14 @@
             &::after{
                 content: "";
                 position: absolute;
-                left: calc(70px / 2);
-                top: -4px;
+                left: calc(#{$sizeStep} / 2);
+                top: -$lineWidth;
                 margin: auto;
                 width: 30px;
-                height: calc(100% - 4px);
-                border-top: 4px solid var(--bg-primary);
-                border-left: 4px solid var(--bg-primary);
-                border-bottom: 4px solid var(--bg-primary);
+                height: calc(100% - #{$lineWidth});
+                border-top: $lineWidth solid var(--bg-primary);
+                border-left: $lineWidth solid var(--bg-primary);
+                border-bottom: $lineWidth solid var(--bg-primary);
                 border-bottom-left-radius: 15px;
                 border-top-left-radius: 15px;
                 z-index: -1;
@@ -159,8 +161,8 @@
             right: calc(100px / 2);
             bottom: 0%;
             width: calc(100% - 100px);
-            height: 4px;
-            background-color: var( --bg-primary);
+            height: $lineWidth;
+            background-color: var(--bg-primary);
         }
 
         &:first-child{
@@ -168,13 +170,13 @@
             &::after{
                 content: "";
                 position: absolute;
-                right: calc(70px / 2);
+                right: calc(#{$sizeStep} / 2);
                 bottom: 0%;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-right: 4px solid var(--bg-primary);
-                border-bottom: 4px solid var(--bg-primary);
+                border-right: $lineWidth solid var(--bg-primary);
+                border-bottom: $lineWidth solid var(--bg-primary);
                 border-bottom-right-radius: 15px;
                 z-index: -1;
             }
@@ -183,13 +185,13 @@
             &::after{
                 content: "";
                 position: absolute;
-                right: calc(70px / 2);
-                top: -4px;
+                right: calc(#{$sizeStep} / 2);
+                top: -#{$sizeStep};
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-right: 4px solid var(--bg-primary);
-                border-top: 4px solid var(--bg-primary);
+                border-right: $lineWidth solid var(--bg-primary);
+                border-top: $lineWidth solid var(--bg-primary);
                 border-top-right-radius: 15px;
                 z-index: -1;
             }
@@ -208,14 +210,14 @@
             &::after{
                 content: "";
                 position: absolute;
-                right: calc(70px / 2);
-                top: -4px;
+                right: calc(#{$sizeStep} / 2);
+                top: -$lineWidth;
                 margin: auto;
                 width: 30px;
-                height: calc(100% - 4px);
-                border-top: 4px solid var(--bg-primary);
-                border-right: 4px solid var(--bg-primary);
-                border-bottom: 4px solid var(--bg-primary);
+                height: calc(100% - #{$lineWidth});
+                border-top: $lineWidth solid var(--bg-primary);
+                border-right: $lineWidth solid var(--bg-primary);
+                border-bottom: $lineWidth solid var(--bg-primary);
                 border-bottom-right-radius: 15px;
                 border-top-right-radius: 15px;
                 z-index: -1;
@@ -224,14 +226,15 @@
     }
 
 }
+$sizeStep: 50px;
 @media (max-width: 768px){
     .timeline{
         & .timeline-step{
-            min-width: 50px;
-            min-height: 50px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
+            min-width: $sizeStep;
+            min-height: $sizeStep;
+            width: $sizeStep;
+            height: $sizeStep;
+            border-radius: $sizeStep;
             padding: 5px;
         }
 
@@ -247,34 +250,34 @@
         & .timeline-left{
             &:first-child{
                 &::after{
-                    left: calc(50px / 2);
+                    left: calc(#{$sizeStep} / 2);
                 }
             }
             &:last-child{
                 &::after{
-                    left: calc(50px / 2);
+                    left: calc(#{$sizeStep} / 2);
                 }
             }
             &:not(:first-child):not(:last-child){
                 &::after{
-                    left: calc(50px / 2);
+                    left: calc(#{$sizeStep} / 2);
                 }
             }
         }
         & .timeline-right{
             &:first-child{
                 &::after{
-                    right: calc(50px / 2);
+                    right: calc(#{$sizeStep} / 2);
                 }
             }
             &:last-child{
                 &::after{
-                    right: calc(50px / 2);
+                    right: calc(#{$sizeStep} / 2);
                 }
             }
             &:not(:first-child):not(:last-child){
                 &::after{
-                    right: calc(50px / 2);
+                    right: calc(#{$sizeStep} / 2);
                 }
             }
         }

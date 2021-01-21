@@ -31,7 +31,7 @@ export const resumeList:IResume[] = [
     {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses'},
     {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
     {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
-    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso Ordinario De Administración'},
+    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso privado sin autorización de oferta pública por CNV'},
     {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A.'},
 ];
 
@@ -42,9 +42,10 @@ export const descriptionData:string = `
         permitirá ofrecer un valor por m² más elevado que el promedio y así, generar una alta revalorización para sus inversores.
     </p>
     <blockquote class="success">
-        A través del modelo del crowdfunding inmobiliario, se propone adquirir 28 unidades de pozo a precio fijo con un importante descuento sobre el precio de lista del 
-        desarrollador por la compra mayorista y de contado. <b>HUB Cabildo</b> es uno de los desarrollos más destacados de la zona, donde la revalorización desde el pozo a 
-        terminado supera el 10% anual, estimando generar así una <strong>rentabilidad entre el 25 y 35% en dólares en 36 meses.</strong>
+        A través del modelo del <b>crowdfunding inmobiliario</b>, el <b>fideicomiso privado</b> propone adquirir 28 unidades de pozo a precio fijo y <b>cerrado</b> con un 
+        importante descuento sobre el precio de lista del desarrollador por la compra mayorista y de contado. <b>HUB Cabildo</b> es uno de los desarrollos más destacados 
+        de la zona, donde la revalorización desde el pozo a terminado supera el 10% anual, estimando generar así una <strong>rentabilidad entre el 25 y 35% en dólares en 
+        36 meses.</strong>
     </blockquote>
     <p>
         La torre cuenta con 186 unidades distribuidas en 14 pisos con full amenities, sobre un terreno de más de 1.000mts² de superficie. Al estar ubicado en una manzana 
@@ -108,7 +109,7 @@ export const descriptionData:string = `
         </li>
     </ul>
     <p class="subtitle">
-        ESTRATÉGIA DE SALIDA
+        ESTRATEGIA DE SALIDA
     </p>
     <p>
         Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se 
