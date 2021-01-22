@@ -31,9 +31,10 @@ export const resumeList:IResume[] = [
     {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses'},
     {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
     {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
-    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso privado sin autorización de oferta pública por CNV'},
     {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A.'},
+    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso privado sin autorización de oferta pública por CNV'},
 ];
+
 
 export const descriptionData:string = `
     <p>

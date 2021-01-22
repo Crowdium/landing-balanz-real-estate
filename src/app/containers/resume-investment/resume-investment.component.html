@@ -3,13 +3,15 @@
         Resumen de la Inversión
     </div>
     <div class="resume-container">
-        <div class="resume-item" *ngFor="let item of data">
-            <div class="resume-title">
-                <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>{{item.title}}
+        <ng-container *ngFor="let item of data">
+            <div class="resume-item">
+                <div class="resume-title">
+                    <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>{{item.title}}
+                </div>
+                <div class="resume-dotted"></div>
+                <div class="resume-value" [innerHTML]="item.value | safeHTML"></div>
             </div>
-            <div class="resume-dotted"></div>
-            <div class="resume-value">{{item.value}}</div>
-        </div>
+        </ng-container>
     </div>
     <div class="progress">
         <porcentage-bar [min]="0" [max]="100" [progress]="progress"></porcentage-bar>
