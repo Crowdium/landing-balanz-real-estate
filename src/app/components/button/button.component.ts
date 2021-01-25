@@ -19,6 +19,7 @@ export enum buttonType{
 export class ButtonComponent implements OnInit, OnChanges {
 
   @Input() type?: 'outline' | 'text' | 'classic' | 'classic-icon' | 'outline-icon' | 'text-icon';
+  @Input() disabled?: boolean = false;
   @Input() size?: 'lg' | 'sm';
   @Input() className?: string | string[];
   @Input() fullWidth?: boolean;

@@ -11,6 +11,7 @@ import { timelineData } from '../../constants/timeline';
 export class AsInvestmentComponent implements OnInit {
 
   timelineData: ITimeline[];
+  CustomizedServicesPlatform:string = "assets/customized-services-platforms.png";
   constructor() { }
 
   ngOnInit(): void {

@@ -7,8 +7,8 @@
     padding: 0 10px;
     border: 1px solid transparent;
     outline: none;
-    background-color: var(--bg-primary);
-    color: var(--ct-primary);
+    background-color: var(--bg-pr);
+    color: var(--ct-pr);
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 500;
@@ -43,8 +43,8 @@
     &.outline{
         background-color: transparent;
         font-weight: bold;
-        color: var(--bg-primary);
-        border-color: var(--bg-primary);
+        color: var(--bg-pr);
+        border-color: var(--bg-pr);
         box-shadow: none;
     }
 
@@ -54,6 +54,11 @@
 
     & .trading{
         margin-left: 6px;
+    }
+    &:disabled,
+    &.disabled{
+        background-color: var(--bg-disabled) !important;
+        color: var(--ct-disabled) !important;
     }
 }
 @media (max-width:320px){

@@ -21,8 +21,8 @@
                         <p>
                             Obtené una rentabilidad estimada del {{data.RentabilidadEstimada}}% en dólares en {{data.Plazo}}*.
                         </p>
-                        <a class="btn lg bg-white" [href]="signIn">
-                            Invertir Ahora
+                        <a class="btn lg bg-white" [class]="{'disabled': data.Estado.Tipo > 1}" (click)="handleInvestment(signIn)">
+                            {{ data.Estado.Tipo > 1 ? 'Proyecto ' + data.Estado.Descripcion : 'Invertir Ahora'}}
                         </a>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
             <scroll-spy-menu [data]="scrollSpyMenu">
                 <div class="content-panel">
                     <gallery-map id="gallery" [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
-                    <resume-investment id="resume" [data]="resumeList" [progress]="data.Completado" [callToAction]="signIn"></resume-investment>
+                    <resume-investment id="resume" [data]="resumeList" [status]="data.Estado" [progress]="data.Completado" [callToAction]="signIn"></resume-investment>
                     <div class="divider"></div>
                     <description-project id="description" [description]="getDescription()"></description-project>
                     <div class="divider"></div>
@@ -47,8 +47,8 @@
             </scroll-spy-menu>
         </div>
         <legal></legal>
-        <from-your-mobile [callToAction]="signIn"></from-your-mobile>
+        <!--<from-your-mobile [callToAction]="signIn"></from-your-mobile>-->
         <ct-footer></ct-footer>
-        <partners></partners>
+        <!--<partners></partners>-->
     </ng-container>
 </div>

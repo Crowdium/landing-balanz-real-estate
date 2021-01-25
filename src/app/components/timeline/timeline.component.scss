@@ -14,8 +14,8 @@ $sizeStep: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--bg-primary);
-        color:var(--ct-primary);
+        background-color: var(--bg-pr);
+        color:var(--ct-pr);
         border-radius: $sizeStep;
         position: relative;
         padding: 12px;
@@ -76,7 +76,7 @@ $sizeStep: 70px;
             bottom: 0%;
             width: calc(100% - 100px);
             height: $lineWidth;
-            background-color: var(--bg-primary);
+            background-color: var(--bg-pr);
         }
 
         &:first-child{
@@ -89,8 +89,8 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-left: $lineWidth solid var(--bg-primary);
-                border-bottom: $lineWidth solid var(--bg-primary);
+                border-left: $lineWidth solid var(--bg-pr);
+                border-bottom: $lineWidth solid var(--bg-pr);
                 border-bottom-left-radius: 15px;
                 z-index: -1;
             }
@@ -104,8 +104,8 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-left: $lineWidth solid var(--bg-primary);
-                border-top: $lineWidth solid var(--bg-primary);
+                border-left: $lineWidth solid var(--bg-pr);
+                border-top: $lineWidth solid var(--bg-pr);
                 border-top-left-radius: 15px;
                 z-index: -1;
             }
@@ -129,9 +129,9 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: calc(100% - #{$lineWidth});
-                border-top: $lineWidth solid var(--bg-primary);
-                border-left: $lineWidth solid var(--bg-primary);
-                border-bottom: $lineWidth solid var(--bg-primary);
+                border-top: $lineWidth solid var(--bg-pr);
+                border-left: $lineWidth solid var(--bg-pr);
+                border-bottom: $lineWidth solid var(--bg-pr);
                 border-bottom-left-radius: 15px;
                 border-top-left-radius: 15px;
                 z-index: -1;
@@ -162,7 +162,7 @@ $sizeStep: 70px;
             bottom: 0%;
             width: calc(100% - 100px);
             height: $lineWidth;
-            background-color: var(--bg-primary);
+            background-color: var(--bg-pr);
         }
 
         &:first-child{
@@ -175,8 +175,8 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-right: $lineWidth solid var(--bg-primary);
-                border-bottom: $lineWidth solid var(--bg-primary);
+                border-right: $lineWidth solid var(--bg-pr);
+                border-bottom: $lineWidth solid var(--bg-pr);
                 border-bottom-right-radius: 15px;
                 z-index: -1;
             }
@@ -190,8 +190,8 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: 50%;
-                border-right: $lineWidth solid var(--bg-primary);
-                border-top: $lineWidth solid var(--bg-primary);
+                border-right: $lineWidth solid var(--bg-pr);
+                border-top: $lineWidth solid var(--bg-pr);
                 border-top-right-radius: 15px;
                 z-index: -1;
             }
@@ -215,9 +215,9 @@ $sizeStep: 70px;
                 margin: auto;
                 width: 30px;
                 height: calc(100% - #{$lineWidth});
-                border-top: $lineWidth solid var(--bg-primary);
-                border-right: $lineWidth solid var(--bg-primary);
-                border-bottom: $lineWidth solid var(--bg-primary);
+                border-top: $lineWidth solid var(--bg-pr);
+                border-right: $lineWidth solid var(--bg-pr);
+                border-bottom: $lineWidth solid var(--bg-pr);
                 border-bottom-right-radius: 15px;
                 border-top-right-radius: 15px;
                 z-index: -1;

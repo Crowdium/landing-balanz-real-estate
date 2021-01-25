@@ -19,8 +19,6 @@ export class InvestmentsScreensComponent implements OnInit {
   error:boolean = false;
   dataFilter;
 
-  isColumnProfile:boolean = false;
-
   filterForm:FormGroup;
 
   options = [
@@ -29,23 +27,10 @@ export class InvestmentsScreensComponent implements OnInit {
     {value: "Finalizado", text: "Inversiones Finalizadas"}
   ]
 
-  faMapMarketAlt = faMapMarkerAlt;
-  faSpinner = faSpinner;
   
   loading:boolean = false;
-  @HostListener('window:resize', ['$event'])
-  onResize(ev?:any){
-    if(this.ref.length > 0){
-      let rect = this.ref.first.nativeElement.getBoundingClientRect();
-      let isColumn = rect.width < 300 ? true : false;
 
-      if(this.isColumnProfile !== isColumn){
-        this.isColumnProfile = isColumn;
-      }
-    }
-  }
-
-  constructor( private projectS: ProjectsService, private cdr: ChangeDetectorRef, private fb: FormBuilder, private router: Router ) {}
+  constructor( private projectS: ProjectsService, private fb: FormBuilder, private router: Router ) {}
 
   ngOnInit(): void {
     this.loading = true;
@@ -66,12 +51,6 @@ export class InvestmentsScreensComponent implements OnInit {
     
     this.filterForm.get('status').valueChanges.subscribe(v => this.filterSelect(v));
 
-  }
-
-  ngAfterViewChecked(){
-    this.onResize();
-
-    this.cdr.detectChanges();
   }
 
   filterSelect(value:string){

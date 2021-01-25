@@ -84,23 +84,6 @@
             border-top: 5px solid #0a1729;
         }
     }
-
-    & .card-item{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        padding: 5px 0;
-        font-size: 13px;
-
-        &-title{
-            color: var(--ct-main);
-        }
-        &-value{
-            font-size: 18px;
-            font-weight: 600;
-        }
-    }
     .no-items{
         max-width: 370px;
         margin: 0 auto;

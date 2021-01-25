@@ -45,5 +45,10 @@ export class HubProjectComponent implements OnInit {
     //return this.data.Descripcion;
     return descriptionData;
   }
+  handleInvestment(value:string){
+    if(this.data.Estado.Tipo === 1){
+      window.open(value);
+    }
+  }
 
 }

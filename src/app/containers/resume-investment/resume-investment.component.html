@@ -17,8 +17,8 @@
         <porcentage-bar [min]="0" [max]="100" [progress]="progress"></porcentage-bar>
     </div>
     <div class="text-center">
-        <a class="btn lg" [href]="callToAction">
-            Invertir Ahora
+        <a class="btn lg" [class]="{'disabled': status.Tipo > 1}"  (click)="handleClick(callToAction)">
+            {{ status.Tipo > 1 ? 'Proyecto ' + status.Descripcion : 'Invertir Ahora'}}
         </a>
     </div>
 </div>

@@ -7,8 +7,8 @@
     padding: 0 10px;
     border: 1px solid transparent;
     outline: none;
-    background-color: var(--bg-primary);
-    color: var(--ct-primary);
+    background-color: var(--bg-pr);
+    color: var(--ct-pr);
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 500;
@@ -17,6 +17,13 @@
     box-shadow: var(--shadow);
     text-decoration: none;
     cursor: pointer;
+
+    &:disabled,
+    &.disabled{
+        background-color: var(--bg-disabled);
+        color: var(--ct-disabled);
+        box-shadow: none;
+    }
 
     &.si-mg{
         margin: 10px
@@ -43,8 +50,8 @@
     &.outline{
         background-color: transparent;
         font-weight: bold;
-        color: var(--bg-primary);
-        border-color: var(--bg-primary);
+        color: var(--bg-pr);
+        border-color: var(--bg-pr);
         box-shadow: none;
     }
 

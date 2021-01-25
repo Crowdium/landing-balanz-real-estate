@@ -13,6 +13,7 @@ import { ScrollSpyMenuComponent } from './scroll-spy-menu/scroll-spy-menu.compon
 import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ChartComponent,
     ScrollSpyMenuComponent,
     GalleryComponent,
+    ProjectCardComponent,
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CardModule,
     ChartComponent,
     ScrollSpyMenuComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProjectCardComponent
   ]
 })
 export class ComponentsModule { }
