@@ -8,8 +8,11 @@
     }
 
     & .legal{
-        padding: 22px 0;
-        border-bottom: 1px solid var(--border);
+        & p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        padding: 22px 0 0;
     }
 }
 @media (max-width: 768px){
