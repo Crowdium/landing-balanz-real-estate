@@ -36,7 +36,7 @@ export const faq: ICollapseMenuData[] = [
         title: "¿Por qué medios puedo invertir?",
         content: `
             <p>
-                Transferencia bancaria en pesos o dólares y/o dinero desde la cuenta comitente.
+                Transferencia bancaria en pesos o dólares.
             </p>
         `
     },
@@ -55,7 +55,7 @@ export const faq: ICollapseMenuData[] = [
         content: `
             <p>
                 Tu inversión estará resguardada en la cuenta bancaria del fideicomiso en dólares hasta completar el cupo necesario para la compra mayorista de los 
-                departamentos y será administrado por una fiduciaria pública registrada en la Comisión Nacional de Valores (CNV)*. Crowdium en ningún momento tiene 
+                departamentos y será administrado por una fiduciaria pública registrada en la Comisión Nacional de Valores (CNV). Crowdium en ningún momento tiene 
                 acceso al capital invertido ya que el dinero es transferido directamente a la cuenta del fideicomiso.
             </p>
         `
@@ -143,7 +143,7 @@ export const faq: ICollapseMenuData[] = [
         title: "¿Quién administra el capital?",
         content: `
             <p>
-                El capital es administrado por CFA, Compañía Fiduciaria Americana, una fiduciaria pública registrada en la Comisión Nacional de Valores (*).
+                El capital es administrado por CFA, Compañía Fiduciaria Americana, una fiduciaria pública registrada en la Comisión Nacional de Valores.
             </p>
         `
     },

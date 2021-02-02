@@ -19,7 +19,7 @@
                     </div>
                     <div class="avatar-description">
                         <p>
-                            Obtené una rentabilidad estimada del {{data.RentabilidadEstimada}}% en dólares en {{data.Plazo}}*.
+                            Obtené una rentabilidad estimada del {{data.RentabilidadEstimada}}% en dólares en {{data.Plazo}}.
                         </p>
                         <a class="btn lg bg-white" [class]="{'disabled': data.Estado.Tipo > 1}" (click)="handleInvestment(signIn)">
                             {{ data.Estado.Tipo > 1 ? 'Proyecto ' + data.Estado.Descripcion : 'Invertir Ahora'}}
