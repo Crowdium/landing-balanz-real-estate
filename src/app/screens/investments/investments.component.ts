@@ -62,8 +62,7 @@ export class InvestmentsScreensComponent implements OnInit {
   }
 
   moreInfo(value:string){
-    let newURL = this.router.createUrlTree(['/real-estate/inversiones', value])
-    window.open(newURL.toString(), '_blank')
+    window.open(`https://www.balanzrealestate.com/real-estate/inversiones/${value}`, '_blank')
   }
 
 }
