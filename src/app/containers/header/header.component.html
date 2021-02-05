@@ -10,7 +10,7 @@
                     {{obj.name}}
                     <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
                 </cp-button>
-                <a class="btn" *ngSwitchCase="'link'" [href]="obj.path" [class]="obj.classnames">
+                <a class="btn" *ngSwitchCase="'link'" [href]="obj.path" target="_top" [class]="obj.classnames">
                     <div class="leading" *ngIf="obj.icon && obj.icon.position === 'left'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
                     {{obj.name}}
                     <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>

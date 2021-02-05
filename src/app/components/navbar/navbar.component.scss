@@ -11,7 +11,7 @@
     box-shadow: var(--shadow);
 
     &.top{
-        position: sticky;
+        position: fixed;
         left: 0;
         top: 0;
     }

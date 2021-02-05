@@ -28,7 +28,7 @@ export class ResumeInvestmentComponent implements OnInit {
   }
   handleClick(value:string){
     if(this.status.Tipo === 1){
-      window.open(value)    
+      window.open(value, '_top')    
     }
   }
 

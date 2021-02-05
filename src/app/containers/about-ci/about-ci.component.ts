@@ -20,5 +20,7 @@ export class AboutCiComponent implements OnInit {
       verticalOffset: -10
     })
   }
-
+  go(){
+    window.open('https://www.balanzrealestate.com/real-estate/inversiones', '_top')
+  }
 }

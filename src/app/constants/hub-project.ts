@@ -49,7 +49,7 @@ export const descriptionData:string = `
         36 meses.</strong>
     </blockquote>
     <p>
-        La torre cuenta con 186 unidades distribuidas en 14 pisos con full amenities, sobre un terreno de más de 1.000mts² de superficie. Al estar ubicado en una manzana 
+        La torre cuenta con más de 200 unidades distribuidas en 14 pisos con full amenities, sobre un terreno de más de 1.000mts² de superficie. Al estar ubicado en una manzana 
         triangular con 130mts lineales de fachada, todas las unidades son al frente con vista verde a la plaza Balcarce o la árboleda de los boulevards Rivadavía y García del 
         Río. <strong>Las unidades que se adquirirán son departamentos de 1 a 4 ambientes de entre 35 y 100mts².</strong>
     </p>
