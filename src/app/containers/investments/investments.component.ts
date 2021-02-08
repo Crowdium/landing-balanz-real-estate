@@ -51,7 +51,7 @@ export class InvestmentsComponent implements OnInit, AfterViewChecked {
   }
 
   moreInfo(value:string){
-    window.open(`https://www.balanzrealestate.com/real-estate/inversiones/${value}`, '_top');
+    window.open(`https://www.balanzrealestate.com/real-estate/inversiones/${value}`, '_blank');
     //this.router.navigateByUrl(`/real-estate/inversiones/${value}`)
   }
 }
