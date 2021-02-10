@@ -8,8 +8,11 @@
         <ct-header id="header" [viewNav]="true" [signIn]="signIn" [signUp]="signUp">
             <div class="header-content" [style.background-image]="'url(../../../assets/project/' + data.Slug + '.jpg)'">
                 <div class="avatar-content">
-                    <div class="avatar-img">
-                        <img [src]="data.Logo" [alt]="data.Nombre">
+                    <div class="avatar-progress">
+                        <progress-circle [progress]="data.Completado"></progress-circle>
+                        <div class="avatar-img">
+                            <img [src]="data.Logo" [alt]="data.Nombre">
+                        </div>
                     </div>
                     <div class="avatar-title">
                         <h1>

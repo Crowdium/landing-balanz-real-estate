@@ -35,19 +35,42 @@
             flex-direction: column;
             z-index: 1;
 
-            & .avatar-img{
-                width: 80px;
-                height: 80px;
+            & .avatar-progress{
+                width: 94px;
+                height: 94px;
                 position: relative;
-                border-radius: 80px;
-                overflow: hidden;
-    
-                & img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .avatar-img{
+                    width: 80px;
+                    height: 80px;
+                    position: relative;
+                    border-radius: 80px;
+                    overflow: hidden;
+        
+                    & img{
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                & progress-circle{
                     width: 100%;
+                    height: 100%;
                     position: absolute;
                     left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
     

@@ -14,6 +14,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { ProgressCircleComponent } from './progress-circle/progress-circle.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     ScrollSpyMenuComponent,
     GalleryComponent,
     ProjectCardComponent,
+    ProgressCircleComponent,
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     ChartComponent,
     ScrollSpyMenuComponent,
     GalleryComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    ProgressCircleComponent
   ]
 })
 export class ComponentsModule { }
