@@ -12,6 +12,99 @@
 body{
     overflow-x: hidden;
 }
+.tooltip{
+    position: absolute;
+    width: max-content;
+    padding: 5px;
+    background-color: #505050;
+    border-radius: 5px;
+    color: white;
+    z-index: 9;
+
+    &.top {
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #505050;
+        }
+    }
+    &.bottom{
+        top: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #505050;
+        }
+    }
+    &.left{
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(100% + 10px);
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid #505050;
+        }
+    }
+    &.right{
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% + 10px);
+
+        &::before{
+            content: "";
+            position: absolute;
+            right: 100%;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #505050;
+        }
+    }
+    &.show{
+        opacity: 1;
+    }
+    &:not(.show){
+        opacity: 0;
+    }
+}
+
 $numbers: 0, 1, 2, 3, 4, 5;
 .padding{
     @each $n in $numbers {

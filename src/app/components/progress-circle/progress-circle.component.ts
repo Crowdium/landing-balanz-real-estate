@@ -6,10 +6,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild,  } from '@angular/core
   styleUrls: ['./progress-circle.component.scss']
 })
 export class ProgressCircleComponent implements OnInit {
-
-  @Input() strokeWidth:number = 2;
-  @Input() fill:string = 'none';
-  @Input() stroke:string = '#00c790';
+  
   @Input() size:number = 84;
   @Input() progress:number;
 

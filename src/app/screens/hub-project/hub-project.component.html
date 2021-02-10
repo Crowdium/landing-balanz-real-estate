@@ -8,7 +8,7 @@
         <ct-header id="header" [viewNav]="true" [signIn]="signIn" [signUp]="signUp">
             <div class="header-content" [style.background-image]="'url(../../../assets/project/' + data.Slug + '.jpg)'">
                 <div class="avatar-content">
-                    <div class="avatar-progress">
+                    <div class="avatar-progress" [tooltip]="data.Completado + '% Completado'" [scrollTop]="120">
                         <progress-circle [progress]="data.Completado"></progress-circle>
                         <div class="avatar-img">
                             <img [src]="data.Logo" [alt]="data.Nombre">
