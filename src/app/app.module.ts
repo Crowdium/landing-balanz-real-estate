@@ -9,6 +9,7 @@ import { ComponentsModule } from './components/components.module';
 import { ContainersModule } from './containers/containers.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NzIconModule
+    NzIconModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],

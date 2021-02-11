@@ -12,17 +12,18 @@
 body{
     overflow-x: hidden;
 }
+
 .tooltip{
     position: absolute;
     width: max-content;
-    padding: 5px;
-    background-color: #505050;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .9);
     border-radius: 5px;
     color: white;
     z-index: 9;
 
     &.top {
-        bottom: calc(100% + 10px);
+        bottom: calc(100% + 14px);
         left: 50%;
         transform: translateX(-50%);
 
@@ -37,11 +38,11 @@ body{
             height: 0;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
-            border-top: 8px solid #505050;
+            border-top: 8px solid rgba(0, 0, 0, .9);
         }
     }
     &.bottom{
-        top: calc(100% + 10px);
+        top: calc(100% + 14px);
         left: 50%;
         transform: translateX(-50%);
 
@@ -56,13 +57,13 @@ body{
             height: 0;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
-            border-bottom: 8px solid #505050;
+            border-bottom: 8px solid rgba(0, 0, 0, .9);
         }
     }
     &.left{
         top: 50%;
         transform: translateY(-50%);
-        right: calc(100% + 10px);
+        right: calc(100% + 14px);
 
         &::before{
             content: "";
@@ -75,13 +76,13 @@ body{
             height: 0;
             border-top: 8px solid transparent;
             border-bottom: 8px solid transparent;
-            border-left: 8px solid #505050;
+            border-left: 8px solid rgba(0, 0, 0, .9);
         }
     }
     &.right{
         top: 50%;
         transform: translateY(-50%);
-        left: calc(100% + 10px);
+        left: calc(100% + 14px);
 
         &::before{
             content: "";
@@ -94,7 +95,7 @@ body{
             height: 0;
             border-top: 8px solid transparent;
             border-bottom: 8px solid transparent;
-            border-right: 8px solid #505050;
+            border-right: 8px solid rgba(0, 0, 0, .9);
         }
     }
     &.show{
@@ -104,7 +105,6 @@ body{
         opacity: 0;
     }
 }
-
 $numbers: 0, 1, 2, 3, 4, 5;
 .padding{
     @each $n in $numbers {
