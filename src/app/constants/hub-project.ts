@@ -296,7 +296,7 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Por qué medios puedo invertir?",
         content: `
             <p>
-                Transferencia bancaria en pesos o dólares.
+                Transferencia bancaria en pesos o dólares o mediante títulos directamente desde tu comitente.
             </p>
         `
     },
@@ -350,8 +350,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿En qué moneda puedo invertir?",
         content: `
             <p>
-                La forma de suscripción al proyecto podrá ser en pesos, dólares. Mediante transferencia bancaria a la cuenta del fideicomiso u operando directamente a 
-                través de tu cuenta comitente en Balanz.
+                La forma de suscripción al proyecto podrá ser mediante transferencia bancaria en pesos o dólares a la cuenta del fideicomiso u  a través de títulos 
+                operando directamente a través de tu cuenta comitente en Balanz.
             </p>
         `
     },

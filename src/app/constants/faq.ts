@@ -36,7 +36,7 @@ export const faq: ICollapseMenuData[] = [
         title: "¿Por qué medios puedo invertir?",
         content: `
             <p>
-                Transferencia bancaria en pesos o dólares.
+                Transferencia bancaria en pesos o dólares o mediante títulos directamente desde tu comitente.
             </p>
         `
     },
