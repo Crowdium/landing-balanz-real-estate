@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { HubCabildoIiScreen } from './hub-cabildo-ii/hub-cabildo-ii.screen';
 import { HubProjectComponent } from './hub-project/hub-project.component';
 import { InvestmentsScreensComponent } from './investments/investments.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
       {path: '', component: RealEstateComponent},
       {path: 'inversiones', component: InvestmentsScreensComponent},
       {path: 'inversiones/hub-cabildo', component: HubProjectComponent},
+      {path: 'inversiones/hub-cabildo2', component: HubCabildoIiScreen},
     ],
   },
   {path: '**', component: NotFoundComponent}

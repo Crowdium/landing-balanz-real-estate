@@ -10,9 +10,10 @@ export class GalleryMapComponent implements OnInit {
 
   @Input() lat: number;
   @Input() lng: number;
+  @Input() data:any;
 
   selectView: 'gallery' | 'map' = "gallery"; 
-  galleryData = galleryData;
+  
   constructor() { }
 
   ngOnInit(): void {

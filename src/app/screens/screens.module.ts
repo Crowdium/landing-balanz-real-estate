@@ -13,6 +13,7 @@ import { AssetsModule } from '../assets/assets.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { DirectivesModule } from '../directives/directives.module';
+import { HubCabildoIiScreen } from './hub-cabildo-ii/hub-cabildo-ii.screen';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DirectivesModule } from '../directives/directives.module';
     RealEstateComponent, 
     InvestmentsScreensComponent, 
     HubProjectComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HubCabildoIiScreen
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ import { DirectivesModule } from '../directives/directives.module';
     RealEstateComponent,
     InvestInRealEstateComponent,
     HubProjectComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HubCabildoIiScreen
   ]
 })
 export class ScreensModule { }
