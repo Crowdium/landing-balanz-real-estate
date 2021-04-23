@@ -30,8 +30,8 @@ export class HubCabildoIiScreen implements OnInit {
   faqProject:ICollapseMenuData[] = faqHUB;
 
 
-  signIn:string = "https://clientes.balanz.com/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
-  signUp:string = "https://balanz.com/abrir-cuenta-2.aspx/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
+  signIn:string = "https://clientes.balanz.com/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo2"
+  signUp:string = "https://balanz.com/abrir-cuenta-2.aspx/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo2"
 
   constructor(private projectS: ProjectsService, private route: ActivatedRoute, private router: Router) { }
 
