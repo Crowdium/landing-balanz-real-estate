@@ -50,7 +50,7 @@ export const descriptionData:string = `
         permitirá ofrecer un valor por m² más elevado que el promedio y así, generar una alta revalorización para sus inversores.
     </p>
     <blockquote class="success">
-        A través del modelo del <b>crowdfunding inmobiliario</b>, el <b>fideicomiso privado</b> propone adquirir 28 unidades de pozo a precio fijo y <b>cerrado</b> con un 
+        A través del modelo del <b>crowdfunding inmobiliario</b>, el <b>fideicomiso privado</b> propone adquirir 10 unidades de pozo a precio fijo y <b>cerrado</b> con un 
         importante descuento sobre el precio de lista del desarrollador por la compra mayorista y de contado. <b>HUB Cabildo</b> es uno de los desarrollos más destacados 
         de la zona, donde la revalorización desde el pozo a terminado supera el 10% anual, estimando generar así una <strong>rentabilidad entre el 25 y 35% en dólares en 
         36 meses.</strong>
