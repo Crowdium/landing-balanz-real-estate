@@ -142,19 +142,19 @@ export const timelineProjectData: ITimeline[] = [
     {
         step: `<icon-acquisition></icon-acquisition>`, 
         title: "Adquisición", 
-        subtitle: "MARZO 2021", 
+        subtitle: "JUNIO 2021", 
         content: "Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con un importante descuento respecto de similares departamentos en el edificio."
     },
     {
         step: `<icon-sale></icon-sale>`, 
         title: "Etapa de Obra",  
-        subtitle: "ABRIL 2021 - SEPTIEMBRE 2023", 
+        subtitle: "JULIO 2021 - DICIEMBRE 2023", 
         content: "La construcción del edificio que comenzó en septiembre del 2020 continuará con su etapa de obra durante los próximos 36 meses aproximadamente. Se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta durante la obra, entendiendo que a su finalización será uno de los mejores momentos para vender."
     },
     {
         step: `<icon-tools></icon-tools>`, 
         title: "Finalización de la Obra + Venta",
-        subtitle: "OCTUBRE 2023 - MARZO 2024", 
+        subtitle: "ENERO 2023 - JUNIO 2024", 
         content: "Se estima que la obra termine entre octubre y marzo del 2024 momento en el cual estimamos que las unidades habrán alcanzado el mayor valor de venta del mt²."
     },
 ];
