@@ -4,7 +4,7 @@ import { ICollapseMenuData } from 'src/app/components/collapse-menu/collapse-men
 import { IGalleryData } from 'src/app/components/gallery/gallery.component';
 import { ITimeline } from 'src/app/components/timeline/timeline.component';
 import { Project } from 'src/app/constants/project';
-import { descriptionData, faqHUB, galleryData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData, urlVideo } from 'src/app/constants/vista-belgrano';
+import { descriptionData, faqHUB, galleryData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData } from 'src/app/constants/vista-belgrano';
 import { IResume } from 'src/app/containers/resume-investment/resume-investment.component';
 import { ProjectsService } from 'src/app/services/projects.service';
 
@@ -25,7 +25,6 @@ export class VistaBelgranoScreen implements OnInit {
   resumeList:IResume[] = resumeList;
   descriptionData:string = descriptionData;
   timelineProjectData:ITimeline[] = timelineProjectData;
-  videoProjectData:string = urlVideo;
   responsibleData = responsibleData;
   faqProject:ICollapseMenuData[] = faqHUB;
 

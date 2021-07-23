@@ -3,8 +3,6 @@ import { IGalleryData } from '../components/gallery/gallery.component';
 import { ITimeline } from '../components/timeline/timeline.component';
 import { IResume } from '../containers/resume-investment/resume-investment.component';
 
-export const urlVideo:string = "https://www.youtube.com/embed/PVKcrQv_fEU";
-
 export const scrollSpyMenu = [
     {id: "#resume", content: "Resumen"},
     {id: "#description", content: "Descripción del Proyecto"},
@@ -20,7 +18,6 @@ export const galleryData:IGalleryData[] = [
     {path: "../../assets/gallery/vista-belgrano-4.jpg", id:"4", alt:"Vista Belgrano 4"},
     {path: "../../assets/gallery/vista-belgrano-5.jpg", id:"5", alt:"Vista Belgrano 5"},
     {path: "../../assets/gallery/vista-belgrano-6.jpg", id:"6", alt:"Vista Belgrano 6"},
-    {path: "../../assets/gallery/vista-belgrano-7.jpg", id:"7", alt:"Vista Belgrano 7"}
 ];
 
 export const resumeList:IResume[] = [

@@ -6,6 +6,7 @@ import { HubProjectComponent } from './hub-project/hub-project.component';
 import { InvestmentsScreensComponent } from './investments/investments.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RealEstateComponent } from './real-estate/real-estate.component';
+import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       {path: 'inversiones', component: InvestmentsScreensComponent},
       {path: 'inversiones/hub-cabildo', component: HubProjectComponent},
       {path: 'inversiones/hub-cabildo2', component: HubCabildoIiScreen},
+      {path: 'inversiones/vista-belgrano', component: VistaBelgranoScreen}
     ],
   },
   {path: '**', component: NotFoundComponent}
