@@ -1,20 +1,19 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ICollapseMenuData } from 'src/app/components/collapse-menu/collapse-menu.component';
 import { IGalleryData } from 'src/app/components/gallery/gallery.component';
 import { ITimeline } from 'src/app/components/timeline/timeline.component';
-import { descriptionData, faqHUB, galleryData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData, urlVideo } from 'src/app/constants/hub-project';
 import { Project } from 'src/app/constants/project';
+import { descriptionData, faqHUB, galleryData, responsibleData, resumeList, scrollSpyMenu, timelineProjectData, urlVideo } from 'src/app/constants/vista-belgrano';
 import { IResume } from 'src/app/containers/resume-investment/resume-investment.component';
 import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
-  selector: 'screen-hub-project',
-  templateUrl: './hub-project.component.html',
-  styleUrls: ['./hub-project.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  selector: 'screen-vista-belgrano',
+  templateUrl: './vista-belgrano.screen.html',
+  styleUrls: ['./vista-belgrano.screen.scss']
 })
-export class HubProjectComponent implements OnInit {
+export class VistaBelgranoScreen implements OnInit {
 
   data:Project;
   error:boolean;
@@ -30,15 +29,15 @@ export class HubProjectComponent implements OnInit {
   responsibleData = responsibleData;
   faqProject:ICollapseMenuData[] = faqHUB;
 
-  signIn:string = "https://clientes.balanz.com/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
-  signUp:string = "https://balanz.com/abrir-cuenta-2.aspx/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=hub-cabildo"
+  signIn:string = "https://clientes.balanz.com/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=vista-belgrano"
+  signUp:string = "https://balanz.com/abrir-cuenta-2.aspx/?utm_source=landingcrowdium&utm_medium=cta&utm_campaign=vista-belgrano"
 
   constructor(private projectS: ProjectsService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.projectS.getProjects().subscribe((data:Project[]) => {
       this.data = data.filter(obj => {
-        return obj.Slug === 'hub-cabildo';
+        return obj.Slug === 'vista-belgrano';
       })[0];
       if(this.data === undefined){
         this.router.navigateByUrl('/404', { skipLocationChange: true})

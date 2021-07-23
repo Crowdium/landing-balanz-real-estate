@@ -1,0 +1,57 @@
+<div class="project-screens">
+    <ng-container *ngIf="loading">
+        <div class="loading-full-screen">
+            <icon-loading></icon-loading>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="data && !error">
+        <ct-header id="header" [viewNav]="true" [signIn]="signIn" [signUp]="signUp">
+            <div class="header-content" [style.background-image]="'url(../../../assets/project/' + data.Slug + '.jpg)'">
+                <div class="avatar-content">
+                    <div class="avatar-progress" [tooltip]="data.Completado + '% Completado'" [scrollTop]="120">
+                        <progress-circle [progress]="data.Completado"></progress-circle>
+                        <div class="avatar-img">
+                            <img [src]="data.Logo" [alt]="data.Nombre">
+                        </div>
+                    </div>
+                    <div class="avatar-title">
+                        <h1>
+                            Invertí en {{data.Nombre}}
+                        </h1>
+                        <p>Desarrollo de Pozo en Núñez, CABA</p>
+                    </div>
+                    <div class="avatar-description">
+                        <p>
+                            Obtené una rentabilidad estimada del {{data.RentabilidadEstimada}}% en dólares en {{data.Plazo}}.
+                        </p>
+                        <a class="btn lg bg-white" [class]="{'disabled': data.Estado.Tipo > 1}" (click)="handleInvestment(signIn)">
+                            {{ data.Estado.Tipo > 1 ? 'Proyecto ' + data.Estado.Descripcion : 'Invertir Ahora'}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ct-header>
+        <div class="scroll-spy-view">
+            <scroll-spy-menu [data]="scrollSpyMenu">
+                <div class="content-panel">
+                    <gallery-map id="gallery" [data]="galleryData" [lat]="data.Geo.lat" [lng]="data.Geo.lng"></gallery-map>
+                    <resume-investment id="resume" [data]="resumeList" [status]="data.Estado" [progress]="data.Completado" [callToAction]="signIn"></resume-investment>
+                    <div class="divider"></div>
+                    <description-project id="description" [description]="descriptionData"></description-project>
+                    <div class="divider"></div>
+                    <timeline-project id="timeline" [data]="timelineProjectData"></timeline-project>
+                    <div class="divider"></div>
+                    <video-project id="video" [url]="videoProjectData"></video-project>
+                    <div class="divider"></div>
+                    <responsible-project id="responsible" [data]="responsibleData"></responsible-project>
+                    <div class="divider"></div>
+                    <faq-project id="faq" [data]="faqProject"></faq-project>
+                </div>
+            </scroll-spy-menu>
+        </div>
+        <!--<legal></legal>-->
+        <!--<from-your-mobile [callToAction]="signIn"></from-your-mobile>-->
+        <ct-footer></ct-footer>
+        <!--<partners></partners>-->
+    </ng-container>
+</div>
