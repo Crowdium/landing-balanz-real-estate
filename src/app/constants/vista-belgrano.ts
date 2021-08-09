@@ -23,7 +23,7 @@ export const galleryData:IGalleryData[] = [
 export const resumeList:IResume[] = [
     {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DÓLAR'},
     {icon: 'signal', title: 'RENTABILIDAD ESTIMADA TOTAL', value: '25~35%'},
-    {icon: 'fund', title: 'TIR ESTIMADA', value: '10,4%'},
+    {icon: 'fund', title: 'TIR ESTIMADA', value: '10,04%'},
     {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses'},
     {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
     {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
@@ -34,28 +34,19 @@ export const resumeList:IResume[] = [
 
 export const descriptionData:string = `
     <p>
-        Vista Belgrano es un complejo de departamentos próximo a estrenarse, ubicado en el barrio residencial más exclusivo de Belgrano a metros de Av. Cabildo y Juramento. 
-        Al ser una de las torres a estrenar de mayor calidad constructiva, de un exclusivo diseño arquitectónico y con una oferta de amenities única en buenos aires, Vista Belgrano 
-        se convierte en un producto de altísima demanda tanto para alquilar como para comprar.
+        <strong>Vista Belgrano</strong> es un complejo de departamentos próximo a estrenarse, ubicado en el corazón gastronómico y comercial de Belgrano a metros de Av. Cabildo y Juramento. Al ser una 
+        torre a estrenar premium, con un exclusivo diseño arquitectónico y con una oferta de amenities de primera calidad en Buenos Aires, Vista Belgrano se convierte en un producto demandado 
+        tanto para alquilar como para comprar.
     </p>
     <blockquote class="success">
-        Crowdium propone adquirir unidades próximas a estrenar con un importante de descuento con respecto al precio de mercado que serán alquiladas generando una renta para el 
-        inversor por un plazo de 36 meses, momento en el cual se venderán con un incremento sustancial en el precio, estimando generar una rentabilidad total del 25 al 35% en 
-        dólares en 36 meses.
+        A través del modelo del <b>crowdfunding inmobiliario</b>, el fideicomiso privado adquirirá unidades próximas a estrenar con un importante descuento con respecto al precio de lista, 
+        que serán <strong>alquiladas generando una renta para el inversor</strong> por un plazo de 30 meses, momento en el cual se venderán con un incremento sustancial en el precio, estimando generar así 
+        una <strong>rentabilidad total entre el 25 y 35% en dólares en 36 meses.</strong>
     </blockquote>
     <p>
-        La torre cuenta con 85 unidades distribuidas en 15 plantas, con los pisos 16 y 17 reservados para los amenities y piscina de primera calidad. La planta baja de doble altura 
-        cuenta con un amplio local comercial, espacio de coworking, sala de juegos para niños, sector de laundry, SUM con más de 100m² totalmente equipados con cocina gastronómica, 
-        boxes para recepción de envíos personales, y sus dos subsuelos reservados para las 55 cocheras. <strong>Las unidades que se adquirirán son de uno a cuatro ambientes de entre 41 a 
-        130m² permitiendo generar una oferta diversificada de departamentos para los distintos segmentos de mercado.</strong>
-    </p>
-    <p>
-        La torre se implanta en un terreno de 983mts² con 23mts de frente en el corazón gastronómico y comercial de Belgrano. El edificio posee seguridad 24hs, cámaras de 
-        vigilancia, 1.200m² de espacios comunes, 100mts² de salón de fiesta y hall de entrada de doble altura.
-    </p>
-    <p>
-        Los detalles constructivos y las terminaciones modernas hacen de Vista Belgrano un producto de altísima categoría frente a la oferta disponible en la zona lo que lo 
-        posiciona como una alternativa única a la hora de alquilar y comprar.
+        La torre cuenta con 85 unidades distribuidas en 15 plantas, con los pisos 16 y 17 reservados para los amenities con una piscina de primera calidad y dos subsuelos reservados 
+        para las 55 cocheras. <strong>Las unidades que se adquirirán son de uno a cuatro ambientes de entre 41 a 130m² permitiendo generar una oferta diversificada de departamentos para los 
+        distintos segmentos de mercado.</strong>
     </p>
     <p class="subtitle">
         ATRIBUTOS DE LA INVERSIÓN
@@ -63,7 +54,7 @@ export const descriptionData:string = `
     <ul>
         <li>
             <p>
-                <strong>Oportunidad única de compra:</strong> 34% por debajo del mercado.
+                <strong>Oportunidad única de compra:</strong> importante descuento sobre el precio de lista del desarrollador.
             </p>
         </li>
         <li>
@@ -83,17 +74,17 @@ export const descriptionData:string = `
         </li>
         <li>
             <p>
-                Proyecciones de venta conservadoras a 36 meses.
+                <strong>Proyecciones de venta conservadoras a 36 meses.</strong>
             </p>
         </li>
         <li>
             <p>
-                <strong>Obra próxima a terminarse:</strong> con posesión de las unidades en diciembre 2021.
+                <strong>Obra próxima a terminarse:</strong> : con posesión de las unidades en Diciembre 2021
             </p>
         </li>
         <li>
             <p>
-                Selección de unidades de 41 a 130 mt² promedio facilitan la posterior venta y defienden mejor el valor por mt².
+                Selección de unidades de 41 a 130 m² facilitan la posterior venta y defienden mejor el valor por m².
             </p>
         </li>
         <li>
@@ -103,9 +94,9 @@ export const descriptionData:string = `
         </li>
         <li>
             <p>
-                <strong>Amenities de primera calidad:</strong> la torre cuenta con un área de coworking, sector de laundry, más de 100 mt² de SUM, sector de juegos para niños, 
-                gimnasio con equipamiento aeróbico, seguridad las 24hs, dos subsuelos de cocheras además de cocheras de cortesía en planta baja y una piscina roof-top casi semi 
-                olímpica con una vista excepcional del río y de la ciudad de buenos aires.
+                <strong>Amenities de primera calidad:</strong> la torre cuenta con un área de coworking, sector de laundry, más de 100 m² de SUM, sector de juegos para niños, gimnasio con 
+                equipamiento aeróbico, seguridad las 24hs, dos subsuelos de cocheras además de cocheras de cortesía en planta baja y una piscina roof-top casi semi olímpica con una vista 
+                excepcional del río y de la ciudad de Buenos Aires.
             </p>
         </li>
     </ul>
@@ -113,19 +104,16 @@ export const descriptionData:string = `
         ESTRATEGIA DE SALIDA
     </p>
     <p>
-        Una vez adquiridos los departamentos, los mismos serán puestos en alquiler, para generar una renta adicional para el inversor. Al cabo de 30 meses, las unidades serán 
-        puestas a la venta con la intención de maximizar la rentabilidad de la inversión.
+        Una vez adquiridos los departamentos, <strong>Crowdium</strong> y su equipo de especialistas analizará el mercado periódicamente y definirá el mejor momento y precio al que se alquilarán 
+        y venderán las unidades, con el objetivo de maximizar el retorno de los inversores en un horizonte temporal de 36 meses.
     </p>
     <p>
-        La <strong>Fiduciaria (Compañía Fiduciaria Americana)</strong> se encargará de administrar el capital de aforo durante la vida del Fideicomiso y la posterior venta de los departamentos. 
-        A su vez, Crowdium y su equipo de especialistas definirá cuál es el mejor momento y precio al que se pueden vender las unidades, con el objetivo de que los inversores puedan 
-        percibir el mayor retorno posible.
+        La <strong>Fiduciaria CFA</strong> se encargará de administrar los fondos remanentes depositados en el fideicomiso para afrontar los gastos de mantenimiento e impuestos del fideicomiso.
     </p>
     <p>
-        Se espera que el precio de venta aumente de forma considerable debido a que las unidades se adquieren con un importante descuento por ser una compra mayorista de unidades. 
-        Sumado a ello, <strong>Vista Belgrano</strong> es un torre premium de gran escala y con una calidad constructiva de primer nivel que generará un diferencial importante respecto a cualquier 
-        otro desarrollo de la zona y logrará atraer la atención tanto de inversores como compradores finales lo que <strong>agilizará la venta y mantendrá los valores en los máximos del 
-        mercado.</strong>
+        Se espera que el precio de venta aumente sustancialmente debido a que las unidades se adquieren con un descuento por ser una compra mayorista de unidades. Además, 
+        <strong>Vista Belgrano</strong> es una torre con una calidad constructiva de primer nivel que generará un diferencial importante respecto a cualquier otro desarrollo de la zona y 
+        logrará atraer la atención de compradores finales, lo que <strong>agilizará la venta y mantendrá los valores en los máximos del mercado.</strong>
     </p>
 `;
 
@@ -134,12 +122,12 @@ export const timelineProjectData: ITimeline[] = [
         step: `<icon-acquisition></icon-acquisition>`, 
         title: "Adquisición", 
         subtitle: "SEPTIEMBRE 2021", 
-        content: "Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con importante de descuento respecto de similares departamentos en la zona."
+        content: "Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con importante descuento respecto de similares departamentos en la zona."
     },
     {
         step: `<icon-sale></icon-sale>`, 
         title: "Finalización de Obra y Renta",  
-        subtitle: "DICIEMBRE 2021 - FEBRERO 2024", 
+        subtitle: "DICIEMBRE 2021 - FEBRERO 2023", 
         content: "Una vez finalizada la obra y con la posesión de las unidades, las mismas se pondrán en alquiler y la renta se irá distribuyendo entre los inversores de forma trimestral."
     },
     {
@@ -168,6 +156,12 @@ export const responsibleData = [
         title: "2PS",
         subtitle: "PROYECTO",
         content: "Equipo multidisciplinario integrado por arquitectos proyectistas, documentadores de obra, interioristas, diseñadores, directores de obra e ingenieros abocados a cada una de las especialidades."
+    },
+    {
+        image: "../../assets/responsible/edfran.jpeg",
+        title: "EDFAN",
+        subtitle: "CONSTRUCTURA",
+        content: "Constructora con más de 30 años en el mercado especializada en estructuras de hormigón, albañilería, obras llave en mano e ingeniería civil para grandes desarrollos de infraestructura. Son una de las constructoras mas importantes del país con más de 125.000m2 construidos e importantes obras realizadas como el edificio Samsumg, el banco de Tokio de la ciudad de Buenos Aires y la Universidad de Belgrano."
     }
 ];
 

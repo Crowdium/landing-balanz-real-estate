@@ -1,0 +1,47 @@
+<div class="project-screens">
+    <ng-container>
+        <ct-header id="header" [viewNav]="true" [signIn]="signIn" [signUp]="signUp">
+            <div class="header-content" [style.background-image]="'url(../../../assets/project/vista-belgrano.jpg)'">
+                <div class="avatar-content">
+                    <div class="avatar-progress" [tooltip]="20 + '% Completado'" [scrollTop]="120">
+                        <progress-circle [progress]="20"></progress-circle>
+                        <div class="avatar-img">
+                            <img [src]="'https://www.crowdium.com.ar/img/proyectos/vista-belgrano/logo.jpg'" alt="Vista Belgrano">
+                        </div>
+                    </div>
+                    <div class="avatar-title">
+                        <h1>
+                            Invertí en Vista Belgrano
+                        </h1>
+                        <p>Departamentos para renta en Belgrano, CABA</p>
+                    </div>
+                    <div class="avatar-description">
+                        <p>
+                            Obtené una rentabilidad estimada del 25~35% en dólares en 36 meses.
+                        </p>
+                        <a class="btn lg bg-white" (click)="handleInvestment(signIn)">
+                            Invertir Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ct-header>
+        <div class="scroll-spy-view">
+            <scroll-spy-menu [data]="scrollSpyMenu">
+                <div class="content-panel">
+                    <gallery-map id="gallery" [data]="galleryData" [lat]="-34.5603002" [lng]="-58.4614684"></gallery-map>
+                    <resume-investment id="resume" [data]="resumeList" [status]="1" [progress]="20" [callToAction]="signIn"></resume-investment>
+                    <div class="divider"></div>
+                    <description-project id="description" [description]="descriptionData"></description-project>
+                    <div class="divider"></div>
+                    <timeline-project id="timeline" [data]="timelineProjectData"></timeline-project>
+                    <div class="divider"></div>
+                    <responsible-project id="responsible" [data]="responsibleData"></responsible-project>
+                    <div class="divider"></div>
+                    <faq-project id="faq" [data]="faqProject"></faq-project>
+                </div>
+            </scroll-spy-menu>
+        </div>
+        <ct-footer></ct-footer>
+    </ng-container>
+</div>

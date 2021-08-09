@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { DirectivesModule } from '../directives/directives.module';
 import { HubCabildoIiScreen } from './hub-cabildo-ii/hub-cabildo-ii.screen';
 import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
+import { VistaBelgranoMock } from './mock-screen/vista-belgrano/vista-belgrano.mock';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
     HubProjectComponent,
     NotFoundComponent,
     HubCabildoIiScreen,
-    VistaBelgranoScreen
+    VistaBelgranoScreen,
+    VistaBelgranoMock
   ],
   imports: [
     CommonModule,
@@ -44,7 +46,8 @@ import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
     HubProjectComponent,
     NotFoundComponent,
     HubCabildoIiScreen,
-    VistaBelgranoScreen
+    VistaBelgranoScreen,
+    VistaBelgranoMock
   ]
 })
 export class ScreensModule { }
