@@ -39,9 +39,9 @@ export const descriptionData:string = `
         tanto para alquilar como para comprar.
     </p>
     <blockquote class="success">
-        A través del modelo del <b>crowdfunding inmobiliario</b>, el fideicomiso privado adquirirá unidades próximas a estrenar con un importante descuento con respecto al precio de lista, 
-        que serán <strong>alquiladas generando una renta para el inversor</strong> por un plazo de 30 meses, momento en el cual se venderán con un incremento sustancial en el precio, estimando generar así 
-        una <strong>rentabilidad total entre el 25 y 35% en dólares en 36 meses.</strong>
+        A través del modelo del <b>crowdfunding inmobiliario</b>, el fideicomiso privado adquirirá unidades próximas a estrenar con un importante descuento con respecto al precio de lista 
+        que serán <b>alquiladas generando una renta para el inversor</b> y luego se venderán con un incremento sustancial en el precio, estimando generar así una <strong>rentabilidad 
+        total entre el 25 y 35% en dólares en 36 meses.</strong>
     </blockquote>
     <p>
         La torre cuenta con 85 unidades distribuidas en 15 plantas, con los pisos 16 y 17 reservados para los amenities con una piscina de primera calidad y dos subsuelos reservados 
@@ -245,14 +245,13 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Qué seguridad tiene mi inversión sobre el proyecto?",
         content: `
             <p>
-                En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este 
-                caso, Tiscornia y Obras & Sistemas son unos de los desarrolladores y constructora más grande de la Argentina con el 100% de obras terminadas teniendo 
-                entre sus proyectos obras de gran envergadura como más de 65 obras de envergadura, como el aeropuerto del Palomar, Star Tower Olivos, Shopping San Justo, 
-                el Instituto de Neurociencias de Buenos Aires o el Faena Art Center.
+                En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este caso, Boston Andes y 
+                Edfan son unos de los desarrolladores y constructora más importante de la Argentina con el 100% de obras terminadas teniendo entre sus proyectos obras como el edificio Samsumg, 
+                el banco de Tokio de la ciudad de Buenos Aires y la Universidad de Belgrano.
             </p>
             <p>
-                En segundo lugar, <strong>Vista Belgrano</strong> tiene la tierra comprada y paga al 100% y más del 70% de las unidades vendidas, con lo cual ya posee el capital necesario 
-                para finalizar la obra.
+                En segundo lugar, <strong>Vista Belgrano</strong> se encuentra príoximo a entregar las unidades terminadas en diciembre del 2021 reduciendo al mínimo el principal riesgo de los desarrollos 
+                inmobiliarios que son los tiempos de obra.
             </p>
         `
     },
@@ -260,8 +259,9 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cuándo recibo los retornos de mi inversión?",
         content: `
             <p>
-                Una vez realizada la compra de los departamentos, se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta durante la obra, 
-                entendiendo que a su finalización será uno de los mejores momentos. A medida se vayan vendiendo las unidades, se distribuirá el resultado de cada venta.
+                Una vez terminada la obra y entregados los departamentos, los mismos serán alquilados generando una renta que se distribuirá trimestralmente entre los inversores. 
+                Al mismo tiempo, se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta de las unidades. A medida se vayan vendiendo los departamentos, 
+                se distribuirá el resultado de cada venta.
             </p>
         `
     },
@@ -305,9 +305,8 @@ export const faqHUB: ICollapseMenuData[] = [
         title: "¿Cuáles son los factores de riesgo?",
         content: `
             <p>
-                El riesgo de participar en este proyecto es el de participar en la compra de departamentos desde el pozo. Adicionalmente, para reducir los riesgos 
-                inherentes del mercado inmobiliario, se han realizado las debidas diligencias de todos los involucrados en el desarrollo del proyecto 
-                <strong>Vista Belgrano<strong>.
+                El riesgo de participar en este proyecto es el de participar en la compra de departamentos próximos a estrenasrse. Adicionalmente, para reducir los riesgos inherentes 
+                del mercado inmobiliario, se han realizado las debidas diligencias de todos los involucrados en el desarrollo del proyecto <strong>Vista Belgrano.</strong>
             </p>
         `
     },
