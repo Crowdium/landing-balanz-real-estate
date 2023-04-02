@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'icon-user',
-  templateUrl: './icon-user.component.html',
-  styleUrls: ['./icon-user.component.scss']
+    selector: 'icon-user',
+    templateUrl: './icon-user.component.html',
+    styleUrls: ['./icon-user.component.scss'],
 })
 export class IconUserComponent implements OnInit {
+    constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

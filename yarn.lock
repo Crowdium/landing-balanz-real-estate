@@ -201,7 +201,7 @@
   dependencies:
     "tslib" "^2.0.0"
 
-"@angular/compiler-cli@~11.0.5":
+"@angular/compiler-cli@~11.0.5", "@angular/compiler-cli@11.0.9":
   "integrity" "sha512-1EbnDdK2Em9xpnbLCjw+9w2F0I6gl5AS6QAn03ztYX9ZooNzCeC6sT8qghzrNTFTV89nyIoAqyMtgcLS6udVkg=="
   "resolved" "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-11.0.5.tgz"
   "version" "11.0.5"
@@ -222,7 +222,7 @@
     "tslib" "^2.0.0"
     "yargs" "^16.1.1"
 
-"@angular/compiler@~11.0.5":
+"@angular/compiler@~11.0.5", "@angular/compiler@11.0.9":
   "integrity" "sha512-japxEn07P9z9FnW8ii+M5DIfgRAGNxl6QNQWKBkNo5ytN6iCAB7pVbJI0vn1AUT9TByV3+xDW/FNuoSuzsnX3w=="
   "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-11.0.5.tgz"
   "version" "11.0.5"

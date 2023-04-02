@@ -1,4 +1,4 @@
-.from-your-mobile{
+.from-your-mobile {
     background-color: #01255c;
     color: #ffffff;
     display: flex;
@@ -7,53 +7,52 @@
     padding: 60px;
     margin-top: 120px;
 
-    &-apps{
+    &-apps {
         width: 40%;
         min-width: 290px;
         text-align: center;
         margin-right: 30px;
 
-
-        & h1{
+        & h1 {
             font-size: 25px;
             margin-bottom: 20px;
         }
 
-        & p{
+        & p {
             font-size: 14px;
             color: #ffffff;
         }
-        & .btn.outline{
+        & .btn.outline {
             color: #ffffff;
             border-color: #ffffff;
         }
     }
 
-    &-img{
+    &-img {
         width: 40%;
 
-        & img{
+        & img {
             width: 100%;
             display: block;
         }
     }
 }
-@media (max-width: 912px){
-    .from-your-mobile{
+@media (max-width: 912px) {
+    .from-your-mobile {
         margin-top: 60px;
         padding: 10px;
         flex-direction: column-reverse;
-        
-        &-img{
+
+        &-img {
             width: 100%;
             padding: 10px;
         }
 
-        &-apps{
+        &-apps {
             width: 100%;
             margin-right: 0;
             padding: 10px;
-            & h1{
+            & h1 {
                 margin-bottom: 15px;
             }
         }

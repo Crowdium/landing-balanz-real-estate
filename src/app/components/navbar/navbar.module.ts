@@ -5,23 +5,19 @@ import { NavbarLeftComponent } from './navbar-left/navbar-left.component';
 import { NavbarRightComponent } from './navbar-right/navbar-right.component';
 import { NavbarCenterComponent } from './navbar-center/navbar-center.component';
 
-
-
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    NavbarLeftComponent,
-    NavbarRightComponent,
-    NavbarCenterComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    NavbarComponent,
-    NavbarLeftComponent,
-    NavbarRightComponent,
-    NavbarCenterComponent
-  ]
+    declarations: [
+        NavbarComponent,
+        NavbarLeftComponent,
+        NavbarRightComponent,
+        NavbarCenterComponent,
+    ],
+    imports: [CommonModule],
+    exports: [
+        NavbarComponent,
+        NavbarLeftComponent,
+        NavbarRightComponent,
+        NavbarCenterComponent,
+    ],
 })
-export class NavbarModule { }
+export class NavbarModule {}

@@ -4,35 +4,66 @@ import { ITimeline } from '../components/timeline/timeline.component';
 import { IResume } from '../containers/resume-investment/resume-investment.component';
 
 export const scrollSpyMenu = [
-    {id: "#resume", content: "Resumen"},
-    {id: "#description", content: "Descripción del Proyecto"},
-    {id: "#timeline", content: "Línea de Tiempo"},
-    {id: "#responsible", content: "Responsables"},
-    {id: "#faq", content: "Preguntas Frecuentes"},
+    { id: '#resume', content: 'Resumen' },
+    { id: '#description', content: 'Descripción del Proyecto' },
+    { id: '#timeline', content: 'Línea de Tiempo' },
+    { id: '#responsible', content: 'Responsables' },
+    { id: '#faq', content: 'Preguntas Frecuentes' },
 ];
 
-export const galleryData:IGalleryData[] = [
-    {path: "../../assets/gallery/vista-belgrano-1.jpg", id:"1", alt:"Vista Belgrano 1"},
-    {path: "../../assets/gallery/vista-belgrano-2.jpg", id:"2", alt:"Vista Belgrano 2"},
-    {path: "../../assets/gallery/vista-belgrano-3.jpg", id:"3", alt:"Vista Belgrano 3"},
-    {path: "../../assets/gallery/vista-belgrano-4.jpg", id:"4", alt:"Vista Belgrano 4"},
-    {path: "../../assets/gallery/vista-belgrano-5.jpg", id:"5", alt:"Vista Belgrano 5"},
-    {path: "../../assets/gallery/vista-belgrano-6.jpg", id:"6", alt:"Vista Belgrano 6"},
+export const galleryData: IGalleryData[] = [
+    {
+        path: '../../assets/gallery/vista-belgrano-1.jpg',
+        id: '1',
+        alt: 'Vista Belgrano 1',
+    },
+    {
+        path: '../../assets/gallery/vista-belgrano-2.jpg',
+        id: '2',
+        alt: 'Vista Belgrano 2',
+    },
+    {
+        path: '../../assets/gallery/vista-belgrano-3.jpg',
+        id: '3',
+        alt: 'Vista Belgrano 3',
+    },
+    {
+        path: '../../assets/gallery/vista-belgrano-4.jpg',
+        id: '4',
+        alt: 'Vista Belgrano 4',
+    },
+    {
+        path: '../../assets/gallery/vista-belgrano-5.jpg',
+        id: '5',
+        alt: 'Vista Belgrano 5',
+    },
+    {
+        path: '../../assets/gallery/vista-belgrano-6.jpg',
+        id: '6',
+        alt: 'Vista Belgrano 6',
+    },
 ];
 
-export const resumeList:IResume[] = [
-    {icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DÓLAR'},
-    {icon: 'signal', title: 'RENTABILIDAD ESTIMADA TOTAL', value: '25~35%'},
-    {icon: 'fund', title: 'TIR ESTIMADA', value: '10,04%'},
-    {icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses'},
-    {icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000'},
-    {icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L'},
-    {icon: 'bank', title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA', value: 'Compañía Fiduciaria Americana S.A.'},
-    {icon: 'profile', title: 'VEHÍCULO LEGAL', value: 'Fideicomiso privado sin autorización de oferta pública por CNV'},
+export const resumeList: IResume[] = [
+    { icon: 'dollar-circle', title: 'MONEDA DEL FONDO', value: 'DÓLAR' },
+    { icon: 'signal', title: 'RENTABILIDAD ESTIMADA TOTAL', value: '25~35%' },
+    { icon: 'fund', title: 'TIR ESTIMADA', value: '10,04%' },
+    { icon: 'clock-circle', title: 'DURACIÓN ESTIMADA', value: '36 meses' },
+    { icon: 'pie-chart', title: 'INVERSIÓN MÍNIMA', value: 'USD 1.000' },
+    { icon: 'project', title: 'OPERADOR', value: 'Crowdium S.R.L' },
+    {
+        icon: 'bank',
+        title: 'FIDUCIARIA PÚBLICA ADMINISTRADORA',
+        value: 'Compañía Fiduciaria Americana S.A.',
+    },
+    {
+        icon: 'profile',
+        title: 'VEHÍCULO LEGAL',
+        value: 'Fideicomiso privado sin autorización de oferta pública por CNV',
+    },
 ];
 
-
-export const descriptionData:string = `
+export const descriptionData: string = `
     <p>
         <strong>Vista Belgrano</strong> es un complejo de departamentos próximo a estrenarse, ubicado en el corazón gastronómico y comercial de Belgrano a metros de Av. Cabildo y Juramento. Al ser una 
         torre a estrenar premium, con un exclusivo diseño arquitectónico y con una oferta de amenities de primera calidad en Buenos Aires, Vista Belgrano se convierte en un producto demandado 
@@ -119,73 +150,80 @@ export const descriptionData:string = `
 
 export const timelineProjectData: ITimeline[] = [
     {
-        step: `<icon-acquisition></icon-acquisition>`, 
-        title: "Adquisición", 
-        subtitle: "SEPTIEMBRE 2021", 
-        content: "Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con importante descuento respecto de similares departamentos en la zona."
+        step: `<icon-acquisition></icon-acquisition>`,
+        title: 'Adquisición',
+        subtitle: 'SEPTIEMBRE 2021',
+        content:
+            'Una vez finalizada la etapa de fondeo, la fiduciaria ordenará la compra de las unidades con importante descuento respecto de similares departamentos en la zona.',
     },
     {
-        step: `<icon-sale></icon-sale>`, 
-        title: "Finalización de Obra y Renta",  
-        subtitle: "DICIEMBRE 2021 - FEBRERO 2023", 
-        content: "Una vez finalizada la obra y con la posesión de las unidades, las mismas se pondrán en alquiler y la renta se irá distribuyendo entre los inversores de forma trimestral."
+        step: `<icon-sale></icon-sale>`,
+        title: 'Finalización de Obra y Renta',
+        subtitle: 'DICIEMBRE 2021 - FEBRERO 2023',
+        content:
+            'Una vez finalizada la obra y con la posesión de las unidades, las mismas se pondrán en alquiler y la renta se irá distribuyendo entre los inversores de forma trimestral.',
     },
     {
-        step: `<icon-tools></icon-tools>`, 
-        title: "Finalización de la Obra + Período de Venta",
-        subtitle: "MARZO 2024 - SEPTIEMBRE 2024", 
-        content: "Luego de haber considerado un plazo de 30 meses, se pondrán en venta las unidades a partir de marzo del 2024 buscando lograr la mayor rentabilidad para el inversor."
+        step: `<icon-tools></icon-tools>`,
+        title: 'Finalización de la Obra + Período de Venta',
+        subtitle: 'MARZO 2024 - SEPTIEMBRE 2024',
+        content:
+            'Luego de haber considerado un plazo de 30 meses, se pondrán en venta las unidades a partir de marzo del 2024 buscando lograr la mayor rentabilidad para el inversor.',
     },
 ];
 
 export const responsibleData = [
     {
-        image: "../../assets/responsible/boston.jpeg",
-        title: "Boston Andes Capital",
-        subtitle: "DESARROLLO",
-        content: "BAC es una firma de inversiones en real estate, que organiza proyectos de capital privado y se especializa en la estructuración, desarrollo, gerenciamiento de activos y consultoría. BAC tiene su sede central en Boston, MA y actividades en varias ciudades de Estados Unidos y América Latina"
+        image: '../../assets/responsible/boston.jpeg',
+        title: 'Boston Andes Capital',
+        subtitle: 'DESARROLLO',
+        content:
+            'BAC es una firma de inversiones en real estate, que organiza proyectos de capital privado y se especializa en la estructuración, desarrollo, gerenciamiento de activos y consultoría. BAC tiene su sede central en Boston, MA y actividades en varias ciudades de Estados Unidos y América Latina',
     },
     {
-        image: "../../assets/responsible/estudiogsa.jpeg",
-        title: "Estudio GS",
-        subtitle: "DIRECCIÓN",
-        content: "Estudio con más de 30 años dedicado a la organización de proyectos de construcción (Gerenciamiento, Dirección de Obra, Programación y seguimiento por Camino Crítico)."
+        image: '../../assets/responsible/estudiogsa.jpeg',
+        title: 'Estudio GS',
+        subtitle: 'DIRECCIÓN',
+        content:
+            'Estudio con más de 30 años dedicado a la organización de proyectos de construcción (Gerenciamiento, Dirección de Obra, Programación y seguimiento por Camino Crítico).',
     },
     {
-        image: "../../assets/responsible/2ps.jpeg",
-        title: "2PS",
-        subtitle: "PROYECTO",
-        content: "Equipo multidisciplinario integrado por arquitectos proyectistas, documentadores de obra, interioristas, diseñadores, directores de obra e ingenieros abocados a cada una de las especialidades."
+        image: '../../assets/responsible/2ps.jpeg',
+        title: '2PS',
+        subtitle: 'PROYECTO',
+        content:
+            'Equipo multidisciplinario integrado por arquitectos proyectistas, documentadores de obra, interioristas, diseñadores, directores de obra e ingenieros abocados a cada una de las especialidades.',
     },
     {
-        image: "../../assets/responsible/edfran.jpeg",
-        title: "EDFAN",
-        subtitle: "CONSTRUCTURA",
-        content: "Constructora con más de 30 años en el mercado especializada en estructuras de hormigón, albañilería, obras llave en mano e ingeniería civil para grandes desarrollos de infraestructura. Son una de las constructoras mas importantes del país con más de 125.000m2 construidos e importantes obras realizadas como el edificio Samsumg, el banco de Tokio de la ciudad de Buenos Aires y la Universidad de Belgrano."
-    }
+        image: '../../assets/responsible/edfran.jpeg',
+        title: 'EDFAN',
+        subtitle: 'CONSTRUCTURA',
+        content:
+            'Constructora con más de 30 años en el mercado especializada en estructuras de hormigón, albañilería, obras llave en mano e ingeniería civil para grandes desarrollos de infraestructura. Son una de las constructoras mas importantes del país con más de 125.000m2 construidos e importantes obras realizadas como el edificio Samsumg, el banco de Tokio de la ciudad de Buenos Aires y la Universidad de Belgrano.',
+    },
 ];
 
 export const faqHUB: ICollapseMenuData[] = [
     {
-        title: "¿Qué es el Crowdfunding?",
+        title: '¿Qué es el Crowdfunding?',
         content: `
             <p>
                 Crowdfunding, del inglés Crowd (masa o multitud) y Funding (financiamiento o fondeo). La financiación colectiva, es la cooperación conjunta llevada a 
                 cabo por personas que forman una red para conseguir dinero u otros recursos.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Tiene algún riesgo el Crowdfunding?",
+        title: '¿Tiene algún riesgo el Crowdfunding?',
         content: `
             <p>
                 No, el crowdfunding en sí significa simplemente “financiamiento colectivo”. El riesgo está asociado únicamente al activo subyacente. En este caso, 
                 el crowdfunding está aplicado al mercado inmobiliario que históricamente es uno de los mercado mas seguros y rentables del mundo.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Qué es el Crowdfunding Inmobiliario?",
+        title: '¿Qué es el Crowdfunding Inmobiliario?',
         content: `
             <p>
                 El Crowdfunding aplicado al Mercado Inmobiliario le brinda a los clientes la posibilidad de participar en grandes proyectos con tickets de inversión 
@@ -195,54 +233,54 @@ export const faqHUB: ICollapseMenuData[] = [
             <p>
                 Por ejemplo, un proyecto inmobiliario de USD 10.000.000 puede ser financiado por 1.000 participantes que invierten USD10.000 cada uno.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cuál es la rentabilidad estimada del proyecto?",
+        title: '¿Cuál es la rentabilidad estimada del proyecto?',
         content: `
             <p>
                 La rentabilidad total estimada que propone este proyecto (ROI) es entre el 25 y 35% en dólares en un plazo aproximado de 36 meses.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cuál es la TIR estimada del proyecto?",
+        title: '¿Cuál es la TIR estimada del proyecto?',
         content: `
             <p>
                 La tasa interna de retorno estimada para este proyecto es del 10,4%.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Por qué el calculo de la rentabilidad, TIR y plazo son estimados?",
+        title: '¿Por qué el calculo de la rentabilidad, TIR y plazo son estimados?',
         content: `
             <p>
                 Hablamos de estimaciones en el calculo de la rentabilidades, TIR y plazo porque las unidades pueden venderse escalonadamente antes o después del plazo 
                 estimado de inversión y los valores de venta pueden fluctuar de acuerdo con las condiciones de venta del mercado.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Para qué se utilizará mi inversión?",
+        title: '¿Para qué se utilizará mi inversión?',
         content: `
             <p>
                 El dinero se utilizará para la compra mayorista de departamentos en la semitorre Vista Belgrano que se encuentra actualmente en etapa de construcción y todos 
                 los gastos e impuestos, adquisición y mantenimiento del proyecto durante el plazo estimado de inversión. Posteriormente, estas unidades serán vendidas y el 
                 resultado será distribuido entre todos los inversores.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cómo se instrumentará la compra de las unidades?",
+        title: '¿Cómo se instrumentará la compra de las unidades?',
         content: `
             <p>
                 Una vez reunido el capital, el Fideicomiso realizará la compraventa de los departamentos a precio cerrado y de contado que se instrumentará a través de 
                 una adhesión al fideicomiso de obra quien lleva acabo el desarrollo del inmueble.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Qué seguridad tiene mi inversión sobre el proyecto?",
+        title: '¿Qué seguridad tiene mi inversión sobre el proyecto?',
         content: `
             <p>
                 En primer lugar, la seguridad de los proyectos inmobiliarios en construcción esta dado por la trayectoria del desarrollador y la constructora. En este caso, Boston Andes y 
@@ -253,112 +291,112 @@ export const faqHUB: ICollapseMenuData[] = [
                 En segundo lugar, <strong>Vista Belgrano</strong> se encuentra príoximo a entregar las unidades terminadas en diciembre del 2021 reduciendo al mínimo el principal riesgo de los desarrollos 
                 inmobiliarios que son los tiempos de obra.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cuándo recibo los retornos de mi inversión?",
+        title: '¿Cuándo recibo los retornos de mi inversión?',
         content: `
             <p>
                 Una vez terminada la obra y entregados los departamentos, los mismos serán alquilados generando una renta que se distribuirá trimestralmente entre los inversores. 
                 Al mismo tiempo, se analizará periódicamente el mercado a fin de encontrar el mejor momento de venta de las unidades. A medida se vayan vendiendo los departamentos, 
                 se distribuirá el resultado de cada venta.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cuánto es el monto mínimo de inversión?",
+        title: '¿Cuánto es el monto mínimo de inversión?',
         content: `
             <p>
                 El monto mínimo de inversión es de USD 1.000.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Por qué medios puedo invertir?",
+        title: '¿Por qué medios puedo invertir?',
         content: `
             <p>
                 Transferencia bancaria en pesos o dólares o mediante títulos directamente desde tu comitente.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Qué obtengo con mi inversión?",
+        title: '¿Qué obtengo con mi inversión?',
         content: `
             <p>
                 Cada inversor recibirá un porcentaje de participación en el fideicomiso equivalente a una cantidad de m2 y dinero remanente en la cuenta bancaria del 
                 fidecomiso para afrontar los gastos de mantenimiento del proyecto durante todo el plazo estimado de inversión. Este porcentaje corresponderá al cociente 
                 entre la inversión sobre el capital fideicomitido total.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cómo me aseguran que mi dinero se usará en lo que estoy invirtiendo?",
+        title: '¿Cómo me aseguran que mi dinero se usará en lo que estoy invirtiendo?',
         content: `
             <p>
                 Tu inversión estará reguardada en la cuenta bancaria del fideicomiso en dólares hasta completar el cupo necesario para la compra mayorista de los 
                 departamentos y será administrado por una fiduciaria pública registrada en la Comisión Nacional de Valores (CNV). Crowdium en ningún momento tiene acceso 
                 al capital invertido ya que el dinero es transferido directamente a la cuenta del fideicomiso.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cuáles son los factores de riesgo?",
+        title: '¿Cuáles son los factores de riesgo?',
         content: `
             <p>
                 El riesgo de participar en este proyecto es el de participar en la compra de departamentos próximos a estrenasrse. Adicionalmente, para reducir los riesgos inherentes 
                 del mercado inmobiliario, se han realizado las debidas diligencias de todos los involucrados en el desarrollo del proyecto <strong>Vista Belgrano.</strong>
             </p>
-        `
+        `,
     },
     {
-        title: "¿Quién administra el capital?",
+        title: '¿Quién administra el capital?',
         content: `
             <p>
                 El capital es administrado por CFA, Compañía Fiduciaria Americana, una fiduciaria pública registrada en la Comisión Nacional de Valores.
             </p>
-        `
+        `,
     },
     {
-        title: "¿La inversión es en pesos o en dólares?",
+        title: '¿La inversión es en pesos o en dólares?',
         content: `
             <p>
                 La inversión es en dólares.
             </p>
-        `
+        `,
     },
     {
-        title: "¿En qué moneda puedo invertir?",
+        title: '¿En qué moneda puedo invertir?',
         content: `
             <p>
                 La forma de suscripción al proyecto podrá ser mediante transferencia bancaria en pesos o dólares a la cuenta del fideicomiso u  a través de títulos 
                 operando directamente a través de tu cuenta comitente en Balanz.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Tengo gastos adicionales o de mantenimiento durante la vida del proyecto?",
+        title: '¿Tengo gastos adicionales o de mantenimiento durante la vida del proyecto?',
         content: `
             <p>
                 La inversión tiene contemplados todos los gastos de adquisición, impuestos y mantenimiento del proyecto durante el plazo estimado de inversión.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Cómo me informo sobre el avance de mis inversiones?",
+        title: '¿Cómo me informo sobre el avance de mis inversiones?',
         content: `
             <p>
                 Se mantendrá informado al inversor de forma periódica a través de notificaciones y/o correo electrónico asociado a su cuenta en Balanz.
             </p>
-        `
+        `,
     },
     {
-        title: "¿Qué ocurre si no se recauda el 100% del capital requerido para un proyecto en el tiempo preestablecido?",
+        title: '¿Qué ocurre si no se recauda el 100% del capital requerido para un proyecto en el tiempo preestablecido?',
         content: `
             <p>
                 Si no se recauda el 100% del capital requerido, se podrá realizar una compra parcial de las unidades. En caso de recaudar menos del 50% del capital 
                 requerido, el dinero será devuelto a los usuarios en su totalidad descontando el impuesto a los Débitos y Créditos bancarios de acuerdo con lo 
                 establecido en la Ley 25.413.
             </p>
-        `
+        `,
     },
-]
+];

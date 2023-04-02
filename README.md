@@ -5,13 +5,14 @@ El proyecto fue desarrollado en [Angular 11.0.5](https://angular.io/docs).
 # Instalación:
 
 ## Requisitos
-- [GIT](https://git-scm.com/)
-- [NodeJS](https://nodejs.org/es/)
-- [Yarn](https://yarnpkg.com/) opcional
+
+-   [GIT](https://git-scm.com/)
+-   [NodeJS](https://nodejs.org/es/)
+-   [Yarn](https://yarnpkg.com/) opcional
 
 ### Clonar el proyecto
 
-Una vez instalado git, el siguiente paso es clonar nuestro proyecto. Para eso introduciremos el siguiente comando en nuestra terminal. 
+Una vez instalado git, el siguiente paso es clonar nuestro proyecto. Para eso introduciremos el siguiente comando en nuestra terminal.
 
 `git clone https://github.com/newlinkcapital/landing-balanz-real-estate.git`
 
@@ -22,6 +23,7 @@ Una vez finalizado la clonación del proyecto, pasaremos a instalar los paquetes
 `yarn install` o `npm install`
 
 ### Configuración
+
 En la carpeta `src/app/constants` agregar `config.ts` y agregar el siguente script con los datos de `api_key` y `endpoint` proporcionados por crowdium.
 
 ```typescript
@@ -52,7 +54,6 @@ Consulte la sección sobre [ng test](https://angular.io/cli/test) para obtener m
 Esto permitira crear un componenetes para el proyecto en `name` se debe espeficiar la ruta y el nombre del componente. \
 Ej: `ng g component containers/about-ci`
 
-
 # Modo Producción
 
 ## Build
@@ -66,4 +67,3 @@ La compilación se minimiza y los nombres de archivo incluyen los hash. \
 ¡Su aplicación está lista para implementarse!
 
 Consulte la sección sobre [implementación](https://angular.io/guide/deployment) para obtener más información.
-

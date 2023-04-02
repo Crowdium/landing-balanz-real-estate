@@ -1,17 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'description-project',
-  templateUrl: './description-project.component.html',
-  styleUrls: ['./description-project.component.scss']
+    selector: 'description-project',
+    templateUrl: './description-project.component.html',
+    styleUrls: ['./description-project.component.scss'],
 })
 export class DescriptionProjectComponent implements OnInit {
-  
-  @Input() description:string;
+    @Input() description: string;
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

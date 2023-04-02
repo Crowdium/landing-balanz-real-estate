@@ -1,25 +1,24 @@
-.doughnut-icon{
-
-    & .doughnut-icon-1, 
-    & .doughnut-icon-3, 
+.doughnut-icon {
+    & .doughnut-icon-1,
+    & .doughnut-icon-3,
     & .doughnut-icon-4 {
         fill: none;
     }
-    
+
     & .doughnut-icon-2 {
         clip-path: url(#clip-path);
     }
-    
+
     & .doughnut-icon-3 {
         stroke: #fff;
     }
-    
-    & .doughnut-icon-3, 
+
+    & .doughnut-icon-3,
     & .doughnut-icon-4 {
         stroke-miterlimit: 10;
         stroke-width: 14px;
     }
-    
+
     & .doughnut-icon-4 {
         stroke: #fdfeff;
     }

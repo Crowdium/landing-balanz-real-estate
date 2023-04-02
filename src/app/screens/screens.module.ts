@@ -18,36 +18,36 @@ import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
 import { VistaBelgranoMock } from './mock-screen/vista-belgrano/vista-belgrano.mock';
 
 @NgModule({
-  declarations: [
-    HomeComponent, 
-    RealEstateComponent, 
-    InvestmentsScreensComponent, 
-    HubProjectComponent,
-    NotFoundComponent,
-    HubCabildoIiScreen,
-    VistaBelgranoScreen,
-    VistaBelgranoMock
-  ],
-  imports: [
-    CommonModule,
-    ContainersModule,
-    ComponentsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    FontAwesomeModule,
-    AssetsModule,
-    RouterModule,
-    DirectivesModule
-  ],
-  exports: [
-    HomeComponent, 
-    RealEstateComponent,
-    InvestInRealEstateComponent,
-    HubProjectComponent,
-    NotFoundComponent,
-    HubCabildoIiScreen,
-    VistaBelgranoScreen,
-    VistaBelgranoMock
-  ]
+    declarations: [
+        HomeComponent,
+        RealEstateComponent,
+        InvestmentsScreensComponent,
+        HubProjectComponent,
+        NotFoundComponent,
+        HubCabildoIiScreen,
+        VistaBelgranoScreen,
+        VistaBelgranoMock,
+    ],
+    imports: [
+        CommonModule,
+        ContainersModule,
+        ComponentsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        FontAwesomeModule,
+        AssetsModule,
+        RouterModule,
+        DirectivesModule,
+    ],
+    exports: [
+        HomeComponent,
+        RealEstateComponent,
+        InvestInRealEstateComponent,
+        HubProjectComponent,
+        NotFoundComponent,
+        HubCabildoIiScreen,
+        VistaBelgranoScreen,
+        VistaBelgranoMock,
+    ],
 })
-export class ScreensModule { }
+export class ScreensModule {}

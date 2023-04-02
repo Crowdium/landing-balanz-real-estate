@@ -1,46 +1,66 @@
 <cp-card>
     <card-head>
         <div class="card-img">
-            <img [src]="data.Imagen" [alt]="data.Nombre" [class]="data.ImagenOrientacion">
+            <img
+                [src]="data.Imagen"
+                [alt]="data.Nombre"
+                [class]="data.ImagenOrientacion"
+            />
         </div>
         <div class="card-label">
-            {{data.Tipo}}
+            {{ data.Tipo }}
         </div>
     </card-head>
     <card-body>
-        <div #cardProfile class="card-profile" [class]="{'card-profile-column': isColumnProfile}">
+        <div
+            #cardProfile
+            class="card-profile"
+            [class]="{ 'card-profile-column': isColumnProfile }"
+        >
             <div class="card-profile-avatar">
-                <img [src]="data.Logo" [alt]="data.Nombre"/>
+                <img [src]="data.Logo" [alt]="data.Nombre" />
             </div>
             <div class="card-profile-content">
                 <div class="card-profile-title">
-                    {{data.Nombre}}
+                    {{ data.Nombre }}
                 </div>
                 <div class="card-profile-description">
                     <fa-icon [icon]="faMapMarketAlt"></fa-icon>
-                    {{data.Ubicacion}}
+                    {{ data.Ubicacion }}
                 </div>
             </div>
         </div>
         <div class="card-content">
             <div class="card-item">
                 <div class="card-item-title">MONEDA DEL FONDO</div>
-                <div class="card-item-value">{{data.Moneda}}</div>
+                <div class="card-item-value">{{ data.Moneda }}</div>
             </div>
             <div class="card-item">
                 <div class="card-item-title">RENTABILIDAD ESTIMADA TOTAL:</div>
-                <div class="card-item-value">{{data.RentabilidadEstimada}}%</div>
+                <div class="card-item-value">
+                    {{ data.RentabilidadEstimada }}%
+                </div>
             </div>
             <div class="card-item">
                 <div class="card-item-title">TIR ESTIMADA:</div>
-                <div class="card-item-value">{{data.TirEstimada.toString().replace('.', ',')}}%</div>
+                <div class="card-item-value">
+                    {{ data.TirEstimada.toString().replace(".", ",") }}%
+                </div>
             </div>
             <div class="card-item">
                 <div class="card-item-title">DURACIÓN ESTIMADA:</div>
-                <div class="card-item-value">{{data.Plazo}}</div>
+                <div class="card-item-value">{{ data.Plazo }}</div>
             </div>
-            <porcentage-bar [min]="0" [max]="100" [progress]="data.Completado"></porcentage-bar>
-            <cp-button (click)="handleMoreInfo(data.Slug)" [size]="'lg'" [fullWidth]="true">
+            <porcentage-bar
+                [min]="0"
+                [max]="100"
+                [progress]="data.Completado"
+            ></porcentage-bar>
+            <cp-button
+                (click)="handleMoreInfo(data.Slug)"
+                [size]="'lg'"
+                [fullWidth]="true"
+            >
                 Más información
             </cp-button>
         </div>

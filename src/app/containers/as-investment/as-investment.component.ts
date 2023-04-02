@@ -3,19 +3,18 @@ import { ITimeline } from 'src/app/components/timeline/timeline.component';
 import { timelineData } from '../../constants/timeline';
 
 @Component({
-  selector: 'as-investment',
-  templateUrl: './as-investment.component.html',
-  styleUrls: ['./as-investment.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'as-investment',
+    templateUrl: './as-investment.component.html',
+    styleUrls: ['./as-investment.component.scss'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class AsInvestmentComponent implements OnInit {
+    timelineData: ITimeline[];
+    CustomizedServicesPlatform: string =
+        'assets/customized-services-platforms.png';
+    constructor() {}
 
-  timelineData: ITimeline[];
-  CustomizedServicesPlatform:string = "assets/customized-services-platforms.png";
-  constructor() { }
-
-  ngOnInit(): void {
-    this.timelineData = timelineData;
-  }
-
+    ngOnInit(): void {
+        this.timelineData = timelineData;
+    }
 }

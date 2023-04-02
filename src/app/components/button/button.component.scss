@@ -1,4 +1,4 @@
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -19,35 +19,35 @@
     cursor: pointer;
 
     &:disabled,
-    &.disabled{
+    &.disabled {
         background-color: var(--bg-disabled);
         color: var(--ct-disabled);
         box-shadow: none;
     }
 
-    &.si-mg{
-        margin: 10px
+    &.si-mg {
+        margin: 10px;
     }
 
-    &.lg{
+    &.lg {
         min-height: 50px;
         font-size: 20px;
         padding: 0 60px;
     }
 
-    &.full-width{
+    &.full-width {
         width: 100%;
         padding: 0;
     }
 
-    &.text{
+    &.text {
         background-color: transparent;
         font-weight: bold;
         color: var(--ct-main);
         box-shadow: none;
     }
 
-    &.outline{
+    &.outline {
         background-color: transparent;
         font-weight: bold;
         color: var(--bg-pr);
@@ -55,17 +55,17 @@
         box-shadow: none;
     }
 
-    & .leading{
+    & .leading {
         margin-right: 6px;
     }
 
-    & .trading{
+    & .trading {
         margin-left: 6px;
     }
 }
-@media (max-width:320px){
-    .btn{
-        &.lg{
+@media (max-width: 320px) {
+    .btn {
+        &.lg {
             padding: 0 10px;
         }
     }

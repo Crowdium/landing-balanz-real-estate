@@ -1,4 +1,4 @@
-.invest-in-real-estate{
+.invest-in-real-estate {
     background-image: url(../../../assets/real-estate-bg.jpg);
     background-position: center bottom;
     background-size: cover;
@@ -7,7 +7,7 @@
     color: #ffffff;
     position: relative;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         left: 0;
@@ -17,27 +17,27 @@
         background: var(--overlay);
         z-index: 0;
     }
-    
-    &-content{
+
+    &-content {
         position: relative;
         z-index: 1;
     }
-    & h2{
+    & h2 {
         margin-bottom: 32px;
         font-weight: 400;
     }
-    & .btn-white-opacity{
+    & .btn-white-opacity {
         background-color: rgba(255, 255, 255, 0.15) !important;
         color: #ffffff !important;
         border-color: #ffffff !important;
     }
-    & .btn-white{
+    & .btn-white {
         color: var(--bg-pr);
         background-color: #ffffff;
     }
 }
-@media (max-width: 768px){
-    .invest-in-real-estate{
+@media (max-width: 768px) {
+    .invest-in-real-estate {
         padding: 120px 16px;
     }
 }

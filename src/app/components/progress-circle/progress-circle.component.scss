@@ -1,18 +1,18 @@
-.progress-circle{
+.progress-circle {
     width: 100%;
     width: 100%;
     overflow: visible;
-    & circle{
-        fill:transparent;
+    & circle {
+        fill: transparent;
         stroke-width: 6px;
         transform: rotate(-90deg) translate(-10px, -10px);
         transform-origin: center;
     }
 
-    & circle:first-child{
+    & circle:first-child {
         stroke: #eeeeee;
     }
-    & circle:last-child{
+    & circle:last-child {
         stroke: #27bb01;
     }
 }

@@ -1,26 +1,25 @@
-.partners{
+.partners {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px 70px;
-    
-    & a{
+
+    & a {
         display: inline-block;
         margin: 0 10px;
 
-        & img{
+        & img {
             height: 40px;
         }
     }
 }
-@media (max-width: 768px){
-    .partners{
-
-        & a{
+@media (max-width: 768px) {
+    .partners {
+        & a {
             width: 100%;
             text-align: center;
-            & img{
+            & img {
                 height: 50px;
             }
         }

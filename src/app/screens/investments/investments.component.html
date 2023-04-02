@@ -3,27 +3,29 @@
         <h1>Real Estate</h1>
     </div>
     <div class="container">
-        <h1 class="page-header">
-            Lista de Inversiones
-        </h1>
+        <h1 class="page-header">Lista de Inversiones</h1>
         <form [formGroup]="filterForm">
             <div class="form-select">
-                <label for="filter">
-                    Filtrar por
-                </label>
+                <label for="filter"> Filtrar por </label>
                 <select formControlName="status">
-                    <option *ngFor="let opt of options" [value]="opt.value">{{opt.text}}</option>
+                    <option *ngFor="let opt of options" [value]="opt.value">
+                        {{ opt.text }}
+                    </option>
                 </select>
             </div>
         </form>
 
-
         <div class="row justify-content-start">
             <ng-container *ngIf="data && !error && !loading">
-                <ng-container *ngIf="dataFilter && dataFilter.length else noItems">
+                <ng-container
+                    *ngIf="dataFilter && dataFilter.length; else noItems"
+                >
                     <ng-container *ngFor="let obj of dataFilter; let i = index">
                         <div class="col sm-12 md-6 lg-4">
-                            <project-card [data]="obj" (moreInfo)="moreInfo($event)"></project-card>
+                            <project-card
+                                [data]="obj"
+                                (moreInfo)="moreInfo($event)"
+                            ></project-card>
                         </div>
                     </ng-container>
                 </ng-container>
@@ -32,7 +34,8 @@
                         <icon-buyer></icon-buyer>
                         <h1>No hay proyectos para mostrar.</h1>
                         <p>
-                            Estamos trabajando para sumar más proyectos en los que puedas invertir.
+                            Estamos trabajando para sumar más proyectos en los
+                            que puedas invertir.
                         </p>
                     </div>
                 </ng-template>

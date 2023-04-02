@@ -1,17 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'icon-diversifity',
-  templateUrl: './icon-diversifity.component.html',
-  styleUrls: ['./icon-diversifity.component.scss']
+    selector: 'icon-diversifity',
+    templateUrl: './icon-diversifity.component.html',
+    styleUrls: ['./icon-diversifity.component.scss'],
 })
 export class IconDiversifityComponent implements OnInit {
+    @Input() className: string;
 
-  @Input() className:string;
+    constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

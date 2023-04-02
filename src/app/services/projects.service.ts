@@ -6,23 +6,22 @@ import { Project } from '../constants/project';
 import { encodeURL } from '../helpers/encodeURI';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class ProjectsService {
+    private headers: any;
+    private endpoint: string;
 
-  private headers:any;
-  private endpoint:string;
-
-  constructor(private http: HttpClient) {
-    this.endpoint = config.ENDPOINT;
-    this.headers = {
-      headers: {
-        "Auth-Token": config.API_KEY
-      }
+    constructor(private http: HttpClient) {
+        this.endpoint = config.ENDPOINT;
+        this.headers = {
+            headers: {
+                'Auth-Token': config.API_KEY,
+            },
+        };
     }
-  }
 
-  getProjects(): Observable<any>{
-    return this.http.get(`${this.endpoint}/proyectos`, this.headers);
-  }
+    getProjects(): Observable<any> {
+        return this.http.get(`${this.endpoint}/proyectos`, this.headers);
+    }
 }

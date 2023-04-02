@@ -10,22 +10,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ScreensModule,
-    ComponentsModule,
-    ContainersModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NzIconModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ScreensModule,
+        ComponentsModule,
+        ContainersModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NzIconModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

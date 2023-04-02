@@ -1,12 +1,12 @@
-.not-found{
-    & .error-container{
+.not-found {
+    & .error-container {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
         flex-wrap: nowrap;
         margin-bottom: -124px;
 
-        & .error-content{
+        & .error-content {
             min-width: 400px;
             width: 40%;
             padding: 0;
@@ -14,29 +14,27 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-    
-            & h1{
+
+            & h1 {
                 color: var(--bg-pr);
                 font-size: 40px;
                 margin-bottom: 20px;
             }
-    
         }
-        & .error-img{
+        & .error-img {
             padding: 0;
-            
-            & img{
+
+            & img {
                 height: calc(100vh - 60px);
                 max-height: 550px;
             }
         }
     }
 }
-@media (max-width: 912px){
-    .not-found{
-        & .error-container{
+@media (max-width: 912px) {
+    .not-found {
+        & .error-container {
             margin-bottom: -64px;
         }
     }
-
 }

@@ -4,16 +4,19 @@
             <div class="error-content">
                 <h1>Página no encontrada</h1>
                 <p>
-                    Oops! No encontramos la página solicitada. <br>
+                    Oops! No encontramos la página solicitada. <br />
                     Si crees que esto es un problema, escríbenos.
                 </p>
                 <cp-button size="lg" className="margin-t-1" (click)="goHome()">
-                    <fa-icon [icon]="faChevronLeft" [style.marginRight.px]="10"></fa-icon>
+                    <fa-icon
+                        [icon]="faChevronLeft"
+                        [style.marginRight.px]="10"
+                    ></fa-icon>
                     Volver a Balanz
                 </cp-button>
             </div>
             <div class="error-img">
-                <img src="../../../assets/hero-bg.jpg" alt="">
+                <img src="../../../assets/hero-bg.jpg" alt="" />
             </div>
         </div>
     </ct-header>

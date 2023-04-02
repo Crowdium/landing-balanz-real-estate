@@ -1,16 +1,16 @@
-.resume-investment{
+.resume-investment {
     margin: 16px 0;
 
-    & .progress{
+    & .progress {
         max-width: 500px;
         margin-bottom: 16px;
         margin: auto;
     }
 
-    & .resume-container{
+    & .resume-container {
         margin: 32px 0;
-        
-        & .resume-item{
+
+        & .resume-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -18,9 +18,8 @@
             padding: 4px 0;
             position: relative;
 
-    
             & .resume-title,
-            & .resume-value{
+            & .resume-value {
                 position: relative;
                 font-size: 16px;
                 z-index: 1;
@@ -28,27 +27,27 @@
                 line-height: 1.5em;
                 -webkit-font-smoothing: antialiased;
             }
-            & .resume-value{
+            & .resume-value {
                 float: right;
                 text-align: right;
-                padding-left: .5em;
+                padding-left: 0.5em;
                 color: #002162;
                 font-weight: 600;
                 font-size: 18px;
             }
-            & .resume-title{
+            & .resume-title {
                 float: left;
                 text-align: left;
-                padding-right: .5em;
+                padding-right: 0.5em;
                 color: #525252;
                 font-weight: 400;
 
-                & i{
+                & i {
                     font-size: 90%;
                     margin-right: 10px;
                 }
             }
-            & .resume-dotted{
+            & .resume-dotted {
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -62,18 +61,18 @@
         }
     }
 }
-@media (max-width: 512px){
-    .resume-investment{
-        & .resume-container{
-            & .resume-item{
-                & .resume-title{
+@media (max-width: 512px) {
+    .resume-investment {
+        & .resume-container {
+            & .resume-item {
+                & .resume-title {
                     font-size: 13px;
-                    
-                    & i{
+
+                    & i {
                         display: none;
                     }
                 }
-                & .resume-value{
+                & .resume-value {
                     font-size: 14px;
                 }
             }

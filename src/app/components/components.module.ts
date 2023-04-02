@@ -16,40 +16,39 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProgressCircleComponent } from './progress-circle/progress-circle.component';
 
-
 @NgModule({
-  declarations: [
-    ButtonComponent,
-    CollapseMenuComponent,
-    PorcentageBarComponent,
-    TimelineComponent,
-    ChartComponent,
-    ScrollSpyMenuComponent,
-    GalleryComponent,
-    ProjectCardComponent,
-    ProgressCircleComponent,
-  ],
-  imports: [
-    CommonModule,
-    NavbarModule,
-    CardModule,
-    PipesModule,
-    CarouselModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule,
-  ],
-  exports:[
-    ButtonComponent,
-    CollapseMenuComponent,
-    PorcentageBarComponent,
-    TimelineComponent,
-    NavbarModule,
-    CardModule,
-    ChartComponent,
-    ScrollSpyMenuComponent,
-    GalleryComponent,
-    ProjectCardComponent,
-    ProgressCircleComponent
-  ]
+    declarations: [
+        ButtonComponent,
+        CollapseMenuComponent,
+        PorcentageBarComponent,
+        TimelineComponent,
+        ChartComponent,
+        ScrollSpyMenuComponent,
+        GalleryComponent,
+        ProjectCardComponent,
+        ProgressCircleComponent,
+    ],
+    imports: [
+        CommonModule,
+        NavbarModule,
+        CardModule,
+        PipesModule,
+        CarouselModule,
+        BrowserAnimationsModule,
+        FontAwesomeModule,
+    ],
+    exports: [
+        ButtonComponent,
+        CollapseMenuComponent,
+        PorcentageBarComponent,
+        TimelineComponent,
+        NavbarModule,
+        CardModule,
+        ChartComponent,
+        ScrollSpyMenuComponent,
+        GalleryComponent,
+        ProjectCardComponent,
+        ProgressCircleComponent,
+    ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

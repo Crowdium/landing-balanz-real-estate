@@ -1,20 +1,20 @@
-.investment{
+.investment {
     padding: 60px 120px;
     text-align: center;
     color: var(--ct-back);
 
-    & h1{
+    & h1 {
         font-size: 30px;
         margin-bottom: 60px;
     }
 
-    & .investments-content{
+    & .investments-content {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    & .card-item{
+    & .card-item {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -22,17 +22,17 @@
         padding: 5px 0;
         font-size: 13px;
 
-        &-title{
+        &-title {
             color: var(--ct-main);
         }
-        &-value{
+        &-value {
             font-size: 18px;
             font-weight: 600;
         }
     }
 }
-@media (max-width: 768px){
-    .investment{
+@media (max-width: 768px) {
+    .investment {
         padding: 60px 10px;
     }
 }

@@ -1,12 +1,12 @@
-.porcentage-bar{
+.porcentage-bar {
     margin: 16px 0;
-    
-    &-title{
+
+    &-title {
         text-align: center;
         font-size: 18px;
         color: var(--ct-back);
     }
-    & .bar{
+    & .bar {
         display: block;
         height: 12px;
         background-color: #eeeeee;
@@ -14,16 +14,16 @@
         margin: 5px 0;
         overflow: hidden;
 
-        &-progress{
+        &-progress {
             height: 12px;
             background-color: #27bb01;
         }
     }
-    &-min-max{
+    &-min-max {
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: 13px;
-        color: var(--ct-main);   
+        color: var(--ct-main);
     }
 }

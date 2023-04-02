@@ -2,7 +2,7 @@
     <owl-carousel-o [options]="config">
         <ng-container *ngFor="let slide of data">
             <ng-template carouselSlide [id]="slide.id">
-                <img [src]="slide.path" [alt]="slide.alt">
+                <img [src]="slide.path" [alt]="slide.alt" />
             </ng-template>
         </ng-container>
     </owl-carousel-o>

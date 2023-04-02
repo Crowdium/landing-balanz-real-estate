@@ -1,27 +1,27 @@
-.about-ci{
+.about-ci {
     background-color: var(--bg-back);
     color: var(--ct-back);
     padding: 75px 100px;
 
-    & .title-about-ci{
+    & .title-about-ci {
         margin-bottom: 100px;
         padding: 0 15%;
         font-size: 35px;
         text-align: center;
         font-weight: 400;
 
-        & strong{
+        & strong {
             font-weight: 600;
         }
     }
-    
-    & .content-button{
+
+    & .content-button {
         margin-top: 2.5rem;
         text-align: center;
     }
 
-    & .content-text{
-        & p{
+    & .content-text {
+        & p {
             color: var(--ct-main);
             font-size: 17px;
             padding-bottom: 10px;
@@ -29,17 +29,16 @@
         }
     }
 }
-@media (max-width: 768px){
-    .about-ci{
+@media (max-width: 768px) {
+    .about-ci {
         padding: 75px 16px;
 
-        & .content-text{
+        & .content-text {
             margin-bottom: 22px;
             text-align: left;
 
-            & .title{
-
-                &::before{
+            & .title {
+                &::before {
                     left: 0;
                     right: 0;
                     margin: auto;
@@ -47,7 +46,7 @@
             }
         }
 
-        & .title-about-ci{
+        & .title-about-ci {
             padding: 0;
             font-size: 30px;
             margin-bottom: 75px;

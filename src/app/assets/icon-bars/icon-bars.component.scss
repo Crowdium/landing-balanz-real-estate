@@ -1,18 +1,17 @@
-.bars-icon{
-
-    & .bars-icon-1, 
+.bars-icon {
+    & .bars-icon-1,
     & .bars-icon-4 {
         fill: none;
     }
-    
+
     & .bars-icon-2 {
         fill: #fff;
     }
-    
+
     & .bars-icon-3 {
         clip-path: url(#clip-path);
     }
-    
+
     & .bars-icon-4 {
         stroke: #fff;
         stroke-miterlimit: 10;

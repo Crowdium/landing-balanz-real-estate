@@ -1,4 +1,4 @@
-export interface Project{
+export interface Project {
     Abreviatura: string;
     AceptandoInversiones: number;
     AceptandoRescates: number;
@@ -12,8 +12,8 @@ export interface Project{
     FechaFinSuscripcion: string;
     FechaInicioSuscripcion: string;
     FechaRetorno: string;
-    FormasDeSuscripcion: [],
-    Geo:{
+    FormasDeSuscripcion: [];
+    Geo: {
         lat: string;
         lng: string;
     };
@@ -24,11 +24,9 @@ export interface Project{
     Nombre: string;
     Plazo: string;
     RentabilidadEstimada: string;
-    Slug:string;
+    Slug: string;
     Tipo: string;
     TirEstimada: string;
     Ubicacion: string;
 }
-export interface ProjectError{
-    
-}
+export interface ProjectError {}

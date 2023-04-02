@@ -10,31 +10,32 @@ import { RealEstateComponent } from './real-estate/real-estate.component';
 import { VistaBelgranoScreen } from './vista-belgrano/vista-belgrano.screen';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-  },
-  {
-    path: 'real-estate',
-    children: [
-      {path: '', component: RealEstateComponent},
-      {path: 'inversiones', component: InvestmentsScreensComponent},
-      {path: 'inversiones/hub-cabildo', component: HubProjectComponent},
-      {path: 'inversiones/hub-cabildo2', component: HubCabildoIiScreen},
-      {path: 'inversiones/vista-belgrano', component: VistaBelgranoScreen}
-    ],
-  },
-  {
-    path: 'dev',
-    children: [
-      {path: 'vista-belgrano', component: VistaBelgranoMock},
-    ]
-  },
-  {path: '**', component: NotFoundComponent}
+    {
+        path: '',
+        component: HomeComponent,
+    },
+    {
+        path: 'real-estate',
+        children: [
+            { path: '', component: RealEstateComponent },
+            { path: 'inversiones', component: InvestmentsScreensComponent },
+            { path: 'inversiones/hub-cabildo', component: HubProjectComponent },
+            { path: 'inversiones/hub-cabildo2', component: HubCabildoIiScreen },
+            {
+                path: 'inversiones/vista-belgrano',
+                component: VistaBelgranoScreen,
+            },
+        ],
+    },
+    {
+        path: 'dev',
+        children: [{ path: 'vista-belgrano', component: VistaBelgranoMock }],
+    },
+    { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

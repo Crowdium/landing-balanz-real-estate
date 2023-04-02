@@ -1,11 +1,11 @@
 <div class="collapse-menu">
-    <ng-container *ngFor="let obj of data; let i = index;">
-        <div class="collapse-item" [class]="{'active': i === index}">
+    <ng-container *ngFor="let obj of data; let i = index">
+        <div class="collapse-item" [class]="{ active: i === index }">
             <div class="collapse-button" (click)="handleClick(i)">
                 <span>
-                    {{obj.title}}
+                    {{ obj.title }}
                 </span>
-                <img [src]="arrowIcon" alt="Flecha Dropdown"/>
+                <img [src]="arrowIcon" alt="Flecha Dropdown" />
             </div>
             <div class="collapse-container">
                 <div class="collapse-content" [innerHTML]="obj.content"></div>

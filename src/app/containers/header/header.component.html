@@ -5,15 +5,40 @@
     <navbar-right>
         <ng-container *ngFor="let obj of navbarRight; let i = index">
             <ng-container [ngSwitch]="obj.type">
-                <cp-button *ngSwitchCase="'button'" [className]="obj.classnames">
-                    <div class="leading" *ngIf="obj.icon && obj.icon.position === 'left'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
-                    {{obj.name}}
-                    <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                <cp-button
+                    *ngSwitchCase="'button'"
+                    [className]="obj.classnames"
+                >
+                    <div
+                        class="leading"
+                        *ngIf="obj.icon && obj.icon.position === 'left'"
+                        [innerHTML]="obj.icon.html | safeHTML"
+                    ></div>
+                    {{ obj.name }}
+                    <div
+                        class="trading"
+                        *ngIf="obj.icon && obj.icon.position === 'right'"
+                        [innerHTML]="obj.icon.html | safeHTML"
+                    ></div>
                 </cp-button>
-                <a class="btn" *ngSwitchCase="'link'" [href]="obj.path" target="_top" [class]="obj.classnames">
-                    <div class="leading" *ngIf="obj.icon && obj.icon.position === 'left'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
-                    {{obj.name}}
-                    <div class="trading" *ngIf="obj.icon && obj.icon.position === 'right'" [innerHTML]="(obj.icon.html | safeHTML)"></div>
+                <a
+                    class="btn"
+                    *ngSwitchCase="'link'"
+                    [href]="obj.path"
+                    target="_top"
+                    [class]="obj.classnames"
+                >
+                    <div
+                        class="leading"
+                        *ngIf="obj.icon && obj.icon.position === 'left'"
+                        [innerHTML]="obj.icon.html | safeHTML"
+                    ></div>
+                    {{ obj.name }}
+                    <div
+                        class="trading"
+                        *ngIf="obj.icon && obj.icon.position === 'right'"
+                        [innerHTML]="obj.icon.html | safeHTML"
+                    ></div>
                 </a>
             </ng-container>
         </ng-container>

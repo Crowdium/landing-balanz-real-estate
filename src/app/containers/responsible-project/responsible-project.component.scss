@@ -1,13 +1,12 @@
-.reponsible-project{
-
-    & .reponsible-content{
+.reponsible-project {
+    & .reponsible-content {
         margin-bottom: 35px;
     }
-    & .reponsible-content:last-child{
+    & .reponsible-content:last-child {
         margin-bottom: 0;
     }
 
-    & h1{
+    & h1 {
         font-size: 22px;
         line-height: 1.25;
         color: var(--title);
@@ -15,23 +14,23 @@
         margin-bottom: 0;
     }
 
-    & h3{
+    & h3 {
         text-transform: uppercase;
         font-size: 16px;
         color: var(--subtitle);
         font-weight: 400;
     }
-    
-    & p{
+
+    & p {
         font-size: 17px;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
     }
 }
-@media (max-width: 767px){
-    .reponsible-project{
-        & .reponsible-content{
+@media (max-width: 767px) {
+    .reponsible-project {
+        & .reponsible-content {
             margin-bottom: 0em;
         }
     }

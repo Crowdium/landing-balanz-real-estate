@@ -1,24 +1,38 @@
 <div class="resume-investment">
-    <div class="title">
-        Resumen de la Inversión
-    </div>
+    <div class="title">Resumen de la Inversión</div>
     <div class="resume-container">
         <ng-container *ngFor="let item of data">
             <div class="resume-item">
                 <div class="resume-title">
-                    <i nz-icon [nzType]="item.icon" nzTheme="fill"></i>{{item.title}}
+                    <i nz-icon [nzType]="item.icon" nzTheme="fill"></i
+                    >{{ item.title }}
                 </div>
                 <div class="resume-dotted"></div>
-                <div class="resume-value" [innerHTML]="item.value | safeHTML"></div>
+                <div
+                    class="resume-value"
+                    [innerHTML]="item.value | safeHTML"
+                ></div>
             </div>
         </ng-container>
     </div>
     <div class="progress">
-        <porcentage-bar [min]="0" [max]="100" [progress]="progress"></porcentage-bar>
+        <porcentage-bar
+            [min]="0"
+            [max]="100"
+            [progress]="progress"
+        ></porcentage-bar>
     </div>
     <div class="text-center">
-        <a class="btn lg" [class]="{'disabled': status.Tipo > 1}"  (click)="handleClick(callToAction)">
-            {{ status.Tipo > 1 ? 'Proyecto ' + status.Descripcion : 'Invertir Ahora'}}
+        <a
+            class="btn lg"
+            [class]="{ disabled: status.Tipo > 1 }"
+            (click)="handleClick(callToAction)"
+        >
+            {{
+                status.Tipo > 1
+                    ? "Proyecto " + status.Descripcion
+                    : "Invertir Ahora"
+            }}
         </a>
     </div>
 </div>

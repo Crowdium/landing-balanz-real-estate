@@ -1,20 +1,19 @@
 <div class="why-real-estate">
-    <h1>
-        ¿Por qué invertir en Real Estate?
-    </h1>
+    <h1>¿Por qué invertir en Real Estate?</h1>
     <h3>
-        El mercado del Real Estate es uno de los más seguros por tratarse de activos valuados en dólares. Funcionan como una reserva 
-        de valor y son los que mejor resisten a las crisis financieras.
+        El mercado del Real Estate es uno de los más seguros por tratarse de
+        activos valuados en dólares. Funcionan como una reserva de valor y son
+        los que mejor resisten a las crisis financieras.
     </h3>
     <div class="row">
         <ng-container *ngFor="let obj of WhyRealEstateData; let i = index">
             <div class="col md-6 lg-3">
-                <div class="item-icon" [innerHTML]="(obj.icon | safeHTML)"></div>
+                <div class="item-icon" [innerHTML]="obj.icon | safeHTML"></div>
                 <div class="item-title">
-                    {{obj.title}}
+                    {{ obj.title }}
                 </div>
                 <div class="item-content">
-                    {{obj.content}}
+                    {{ obj.content }}
                 </div>
             </div>
         </ng-container>

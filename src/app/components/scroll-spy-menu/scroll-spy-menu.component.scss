@@ -1,4 +1,4 @@
-.scroll-spy-container{
+.scroll-spy-container {
     width: 100%;
     min-width: 798px;
     max-width: 1026px;
@@ -13,14 +13,14 @@
     z-index: 9;
     background-color: white;
 
-    &.scrolled{
+    &.scrolled {
         margin-left: -16px;
         min-width: calc(100% + 32px);
         left: 0;
         right: 0;
     }
 
-    & .scroll-spy-item{
+    & .scroll-spy-item {
         background: transparent;
         height: 3.5rem;
         color: var(--ct-main);
@@ -32,13 +32,13 @@
         font-weight: 400;
         cursor: pointer;
 
-        &.active{
+        &.active {
             color: var(--active);
         }
     }
 }
-@media (max-width:798px){
-    .scroll-spy-container{
+@media (max-width: 798px) {
+    .scroll-spy-container {
         display: none;
     }
 }
