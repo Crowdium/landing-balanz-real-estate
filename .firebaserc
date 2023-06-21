@@ -1,5 +1,15 @@
 {
-  "projects": {
-    "default": "balanz-crowdium"
-  }
+    "projects": {
+        "default": "crowdium-com-ar",
+        "crowdium-com-ar": "crowdium-com-ar"
+    },
+    "targets": {
+        "crowdium-com-ar": {
+            "hosting": {
+                "balance-crowdium": [
+                    "balance-crowdium-com-ar"
+                ]
+            }
+        }
+    }
 }
